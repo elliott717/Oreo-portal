@@ -8,9 +8,6 @@ import * as _redux from './setup'
 import store, {persistor} from './setup/redux/Store'
 // Axios
 import axios from 'axios'
-import {Chart, registerables} from 'chart.js'
-import {QueryClient, QueryClientProvider} from 'react-query'
-import {ReactQueryDevtools} from 'react-query/devtools'
 
 // Apps
 import {GoodI18nProvider} from './_theme/i18n/Goodi18n'
@@ -35,13 +32,9 @@ import {AppRoutes} from './app/routing/AppRoutes'
  */
 _redux.setupAxios(axios, store)
 
-Chart.register(...registerables)
-
-const queryClient = new QueryClient()
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 
 root.render(
-  <QueryClientProvider client={queryClient}>
     <GoodI18nProvider>
       <Provider store={store}>
         {/* Asynchronously persist redux stores and show `SplashScreen` while it's loading. */}
@@ -50,6 +43,4 @@ root.render(
         </PersistGate>
       </Provider>
     </GoodI18nProvider>
-    <ReactQueryDevtools initialIsOpen={false} />
-  </QueryClientProvider>,
 )

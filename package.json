@@ -2,7 +2,7 @@
   "name": "oreo",
   "version": "1.0.0",
   "private": true,
-  "homepage": "/good-react",
+  "homepage": "/oreo",
   "dependencies": {
     "@formatjs/intl-pluralrules": "5.1.3",
     "@formatjs/intl-relativetimeformat": "11.1.3",
