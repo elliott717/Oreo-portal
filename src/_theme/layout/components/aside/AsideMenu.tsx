@@ -1,9 +1,5 @@
-import React from 'react'
 import {AsideMenuMain} from './AsideMenuMain'
 
-type Props = {
-  children?: React.ReactNode
-}
 function AsideMenu() {
   return (
     <div

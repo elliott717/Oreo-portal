@@ -1,6 +1,5 @@
 import {AsideMenuItemWithSub} from './AsideMenuItemWithSub'
 import {AsideMenuItem} from './AsideMenuItem'
-import {KTSVG} from '../../../helpers'
 
 export function AsideMenuMain() {
   return (

@@ -1,4 +1,4 @@
-import {FC, lazy, Suspense} from 'react'
+import {lazy, Suspense} from 'react'
 import {Navigate, Route, Routes} from 'react-router-dom'
 import {MasterLayout} from '../../_theme/layout/MasterLayout'
 import TopBarProgress from 'react-topbar-progress-indicator'

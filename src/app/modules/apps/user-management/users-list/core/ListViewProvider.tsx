@@ -1,4 +1,4 @@
-import {createContext, FC, useContext, useMemo, useState} from 'react'
+import {createContext, useContext, useMemo, useState} from 'react'
 import {
   calculatedGroupingIsDisabled,
   calculateIsAllDataSelected,

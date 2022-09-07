@@ -1,4 +1,5 @@
-import ReactDOM from 'react-dom'
+// import ReactDOM from 'react-dom'
+import ReactDOM from "react-dom/client";
 // Redux
 // https://github.com/rt2zz/redux-persist
 import {PersistGate} from 'redux-persist/integration/react'
@@ -37,8 +38,9 @@ _redux.setupAxios(axios, store)
 Chart.register(...registerables)
 
 const queryClient = new QueryClient()
+const root = ReactDOM.createRoot(document.getElementById('root')!);
 
-ReactDOM.render(
+root.render(
   <QueryClientProvider client={queryClient}>
     <GoodI18nProvider>
       <Provider store={store}>
@@ -50,5 +52,4 @@ ReactDOM.render(
     </GoodI18nProvider>
     <ReactQueryDevtools initialIsOpen={false} />
   </QueryClientProvider>,
-  document.getElementById('root')
 )
