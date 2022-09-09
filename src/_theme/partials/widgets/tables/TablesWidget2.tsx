@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {Nav, Tab} from 'react-bootstrap'
 import {Dropdown2} from '../..'
@@ -8,7 +7,7 @@ type Props = {
   className: string
 }
 
-export const TablesWidget2: FC<Props> = ({className}) => {
+export const TablesWidget2 = ({className}:Props) => {
   return (
     <div className={`card ${className}`}>
       <Tab.Container defaultActiveKey='kt_stats_widget_2_tab_1'>

@@ -1,4 +1,4 @@
-import {FC, useEffect, useRef} from 'react'
+import {useEffect, useRef} from 'react'
 import {KTSVG} from '../../../helpers'
 import {Dropdown2} from '../..'
 import ApexCharts, {ApexOptions} from 'apexcharts'
@@ -9,7 +9,7 @@ type Props = {
   chartHeight: number
 }
 
-export const ChartsWidget4: FC<Props> = ({className, chartHeight}) => {
+export function ChartsWidget4({ className, chartHeight }: Props) {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -67,8 +67,7 @@ export const ChartsWidget4: FC<Props> = ({className, chartHeight}) => {
             <span className='badge badge-success fs-6 p-2 d-flex align-items-center align-self-center'>
               <KTSVG
                 path='/media/icons/duotune/arrows/arr067.svg'
-                className='svg-icon-7 svg-icon-white'
-              />
+                className='svg-icon-7 svg-icon-white' />
               2.2%
             </span>
           </div>
@@ -79,7 +78,7 @@ export const ChartsWidget4: FC<Props> = ({className, chartHeight}) => {
         </div>
         {/* end::Statistics */}
         {/* begin::Chart */}
-        <div ref={chartRef} className='min-h-auto ps-4 pe-6' style={{height: '300px'}}></div>
+        <div ref={chartRef} className='min-h-auto ps-4 pe-6' style={{ height: '300px' }}></div>
         {/* end::Chart */}
       </div>
       {/* end::Card body */}

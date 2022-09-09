@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {Dropdown3} from '../../content/dropdown/Dropdown3'
 
@@ -7,7 +6,7 @@ type Props = {
   className: string
 }
 
-export const ListsWidget15: FC<Props> = ({className}) => {
+export function ListsWidget15({ className }: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -29,8 +28,7 @@ export const ListsWidget15: FC<Props> = ({className}) => {
           >
             <KTSVG
               path='/media/icons/duotune/general/gen023.svg'
-              className='svg-icon-1 svg-icon-gray-300 me-n1'
-            />
+              className='svg-icon-1 svg-icon-gray-300 me-n1' />
           </button>
           <Dropdown3 />
           {/* end::Menu */}
@@ -46,7 +44,7 @@ export const ListsWidget15: FC<Props> = ({className}) => {
           <div className='symbol symbol-50px symbol-2by3 me-4'>
             <div
               className='symbol-label'
-              style={{backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/20.jpg')})`}}
+              style={{ backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/20.jpg')})` }}
             ></div>
           </div>
           {/* end::Symbol */}
@@ -81,7 +79,7 @@ export const ListsWidget15: FC<Props> = ({className}) => {
           <div className='symbol symbol-50px symbol-2by3 me-4'>
             <div
               className='symbol-label'
-              style={{backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/23.jpg')})`}}
+              style={{ backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/23.jpg')})` }}
             ></div>
           </div>
           {/* end::Symbol */}
@@ -116,7 +114,7 @@ export const ListsWidget15: FC<Props> = ({className}) => {
           <div className='symbol symbol-50px symbol-2by3 me-4'>
             <div
               className='symbol-label'
-              style={{backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/22.jpg')})`}}
+              style={{ backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/22.jpg')})` }}
             ></div>
           </div>
           {/* end::Symbol */}
@@ -151,7 +149,7 @@ export const ListsWidget15: FC<Props> = ({className}) => {
           <div className='symbol symbol-50px symbol-2by3 me-4'>
             <div
               className='symbol-label'
-              style={{backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/19.jpg')})`}}
+              style={{ backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/19.jpg')})` }}
             ></div>
           </div>
           {/* end::Symbol */}
@@ -188,7 +186,7 @@ export const ListsWidget15: FC<Props> = ({className}) => {
           <div className='symbol symbol-50px symbol-2by3 me-4'>
             <div
               className='symbol-label'
-              style={{backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/3.jpg')})`}}
+              style={{ backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/3.jpg')})` }}
             ></div>
           </div>
           {/* end::Symbol */}

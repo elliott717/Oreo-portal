@@ -1,4 +1,3 @@
-import {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {Social} from '../../../helpers/data/social'
 import {Dropdown2} from '../..'
@@ -10,7 +9,7 @@ type Props = {
   data: Array<Social>
 }
 
-export const ListsWidget3: FC<Props> = ({className, title, stat, data}) => {
+export function ListsWidget3({ className, title, stat, data }: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -69,7 +68,7 @@ export const ListsWidget3: FC<Props> = ({className, title, stat, data}) => {
                   <div className='progress h-6px w-100 me-2 bg-light-success'>
                     <div
                       className='progress-bar bg-success'
-                      style={{width: `${item.progress.value}%`}}
+                      style={{ width: `${item.progress.value}%` }}
                     ></div>
                   </div>
                   {/* end::Progress */}

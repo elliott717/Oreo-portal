@@ -1,4 +1,4 @@
-import {FC, useRef} from 'react'
+import {useRef} from 'react'
 import {KTSVG} from '../../../helpers'
 import {Modal} from 'react-bootstrap'
 import {StepperComponent} from '../../../assets/ts/components'
@@ -26,7 +26,7 @@ type Props = {
 //   notifications: '',
 // }
 
-const CreateProject: FC<Props> = ({show, handleClose}) => {
+function CreateProject({ show, handleClose }: Props) {
   const stepperRef = useRef<HTMLDivElement | null>(null)
   const stepper = useRef<StepperComponent | null>(null)
 
@@ -113,60 +113,60 @@ const CreateProject: FC<Props> = ({show, handleClose}) => {
               {/* begin::Form */}
               {/* begin::Form */}
               {/* <Formik
-                validationSchema={currentSchema}
-                initialValues={initValues}
-                onSubmit={submitStep}
-              >
-                {() => (
-                  <Form className='mx-auto w-100 mw-600px pt-15 pb-10' noValidate id='kt_modal_create_project_form'>
-                    <Step1 />
+              validationSchema={currentSchema}
+              initialValues={initValues}
+              onSubmit={submitStep}
+            >
+              {() => (
+                <Form className='mx-auto w-100 mw-600px pt-15 pb-10' noValidate id='kt_modal_create_project_form'>
+                  <Step1 />
 
-                    <Step2 />
+                  <Step2 />
 
-                    <Step3 />
+                  <Step3 />
 
-                    <Step4 />
+                  <Step4 />
 
-                    <Step5 />
+                  <Step5 />
 
-                    <Step6 />
+                  <Step6 />
 
-                    <Step7 />
+                  <Step7 />
 
-                    <div className='d-flex flex-stack pt-10'>
-                      <div className='me-2'>
-                        <button
-                          onClick={prevStep}
-                          type='button'
-                          className='btn btn-lg btn-light-primary me-3'
-                          data-kt-stepper-action='previous'
-                        >
-                          <KTSVG
-                            path='/media/icons/duotune/arrows/arr063.svg'
-                            className='svg-icon-4 me-1'
-                          />
-                          Back
-                        </button>
-                      </div>
-
-                      <div>
-                        <button type='submit' className='btn btn-lg btn-primary me-3'>
-                          <span className='indicator-label'>
-                            {stepper.current?.currentStepIndex !==
-                              stepper.current?.totatStepsNumber! - 1 && 'Continue'}
-                            {stepper.current?.currentStepIndex ===
-                              stepper.current?.totatStepsNumber! - 1 && 'Submit'}
-                            <KTSVG
-                              path='/media/icons/duotune/arrows/arr064.svg'
-                              className='svg-icon-3 ms-2 me-0'
-                            />
-                          </span>
-                        </button>
-                      </div>
+                  <div className='d-flex flex-stack pt-10'>
+                    <div className='me-2'>
+                      <button
+                        onClick={prevStep}
+                        type='button'
+                        className='btn btn-lg btn-light-primary me-3'
+                        data-kt-stepper-action='previous'
+                      >
+                        <KTSVG
+                          path='/media/icons/duotune/arrows/arr063.svg'
+                          className='svg-icon-4 me-1'
+                        />
+                        Back
+                      </button>
                     </div>
-                  </Form>
-                )}
-              </Formik> */}
+
+                    <div>
+                      <button type='submit' className='btn btn-lg btn-primary me-3'>
+                        <span className='indicator-label'>
+                          {stepper.current?.currentStepIndex !==
+                            stepper.current?.totatStepsNumber! - 1 && 'Continue'}
+                          {stepper.current?.currentStepIndex ===
+                            stepper.current?.totatStepsNumber! - 1 && 'Submit'}
+                          <KTSVG
+                            path='/media/icons/duotune/arrows/arr064.svg'
+                            className='svg-icon-3 ms-2 me-0'
+                          />
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </Form>
+              )}
+            </Formik> */}
             </div>
             {/* begin::Container */}
           </div>

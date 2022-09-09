@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC, useEffect} from 'react'
+import {useEffect} from 'react'
 import {useMutation, useQueryClient} from 'react-query'
 import {MenuComponent} from '../../../../../../../_theme/assets/ts/components'
 import {ID, KTSVG, QUERIES} from '../../../../../../../_theme/helpers'
@@ -11,9 +11,9 @@ type Props = {
   id: ID
 }
 
-const UserActionsCell: FC<Props> = ({id}) => {
-  const {setItemIdForUpdate} = useListView()
-  const {query} = useQueryResponse()
+function UserActionsCell({ id }: Props) {
+  const { setItemIdForUpdate } = useListView()
+  const { query } = useQueryResponse()
   const queryClient = useQueryClient()
 
   useEffect(() => {

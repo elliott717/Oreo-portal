@@ -1,4 +1,3 @@
-import {FC} from 'react'
 import {IconUserModel} from '../ProfileModels'
 import {toAbsoluteUrl} from '../../../../_theme/helpers'
 import {OverlayTrigger, Tooltip} from 'react-bootstrap'
@@ -7,7 +6,7 @@ type Props = {
   users?: Array<IconUserModel>
 }
 
-const UsersList: FC<Props> = ({users = undefined}) => {
+function UsersList({ users = undefined }:Props) {
   return (
     <>
       {users &&

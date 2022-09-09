@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
 import {Modal} from 'react-bootstrap'
 import {KTSVG, toAbsoluteUrl} from '../../helpers'
 // import {ListsWidget4, ListsWidget5} from '../widgets'
@@ -9,7 +8,7 @@ type Props = {
   handleClose: () => void
 }
 
-const SearchModal: React.FC<Props> = ({show, handleClose}) => {
+function SearchModal({ show, handleClose }: Props) {
   return (
     <Modal
       className='bg-white'
@@ -35,8 +34,7 @@ const SearchModal: React.FC<Props> = ({show, handleClose}) => {
                 type='text'
                 className='form-control bg-transparent border-0 fs-4x text-center fw-normal'
                 name='query'
-                placeholder='Search...'
-              />
+                placeholder='Search...' />
             </form>
             {/* end::Search */}
 
@@ -57,8 +55,7 @@ const SearchModal: React.FC<Props> = ({show, handleClose}) => {
                               backgroundImage: `url('${toAbsoluteUrl(
                                 '/media/stock/600x400/img-17.jpg'
                               )}')`,
-                            }}
-                          />
+                            }} />
                           <div className='overlay-layer bg-white bg-opacity-50'>
                             <a href='#' className='btn btn-sm fw-bold btn-primary'>
                               Explore
@@ -74,8 +71,7 @@ const SearchModal: React.FC<Props> = ({show, handleClose}) => {
                               backgroundImage: `url('${toAbsoluteUrl(
                                 '/media/stock/600x400/img-1.jpg'
                               )}')`,
-                            }}
-                          />
+                            }} />
                           <div className='overlay-layer bg-white bg-opacity-50'>
                             <a href='#' className='btn btn-sm fw-bold btn-primary'>
                               Explore
@@ -93,8 +89,7 @@ const SearchModal: React.FC<Props> = ({show, handleClose}) => {
                               backgroundImage: `url('${toAbsoluteUrl(
                                 '/media/stock/600x400/img-23.jpg'
                               )}')`,
-                            }}
-                          />
+                            }} />
                           <div className='overlay-layer bg-white bg-opacity-50'>
                             <a href='#' className='btn btn-sm fw-bold btn-primary'>
                               Explore

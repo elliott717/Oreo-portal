@@ -1,10 +1,9 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
 import {useLayout} from '../core'
 
-const Footer: React.FC = () => {
-  const {classes} = useLayout()
+function Footer() {
+  const { classes } = useLayout()
   return (
     <div className='footer py-4 d-flex flex-lg-column' id='kt_footer'>
       <div

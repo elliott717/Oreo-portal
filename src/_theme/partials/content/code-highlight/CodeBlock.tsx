@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {useEffect, useRef, useState} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import Highlight, {defaultProps, Language} from 'prism-react-renderer'
 import theme from 'prism-react-renderer/themes/shadesOfPurple'
@@ -10,7 +10,7 @@ type Props = {
   language: Language
 }
 
-const CodeBlock: React.FC<Props> = ({code, language}) => {
+function CodeBlock({ code, language }: Props) {
   const codeRef = useRef<HTMLDivElement | null>(null)
   const [copied, setCopied] = useState(false)
   useEffect(() => {
@@ -50,19 +50,19 @@ const CodeBlock: React.FC<Props> = ({code, language}) => {
 
         <div className='highlight-code' ref={codeRef}>
           <Highlight {...defaultProps} theme={theme} code={code} language={language}>
-            {({className, style, tokens, getLineProps, getTokenProps}) => {
+            {({ className, style, tokens, getLineProps, getTokenProps }) => {
               return (
-                <pre className={className} style={{maxHeight: '300px', ...style}}>
+                <pre className={className} style={{ maxHeight: '300px', ...style }}>
                   {tokens.map((line, i) => (
-                    <div {...getLineProps({line, key: i})}>
+                    <div {...getLineProps({ line, key: i })}>
                       {line.map((token, key) => (
-                        <span {...getTokenProps({token, key})} />
+                        <span {...getTokenProps({ token, key })} />
                       ))}
                     </div>
                   ))}
                 </pre>
               )
-            }}
+            } }
           </Highlight>
         </div>
       </div>

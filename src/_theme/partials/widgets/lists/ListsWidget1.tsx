@@ -1,4 +1,3 @@
-import {FC} from 'react'
 import {KTSVG} from '../../../helpers'
 import {Dropdown2} from '../..'
 
@@ -6,7 +5,7 @@ type Props = {
   className: string
 }
 
-export const ListsWidget1: FC<Props> = ({className}) => {
+export function ListsWidget1({ className }: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -44,8 +43,7 @@ export const ListsWidget1: FC<Props> = ({className}) => {
           <div className='d-flex align-items-senter'>
             <KTSVG
               path='/media/icons/duotune/arrows/arr094.svg'
-              className='svg-icon-2 svg-icon-success me-2'
-            />
+              className='svg-icon-2 svg-icon-success me-2' />
             {/* begin::Number */}
             <span className='text-gray-900 fw-boldest fs-6'>7.8</span>
             {/* end::Number */}
@@ -66,8 +64,7 @@ export const ListsWidget1: FC<Props> = ({className}) => {
           <div className='d-flex align-items-senter'>
             <KTSVG
               path='/media/icons/duotune/arrows/arr093.svg'
-              className='svg-icon-2 svg-icon-danger me-2'
-            />
+              className='svg-icon-2 svg-icon-danger me-2' />
             {/* begin::Number */}
             <span className='text-gray-900 fw-boldest fs-6'>730k</span>
             {/* end::Number */}
@@ -87,8 +84,7 @@ export const ListsWidget1: FC<Props> = ({className}) => {
           <div className='d-flex align-items-senter'>
             <KTSVG
               path='/media/icons/duotune/arrows/arr094.svg'
-              className='svg-icon-2 svg-icon-success me-2'
-            />
+              className='svg-icon-2 svg-icon-success me-2' />
             {/* begin::Number */}
             <span className='text-gray-900 fw-boldest fs-6'>$2.09</span>
             {/* end::Number */}

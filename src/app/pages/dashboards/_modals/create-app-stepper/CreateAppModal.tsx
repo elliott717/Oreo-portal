@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {useRef, useState} from 'react'
+import {useRef, useState} from 'react'
 import {Modal} from 'react-bootstrap'
 import {StepperComponent} from '../../../../../_theme/assets/ts/components'
 import {KTSVG} from '../../../../../_theme/helpers'
@@ -11,7 +11,7 @@ type Props = {
   handleClose: () => void
 }
 
-const CreateAppModal: React.FC<Props> = ({show, handleClose}) => {
+const CreateAppModal = ({show, handleClose}:Props) => {
   const stepperRef = useRef<HTMLDivElement | null>(null)
   const stepper = useRef<StepperComponent | null>(null)
   const [data, setData] = useState<ICreateAppData>(defaultCreateAppData)

@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
 import {toAbsoluteUrl} from '../../../helpers'
 
 type Props = {
@@ -8,7 +7,7 @@ type Props = {
   description: string
 }
 
-const Card4: FC<Props> = ({icon, title, description}) => {
+function Card4({ icon, title, description }: Props) {
   return (
     <div className='card h-100'>
       <div className='card-body d-flex justify-content-center text-center flex-column p-8'>

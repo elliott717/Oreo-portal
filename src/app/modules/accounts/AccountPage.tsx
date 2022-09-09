@@ -1,4 +1,3 @@
-import React from 'react'
 import {Navigate, Outlet, Route, Routes} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_theme/layout/core'
 import {Overview} from './components/Overview'
@@ -20,35 +19,27 @@ const accountBreadCrumbs: Array<PageLink> = [
   },
 ]
 
-const AccountPage: React.FC = () => {
+function AccountPage() {
   return (
     <Routes>
       <Route
-        element={
-          <>
-            <AccountHeader />
-            <Outlet />
-          </>
-        }
+        element={<>
+          <AccountHeader />
+          <Outlet />
+        </>}
       >
         <Route
           path='overview'
-          element={
-            <>
-              <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
-              <Overview />
-            </>
-          }
-        />
+          element={<>
+            <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
+            <Overview />
+          </>} />
         <Route
           path='settings'
-          element={
-            <>
-              <PageTitle breadcrumbs={accountBreadCrumbs}>Settings</PageTitle>
-              <Settings />
-            </>
-          }
-        />
+          element={<>
+            <PageTitle breadcrumbs={accountBreadCrumbs}>Settings</PageTitle>
+            <Settings />
+          </>} />
         <Route index element={<Navigate to='/crafted/account/overview' />} />
       </Route>
     </Routes>

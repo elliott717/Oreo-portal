@@ -1,4 +1,4 @@
-import {FC, useEffect, useRef, useState} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import {KTSVG} from '../../../helpers'
 import ApexCharts from 'apexcharts'
 import {getCSSVariableValue} from '../../../assets/ts/_utils'
@@ -8,7 +8,7 @@ type Props = {
   chartHeight: number
 }
 
-export const ChartsWidget8: FC<Props> = ({className, chartHeight}) => {
+export function ChartsWidget8({ className, chartHeight }: Props) {
   const [tab, setTab] = useState<string>('kt_chart_widget_8_tab1')
   const chartRef1 = useRef<HTMLDivElement | null>(null)
   const chartRef2 = useRef<HTMLDivElement | null>(null)
@@ -76,10 +76,8 @@ export const ChartsWidget8: FC<Props> = ({className, chartHeight}) => {
               <div
                 onClick={() => {
                   setTab('kt_chart_widget_8_tab1')
-                }}
-                className={`nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bolder px-4 me-1 ${
-                  tab === 'kt_chart_widget_8_tab1' ? 'active' : ''
-                }`}
+                } }
+                className={`nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bolder px-4 me-1 ${tab === 'kt_chart_widget_8_tab1' ? 'active' : ''}`}
               >
                 Month
               </div>
@@ -88,10 +86,8 @@ export const ChartsWidget8: FC<Props> = ({className, chartHeight}) => {
               <div
                 onClick={() => {
                   setTab('kt_chart_widget_8_tab2')
-                }}
-                className={`nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bolder px-4 me-1 ${
-                  tab === 'kt_chart_widget_8_tab2' ? 'active' : ''
-                }`}
+                } }
+                className={`nav-link btn btn-sm btn-color-muted btn-active btn-active-light fw-bolder px-4 me-1 ${tab === 'kt_chart_widget_8_tab2' ? 'active' : ''}`}
               >
                 Week
               </div>
@@ -118,8 +114,7 @@ export const ChartsWidget8: FC<Props> = ({className, chartHeight}) => {
                     <span className='badge badge-success fs-6 p-2 d-flex align-items-center align-self-center'>
                       <KTSVG
                         path='/media/icons/duotune/arrows/arr067.svg'
-                        className='svg-icon-7 svg-icon-white ms-n1'
-                      />
+                        className='svg-icon-7 svg-icon-white ms-n1' />
                       4,8%
                     </span>
                   </div>
@@ -225,8 +220,7 @@ export const ChartsWidget8: FC<Props> = ({className, chartHeight}) => {
                     <span className='badge badge-success fs-6 p-2 d-flex align-items-center align-self-center'>
                       <KTSVG
                         path='/media/icons/duotune/arrows/arr067.svg'
-                        className='svg-icon-7 svg-icon-white ms-n1'
-                      />
+                        className='svg-icon-7 svg-icon-white ms-n1' />
                       2.2%
                     </span>
                   </div>

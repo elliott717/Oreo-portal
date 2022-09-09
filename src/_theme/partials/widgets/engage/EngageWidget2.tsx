@@ -1,4 +1,4 @@
-import {FC, useState} from 'react'
+import {useState} from 'react'
 import {toAbsoluteUrl} from '../../../helpers'
 import {Main} from '../../modals/create-app/Main'
 
@@ -10,7 +10,7 @@ type Props = {
   buttonClass: string
 }
 
-export const EngageWidget2: FC<Props> = ({className, text, textClass, buttonText, buttonClass}) => {
+export function EngageWidget2({ className, text, textClass, buttonText, buttonClass }: Props) {
   const [show, setShow] = useState<boolean>(false)
 
   return (
@@ -28,7 +28,7 @@ export const EngageWidget2: FC<Props> = ({className, text, textClass, buttonText
           {/* begin::Title */}
           <h3
             className={`${textClass} fs-2qx fw-boldest mb-4 mb-lg-8`}
-            dangerouslySetInnerHTML={{__html: text}}
+            dangerouslySetInnerHTML={{ __html: text }}
           ></h3>
           {/* end::Title */}
 
@@ -41,7 +41,7 @@ export const EngageWidget2: FC<Props> = ({className, text, textClass, buttonText
               data-bs-target='#kt_modal_create_app'
               onClick={() => {
                 setShow(!show)
-              }}
+              } }
             >
               {buttonText}
             </a>
@@ -54,8 +54,7 @@ export const EngageWidget2: FC<Props> = ({className, text, textClass, buttonText
         show={show}
         handleClose={() => {
           setShow(false)
-        }}
-      />
+        } } />
     </>
   )
 }

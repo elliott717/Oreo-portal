@@ -1,4 +1,4 @@
-import {FC, useMemo} from 'react'
+import {useMemo} from 'react'
 import {ID} from '../../../../../../../_theme/helpers'
 import {useListView} from '../../core/ListViewProvider'
 
@@ -6,8 +6,8 @@ type Props = {
   id: ID
 }
 
-const UserSelectionCell: FC<Props> = ({id}) => {
-  const {selected, onSelect} = useListView()
+function UserSelectionCell({ id }: Props) {
+  const { selected, onSelect } = useListView()
   const isSelected = useMemo(() => selected.includes(id), [id, selected])
   return (
     <div className='form-check form-check-sm form-check-custom form-check-solid'>
@@ -17,8 +17,7 @@ const UserSelectionCell: FC<Props> = ({id}) => {
         data-kt-check={isSelected}
         data-kt-check-target='#kt_table_users .form-check-input'
         checked={isSelected}
-        onChange={() => onSelect(id)}
-      />
+        onChange={() => onSelect(id)} />
     </div>
   )
 }

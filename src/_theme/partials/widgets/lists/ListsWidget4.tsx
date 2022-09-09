@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
 import {KTSVG} from '../../../helpers'
 
 import {Dropdown2} from '../..'
@@ -28,7 +27,7 @@ const slides = [
   ],
 ]
 
-export const ListsWidget4: FC<Props> = ({className}) => {
+export function ListsWidget4({ className }: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -102,7 +101,7 @@ export const ListsWidget4: FC<Props> = ({className}) => {
                               <div
                                 className='progress-bar bg-warning'
                                 role='progressbar'
-                                style={{width: `${item.value}%`}}
+                                style={{ width: `${item.value}%` }}
                               ></div>
                             </div>
                             {/* end::Progress */}

@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import {INotifications, notifications} from '../SettingsModel'
 
-const Notifications: React.FC = () => {
+const Notifications = () => {
   const [data, setData] = useState<INotifications>(notifications)
 
   const updateData = (fieldsToUpdate: Partial<INotifications>) => {

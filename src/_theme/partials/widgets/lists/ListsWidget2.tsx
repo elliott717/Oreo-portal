@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
 import {KTSVG} from '../../../helpers'
 import {Dropdown2} from '../..'
 
@@ -7,7 +6,7 @@ type Props = {
   className: string
 }
 
-export const ListsWidget2: FC<Props> = ({className}) => {
+export function ListsWidget2({ className }: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}

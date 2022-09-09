@@ -1,4 +1,4 @@
-import {FC, useEffect, useRef} from 'react'
+import {useEffect, useRef} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {Dropdown2} from '../..'
 import ApexCharts, {ApexOptions} from 'apexcharts'
@@ -12,7 +12,7 @@ type Props = {
   data: Array<Social>
 }
 
-export const ChartsWidget2: FC<Props> = ({clasName, chartHeight, chartColor, data}) => {
+export function ChartsWidget2({ clasName, chartHeight, chartColor, data }: Props) {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -89,7 +89,7 @@ export const ChartsWidget2: FC<Props> = ({clasName, chartHeight, chartColor, dat
                     <div className='progress h-6px w-100 me-2 bg-light-success'>
                       <div
                         className='progress-bar bg-success'
-                        style={{width: `${item.progress.value}%`}}
+                        style={{ width: `${item.progress.value}%` }}
                       ></div>
                     </div>
                     {/* end::Progress */}
@@ -109,7 +109,7 @@ export const ChartsWidget2: FC<Props> = ({clasName, chartHeight, chartColor, dat
         <div
           ref={chartRef}
           className='charts-widget-2 card-rounded-bottom'
-          style={{height: chartHeight}}
+          style={{ height: chartHeight }}
         ></div>
         {/* end::Chart */}
       </div>

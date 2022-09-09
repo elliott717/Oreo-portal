@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
 import {Link} from 'react-router-dom'
 import {IconUserModel} from '../../../../app/modules/profile/ProfileModels'
 import {UsersList} from '../../../../app/modules/profile/components/UsersList'
@@ -18,18 +17,9 @@ type Props = {
   users?: Array<IconUserModel>
 }
 
-const Card2: FC<Props> = ({
-  icon,
-  badgeColor,
-  status,
-  statusColor,
-  title,
-  description,
-  date,
-  budget,
-  progress,
-  users = undefined,
-}) => {
+function Card2({
+  icon, badgeColor, status, statusColor, title, description, date, budget, progress, users = undefined,
+}: Props) {
   return (
     <Link
       to='/crafted/pages/profile/overview'
@@ -74,7 +64,7 @@ const Card2: FC<Props> = ({
           <div
             className={`bg-${statusColor} rounded h-4px`}
             role='progressbar'
-            style={{width: `${progress}%`}}
+            style={{ width: `${progress}%` }}
           ></div>
         </div>
 

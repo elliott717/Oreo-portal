@@ -1,4 +1,4 @@
-import {FC, useEffect, useRef} from 'react'
+import {useEffect, useRef} from 'react'
 import {KTSVG} from '../../../helpers'
 import {Dropdown2} from '../..'
 import ApexCharts, {ApexOptions} from 'apexcharts'
@@ -8,7 +8,7 @@ type Props = {
   className: string
 }
 
-export const ChartsWidget5: FC<Props> = ({className}) => {
+export function ChartsWidget5({ className }: Props) {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -49,8 +49,7 @@ export const ChartsWidget5: FC<Props> = ({className}) => {
           >
             <KTSVG
               path='/media/icons/duotune/general/gen023.svg'
-              className='svg-icon-1 svg-icon-gray-300 me-n1'
-            />
+              className='svg-icon-1 svg-icon-gray-300 me-n1' />
           </button>
           <Dropdown2 />
           {/* end::Menu */}

@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 
 type Props = {
@@ -12,15 +11,9 @@ type Props = {
   totalEarnings: string
 }
 
-const Card3: FC<Props> = ({
-  color = '',
-  avatar = '',
-  online = false,
-  name,
-  job,
-  avgEarnings,
-  totalEarnings,
-}) => {
+function Card3({
+  color = '', avatar = '', online = false, name, job, avgEarnings, totalEarnings,
+}: Props) {
   return (
     <div className='card'>
       <div className='card-body d-flex flex-center flex-column p-9'>

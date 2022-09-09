@@ -1,4 +1,4 @@
-import {FC, useEffect, useRef} from 'react'
+import {useEffect, useRef} from 'react'
 import {KTSVG} from '../../../helpers'
 import {Dropdown2} from '../..'
 import ApexCharts, {ApexOptions} from 'apexcharts'
@@ -9,7 +9,7 @@ type Props = {
   chartHeight: number
 }
 
-export const ChartsWidget9: FC<Props> = ({className, chartHeight}) => {
+export function ChartsWidget9({ className, chartHeight }: Props) {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -48,12 +48,11 @@ export const ChartsWidget9: FC<Props> = ({className, chartHeight}) => {
             {/* begin::Badge */}
             <span
               className='badge badge-success fs-6 lh-1 py-1 px-2 d-flex flex-center'
-              style={{height: '22px'}}
+              style={{ height: '22px' }}
             >
               <KTSVG
                 path='/media/icons/duotune/arrows/arr067.svg'
-                className='svg-icon-7 svg-icon-white ms-n1'
-              />
+                className='svg-icon-7 svg-icon-white ms-n1' />
               2.2%
             </span>
             {/* end::Badge */}
@@ -72,8 +71,7 @@ export const ChartsWidget9: FC<Props> = ({className, chartHeight}) => {
             >
               <KTSVG
                 path='/media/icons/duotune/general/gen044.svg'
-                className='svg-icon-2 svg-icon-primary'
-              />
+                className='svg-icon-2 svg-icon-primary' />
             </span>
           </span>
           {/* end::Subtitle */}
@@ -101,7 +99,7 @@ export const ChartsWidget9: FC<Props> = ({className, chartHeight}) => {
       {/* begin::Body */}
       <div className='card-body d-flex align-items-end pb-6 ps-4 pe-6'>
         {/* begin::Chart */}
-        <div ref={chartRef} className='w-100 min-h-auto' style={{height: '250px'}}></div>
+        <div ref={chartRef} className='w-100 min-h-auto' style={{ height: '250px' }}></div>
         {/* end::Chart */}
       </div>
       {/* end::Body */}

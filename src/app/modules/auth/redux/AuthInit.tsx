@@ -1,4 +1,4 @@
-import {FC, useEffect, useRef} from 'react'
+import {useEffect, useRef} from 'react'
 import {connect, ConnectedProps, shallowEqual, useDispatch, useSelector} from 'react-redux'
 import * as auth from './AuthRedux'
 import {getUserByToken} from './AuthCRUD'
@@ -10,17 +10,17 @@ type PropsFromRedux = ConnectedProps<typeof connector>
 type Props = PropsFromRedux & {
    children?: React.ReactNode
 }
-const AuthInit: FC<Props> = (props) => {
+function AuthInit(props:Props) {
   const didRequest = useRef(false)
   const dispatch = useDispatch()
-  const accessToken = useSelector<RootState>(({auth}) => auth.accessToken, shallowEqual)
+  const accessToken = useSelector<RootState>(({ auth }) => auth.accessToken, shallowEqual)
 
   // We should request user by authToken before rendering the application
   useEffect(() => {
     const requestUser = async () => {
       try {
         if (!didRequest.current) {
-          const {data: user} = await getUserByToken(accessToken as string)
+          const { data: user } = await getUserByToken(accessToken as string)
           dispatch(props.fulfillUser(user))
         }
       } catch (error) {

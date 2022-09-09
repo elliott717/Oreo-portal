@@ -1,4 +1,3 @@
-import React from 'react'
 import {Navigate, Outlet, Route, Routes} from 'react-router-dom'
 import {PageLink, PageTitle} from '../../../_theme/layout/core'
 import {Default} from './Default'
@@ -21,46 +20,34 @@ const dashboardBreadCrumbs: Array<PageLink> = [
   },
 ]
 
-const DashboardsPageWrapper: React.FC = () => {
+function DashboardsPageWrapper() {
   return (
     <Routes>
       <Route element={<Outlet />}>
         <Route
           path='default'
-          element={
-            <>
-              <PageTitle breadcrumbs={dashboardBreadCrumbs}>Default</PageTitle>
-              <Default />
-            </>
-          }
-        />
+          element={<>
+            <PageTitle breadcrumbs={dashboardBreadCrumbs}>Default</PageTitle>
+            <Default />
+          </>} />
         <Route
           path='marketing'
-          element={
-            <>
-              <PageTitle breadcrumbs={dashboardBreadCrumbs}>Marketing</PageTitle>
-              <Marketing />
-            </>
-          }
-        />
+          element={<>
+            <PageTitle breadcrumbs={dashboardBreadCrumbs}>Marketing</PageTitle>
+            <Marketing />
+          </>} />
         <Route
           path='/social'
-          element={
-            <>
-              <PageTitle breadcrumbs={dashboardBreadCrumbs}>Social</PageTitle>
-              <Social />
-            </>
-          }
-        />
+          element={<>
+            <PageTitle breadcrumbs={dashboardBreadCrumbs}>Social</PageTitle>
+            <Social />
+          </>} />
         <Route
           path='ecommerce'
-          element={
-            <>
-              <PageTitle breadcrumbs={dashboardBreadCrumbs}>ECommerce</PageTitle>
-              <ECommerce />
-            </>
-          }
-        />
+          element={<>
+            <PageTitle breadcrumbs={dashboardBreadCrumbs}>ECommerce</PageTitle>
+            <ECommerce />
+          </>} />
         <Route index element={<Navigate to='/dashboards/default' />} />
       </Route>
     </Routes>

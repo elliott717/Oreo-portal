@@ -1,5 +1,4 @@
 import clsx from 'clsx'
-import {FC} from 'react'
 
 type Props = {
   className?: string
@@ -8,8 +7,8 @@ type Props = {
   children: React.ReactNode
 }
 
-const KTCardBody: FC<Props> = (props) => {
-  const {className, scroll, height, children} = props
+function KTCardBody(props: Props) {
+  const { className, scroll, height, children } = props
   return (
     <div
       className={clsx(

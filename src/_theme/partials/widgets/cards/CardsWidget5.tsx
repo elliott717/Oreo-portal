@@ -1,11 +1,10 @@
-import {FC} from 'react'
 import {KTSVG} from '../../../helpers'
 
 type Props = {
   className: string
 }
 
-export const CardsWidget5: FC<Props> = ({className}) => {
+export function CardsWidget5({ className }: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -20,12 +19,11 @@ export const CardsWidget5: FC<Props> = ({className}) => {
             {/* begin::Badge */}
             <span
               className=' badge badge-danger fs-6 lh-1 py-1 px-2 d-flex flex-center'
-              style={{height: '22px'}}
+              style={{ height: '22px' }}
             >
               <KTSVG
                 path='/media/icons/duotune/arrows/arr068.svg'
-                className='svg-icon-7 svg-icon-white ms-n1'
-              />
+                className='svg-icon-7 svg-icon-white ms-n1' />
               2.2%
             </span>
             {/* end::Badge */}
@@ -50,7 +48,7 @@ export const CardsWidget5: FC<Props> = ({className}) => {
             <div
               className=' bg-success rounded h-8px'
               role='progressbar'
-              style={{width: '62%'}}
+              style={{ width: '62%' }}
             ></div>
           </div>
         </div>

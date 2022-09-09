@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC, useState} from 'react'
+import {useState} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {Dropdown2, Main} from '../..'
 import {Nav, Tab} from 'react-bootstrap'
@@ -8,7 +8,7 @@ type Props = {
   className: string
 }
 
-export const TablesWidget1: FC<Props> = ({className}) => {
+export function TablesWidget1({ className }: Props) {
   const [show, setShow] = useState<boolean>(false)
 
   return (
@@ -34,8 +34,7 @@ export const TablesWidget1: FC<Props> = ({className}) => {
               >
                 <KTSVG
                   path='/media/icons/duotune/general/gen023.svg'
-                  className='svg-icon-1 svg-icon-gray-300 me-n1'
-                />
+                  className='svg-icon-1 svg-icon-gray-300 me-n1' />
               </button>
               <Dropdown2 />
             </div>
@@ -58,8 +57,7 @@ export const TablesWidget1: FC<Props> = ({className}) => {
                     <img
                       alt=''
                       src={toAbsoluteUrl('/media/svg/brand-logos/beats-electronics.svg')}
-                      className=''
-                    />
+                      className='' />
                   </div>
                   {/* end::Icon */}
                   {/* begin::Subtitle */}
@@ -85,8 +83,7 @@ export const TablesWidget1: FC<Props> = ({className}) => {
                     <img
                       alt='Logo'
                       src={toAbsoluteUrl('/media/svg/brand-logos/amazon.svg')}
-                      className=''
-                    />
+                      className='' />
                   </div>
                   {/* end::Icon */}
                   {/* begin::Subtitle */}
@@ -112,8 +109,7 @@ export const TablesWidget1: FC<Props> = ({className}) => {
                     <img
                       alt=''
                       src={toAbsoluteUrl('/media/svg/brand-logos/bp-2.svg')}
-                      className=''
-                    />
+                      className='' />
                   </div>
                   {/* end::Icon */}
                   {/* begin::Subtitle */}
@@ -139,8 +135,7 @@ export const TablesWidget1: FC<Props> = ({className}) => {
                     <img
                       alt=''
                       src={toAbsoluteUrl('/media/svg/brand-logos/slack-icon.svg')}
-                      className='nav-icon'
-                    />
+                      className='nav-icon' />
                   </div>
                   {/* end::Icon */}
                   {/* begin::Subtitle */}
@@ -157,7 +152,7 @@ export const TablesWidget1: FC<Props> = ({className}) => {
               <div
                 onClick={() => {
                   setShow(true)
-                }}
+                } }
                 className='nav-item mb-3 cursor-pointer'
               >
                 {/* begin::Link */}
@@ -167,8 +162,7 @@ export const TablesWidget1: FC<Props> = ({className}) => {
                   <div className='nav-icon'>
                     <KTSVG
                       path='/media/icons/duotune/general/gen035.svg'
-                      className='svg-icon-2hx svg-icon-gray-400'
-                    />
+                      className='svg-icon-2hx svg-icon-gray-400' />
                   </div>
                   {/* end::Icon */}
                   {/* begin::Bullet */}
@@ -551,8 +545,7 @@ export const TablesWidget1: FC<Props> = ({className}) => {
         show={show}
         handleClose={() => {
           setShow(false)
-        }}
-      />
+        } } />
     </>
   )
 }

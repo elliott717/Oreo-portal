@@ -1,11 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
-
 type Props = {
   className: string
 }
 
-export const TablesWidget5: FC<Props> = ({className}) => {
+export function TablesWidget5({ className }: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Card header */}
@@ -93,7 +91,7 @@ export const TablesWidget5: FC<Props> = ({className}) => {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Item: activate to sort column ascending'
-                    style={{width: '196.453px'}}
+                    style={{ width: '196.453px' }}
                   >
                     Item
                   </th>
@@ -102,7 +100,7 @@ export const TablesWidget5: FC<Props> = ({className}) => {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Product ID'
-                    style={{width: '153.469px'}}
+                    style={{ width: '153.469px' }}
                   >
                     Product ID
                   </th>
@@ -113,7 +111,7 @@ export const TablesWidget5: FC<Props> = ({className}) => {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Date Added: activate to sort column ascending'
-                    style={{width: '225.836px'}}
+                    style={{ width: '225.836px' }}
                   >
                     Date Added
                   </th>
@@ -124,7 +122,7 @@ export const TablesWidget5: FC<Props> = ({className}) => {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Price: activate to sort column ascending'
-                    style={{width: '153.469px'}}
+                    style={{ width: '153.469px' }}
                   >
                     Price
                   </th>
@@ -135,7 +133,7 @@ export const TablesWidget5: FC<Props> = ({className}) => {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Status: activate to sort column ascending'
-                    style={{width: '155.656px'}}
+                    style={{ width: '155.656px' }}
                   >
                     Status
                   </th>
@@ -146,7 +144,7 @@ export const TablesWidget5: FC<Props> = ({className}) => {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Qty: activate to sort column ascending'
-                    style={{width: '86.6953px'}}
+                    style={{ width: '86.6953px' }}
                   >
                     Qty
                   </th>

@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {useEffect, useRef} from 'react'
+import {useEffect, useRef} from 'react'
 import ApexCharts, {ApexOptions} from 'apexcharts'
 import {KTSVG} from '../../helpers'
 import {Dropdown1} from '../content/dropdown/Dropdown1'
@@ -9,7 +9,7 @@ type Props = {
   className: string
 }
 
-const ChartsWidget1: React.FC<Props> = ({className}) => {
+function ChartsWidget1({ className }: Props) {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -65,7 +65,7 @@ const ChartsWidget1: React.FC<Props> = ({className}) => {
       {/* begin::Body */}
       <div className='card-body'>
         {/* begin::Chart */}
-        <div ref={chartRef} id='kt_charts_widget_1_chart' style={{height: '350px'}} />
+        <div ref={chartRef} id='kt_charts_widget_1_chart' style={{ height: '350px' }} />
         {/* end::Chart */}
       </div>
       {/* end::Body */}

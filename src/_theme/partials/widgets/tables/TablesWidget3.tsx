@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC, useState} from 'react'
+import {useState} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {Dropdown1} from '../..'
 import {OverlayTrigger, Tooltip} from 'react-bootstrap'
@@ -8,7 +8,7 @@ type Props = {
   className: string
 }
 
-export const TablesWidget3: FC<Props> = ({className}) => {
+export function TablesWidget3({ className }: Props) {
   const [tabNumber, setTabNumber] = useState<number>(1)
 
   return (
@@ -19,36 +19,30 @@ export const TablesWidget3: FC<Props> = ({className}) => {
         <div className='card-title pt-3 mb-0 gap-4 gap-lg-10 gap-xl-15 nav nav-tabs border-bottom-0'>
           {/* begin::Tab item */}
           <div
-            className={`fs-4 fw-bolder pb-3 cursor-pointer ${
-              tabNumber === 1 ? 'border-bottom border-3 border-primary' : 'text-muted'
-            }`}
+            className={`fs-4 fw-bolder pb-3 cursor-pointer ${tabNumber === 1 ? 'border-bottom border-3 border-primary' : 'text-muted'}`}
             onClick={() => {
               setTabNumber(1)
-            }}
+            } }
           >
             All Campaigns (47)
           </div>
           {/* end::Tab item */}
           {/* begin::Tab item */}
           <div
-            className={`fs-4 fw-bolder pb-3 cursor-pointer ${
-              tabNumber === 2 ? 'border-bottom border-3 border-primary' : 'text-muted'
-            }`}
+            className={`fs-4 fw-bolder pb-3 cursor-pointer ${tabNumber === 2 ? 'border-bottom border-3 border-primary' : 'text-muted'}`}
             onClick={() => {
               setTabNumber(2)
-            }}
+            } }
           >
             Pending (8)
           </div>
           {/* end::Tab item */}
           {/* begin::Tab item */}
           <div
-            className={`fs-4 fw-bolder pb-3 cursor-pointer ${
-              tabNumber === 3 ? 'border-bottom border-3 border-primary' : 'text-muted'
-            }`}
+            className={`fs-4 fw-bolder pb-3 cursor-pointer ${tabNumber === 3 ? 'border-bottom border-3 border-primary' : 'text-muted'}`}
             onClick={() => {
               setTabNumber(3)
-            }}
+            } }
           >
             Completed (39)
           </div>
@@ -147,8 +141,7 @@ export const TablesWidget3: FC<Props> = ({className}) => {
             >
               <KTSVG
                 path='/media/icons/duotune/general/gen031.svg'
-                className='svg-icon-2 svg-icon-gray-400'
-              />
+                className='svg-icon-2 svg-icon-gray-400' />
             </a>
             {/* begin::Menu 1 */}
             <Dropdown1 />
@@ -194,32 +187,27 @@ export const TablesWidget3: FC<Props> = ({className}) => {
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/linkedin-2.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -313,20 +301,17 @@ export const TablesWidget3: FC<Props> = ({className}) => {
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -401,14 +386,12 @@ export const TablesWidget3: FC<Props> = ({className}) => {
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -492,20 +475,17 @@ export const TablesWidget3: FC<Props> = ({className}) => {
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/linkedin-2.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -603,32 +583,27 @@ export const TablesWidget3: FC<Props> = ({className}) => {
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/linkedin-2.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -722,20 +697,17 @@ export const TablesWidget3: FC<Props> = ({className}) => {
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -814,32 +786,27 @@ export const TablesWidget3: FC<Props> = ({className}) => {
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/linkedin-2.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
-                              alt=''
-                            />
+                              alt='' />
                           </a>
                         </div>
                         {/* end::Icons */}

@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {Dropdown2} from '../../content/dropdown/Dropdown2'
 
@@ -7,7 +6,7 @@ type Props = {
   className: string
 }
 
-export const ListsWidget14: FC<Props> = ({className}) => {
+export function ListsWidget14({ className }: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -29,8 +28,7 @@ export const ListsWidget14: FC<Props> = ({className}) => {
           >
             <KTSVG
               path='/media/icons/duotune/general/gen023.svg'
-              className='svg-icon-1 svg-icon-gray-300 me-n1'
-            />
+              className='svg-icon-1 svg-icon-gray-300 me-n1' />
           </button>
           <Dropdown2 />
           {/* end::Menu */}

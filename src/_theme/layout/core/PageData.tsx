@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, {createContext, FC, useContext, useEffect, useState} from 'react'
+import React, {createContext, useContext, useEffect, useState} from 'react'
 
 export interface PageLink {
   title: string
@@ -48,8 +48,8 @@ type Props = {
   children?: React.ReactNode
 }
 
-const PageTitle: FC<Props> = ({children, description, breadcrumbs}) => {
-  const {setPageTitle, setPageDescription, setPageBreadcrumbs} = usePageData()
+function PageTitle({ children, description, breadcrumbs }: Props) {
+  const { setPageTitle, setPageDescription, setPageBreadcrumbs } = usePageData()
   useEffect(() => {
     if (children) {
       setPageTitle(children.toString())

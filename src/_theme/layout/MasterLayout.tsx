@@ -9,7 +9,7 @@ import {ScrollTop} from './components/Scrolltop'
 import {ActivityDrawer, CreateApp, DrawerMessenger} from '../partials'
 import {Content} from './components/Content'
 
-const MasterLayout: React.FC = ({children}:any) => {
+function MasterLayout({ children }: any) {
   const location = useLocation()
   useEffect(() => {
     setTimeout(() => {

@@ -7,7 +7,7 @@ type Props = {
   className: string
 }
 
-const FeedsWidget2: React.FC<Props> = ({className}) => {
+function FeedsWidget2({ className }: Props) {
   return (
     <div className={`card ${className}`}>
       {/* begin::Body */}
@@ -98,8 +98,7 @@ const FeedsWidget2: React.FC<Props> = ({className}) => {
             <span className='btn btn-icon btn-sm btn-active-color-primary pe-0 me-2'>
               <KTSVG
                 path='/media/icons/duotune/communication/com008.svg'
-                className='svg-icon-3 mb-3'
-              />
+                className='svg-icon-3 mb-3' />
             </span>
 
             <span className='btn btn-icon btn-sm btn-active-color-primary ps-0'>

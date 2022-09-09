@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {FC, useRef, useState} from 'react'
+import {useRef, useState} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {ErrorMessage, Field, Form, Formik, FormikValues} from 'formik'
 import * as Yup from 'yup'
@@ -60,7 +60,7 @@ type Props = {
   handleClose: () => void
 }
 
-const Main: FC<Props> = ({show, handleClose}) => {
+function Main({ show, handleClose }: Props) {
   const stepperRef = useRef<HTMLDivElement | null>(null)
   const stepper = useRef<StepperComponent | null>(null)
   const [currentSchema, setCurrentSchema] = useState(createAppSchema[0])
@@ -275,8 +275,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                             type='text'
                             className='form-control form-control-lg form-control-solid'
                             name='appName'
-                            placeholder=''
-                          />
+                            placeholder='' />
                           <div className='text-danger'>
                             <ErrorMessage name='appName' />
                           </div>
@@ -300,8 +299,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                   <span className='symbol-label bg-light-primary'>
                                     <KTSVG
                                       path='/media/icons/duotune/maps/map004.svg'
-                                      className='svg-icon-1 svg-icon-primary'
-                                    />
+                                      className='svg-icon-1 svg-icon-primary' />
                                   </span>
                                 </span>
 
@@ -319,8 +317,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                   className='form-check-input'
                                   type='radio'
                                   name='category'
-                                  value='1'
-                                />
+                                  value='1' />
                               </span>
                             </label>
 
@@ -330,8 +327,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                   <span className='symbol-label bg-light-danger  '>
                                     <KTSVG
                                       path='/media/icons/duotune/general/gen024.svg'
-                                      className='svg-icon-1 svg-icon-danger'
-                                    />
+                                      className='svg-icon-1 svg-icon-danger' />
                                   </span>
                                 </span>
 
@@ -349,8 +345,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                   className='form-check-input'
                                   type='radio'
                                   name='category'
-                                  value='2'
-                                />
+                                  value='2' />
                               </span>
                             </label>
 
@@ -360,8 +355,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                   <span className='symbol-label bg-light-success'>
                                     <KTSVG
                                       path='/media/icons/duotune/general/gen013.svg'
-                                      className='svg-icon-1 svg-icon-success'
-                                    />
+                                      className='svg-icon-1 svg-icon-success' />
                                   </span>
                                 </span>
 
@@ -379,8 +373,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                   className='form-check-input'
                                   type='radio'
                                   name='category'
-                                  value='3'
-                                />
+                                  value='3' />
                               </span>
                             </label>
                           </div>
@@ -424,8 +417,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                 className='form-check-input'
                                 type='radio'
                                 name='framework'
-                                value='1'
-                              />
+                                value='1' />
                             </span>
                           </label>
 
@@ -450,8 +442,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                 className='form-check-input'
                                 type='radio'
                                 name='framework'
-                                value='2'
-                              />
+                                value='2' />
                             </span>
                           </label>
 
@@ -474,8 +465,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                 className='form-check-input'
                                 type='radio'
                                 name='framework'
-                                value='3'
-                              />
+                                value='3' />
                             </span>
                           </label>
 
@@ -500,8 +490,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                 className='form-check-input'
                                 type='radio'
                                 name='framework'
-                                value='4'
-                              />
+                                value='4' />
                             </span>
                           </label>
                         </div>
@@ -520,8 +509,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                             type='text'
                             className='form-control form-control-lg form-control-solid'
                             name='dbName'
-                            placeholder=''
-                          />
+                            placeholder='' />
                           <div className='text-danger'>
                             <ErrorMessage name='dbName' />
                           </div>
@@ -558,8 +546,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                 className='form-check-input'
                                 type='radio'
                                 name='dbType'
-                                value='1'
-                              />
+                                value='1' />
                             </span>
                           </label>
 
@@ -585,8 +572,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                 className='form-check-input'
                                 type='radio'
                                 name='dbType'
-                                value='2'
-                              />
+                                value='2' />
                             </span>
                           </label>
 
@@ -610,8 +596,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                 className='form-check-input'
                                 type='radio'
                                 name='dbType'
-                                value='3'
-                              />
+                                value='3' />
                             </span>
                           </label>
                         </div>
@@ -649,8 +634,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                             type='text'
                             className='form-control form-control-solid'
                             placeholder=''
-                            name='nameOnCard'
-                          />
+                            name='nameOnCard' />
                           <div className='text-danger'>
                             <ErrorMessage name='nameOnCard' />
                           </div>
@@ -665,8 +649,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                               type='text'
                               className='form-control form-control-solid'
                               placeholder='Enter card number'
-                              name='cardNumber'
-                            />
+                              name='cardNumber' />
                             <div className='text-danger'>
                               <ErrorMessage name='cardNumber' />
                             </div>
@@ -675,18 +658,15 @@ const Main: FC<Props> = ({show, handleClose}) => {
                               <img
                                 src={toAbsoluteUrl('/media/svg/card-logos/visa.svg')}
                                 alt=''
-                                className='h-25px'
-                              />
+                                className='h-25px' />
                               <img
                                 src={toAbsoluteUrl('/media/svg/card-logos/mastercard.svg')}
                                 alt=''
-                                className='h-25px'
-                              />
+                                className='h-25px' />
                               <img
                                 src={toAbsoluteUrl('/media/svg/card-logos/american-express.svg')}
                                 alt=''
-                                className='h-25px'
-                              />
+                                className='h-25px' />
                             </div>
                           </div>
                         </div>
@@ -763,8 +743,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                                 type='text'
                                 className='form-control form-control-solid'
                                 placeholder='CVV'
-                                name='cardCvv'
-                              />
+                                name='cardCvv' />
                               <div className='text-danger'>
                                 <ErrorMessage name='cardCvv' />
                               </div>
@@ -772,8 +751,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                               <div className='position-absolute translate-middle-y top-50 end-0 me-3'>
                                 <KTSVG
                                   path='/media/icons/duotune/finance/fin002.svg'
-                                  className='svg-icon-2hx'
-                                />
+                                  className='svg-icon-2hx' />
                               </div>
                             </div>
                           </div>
@@ -810,8 +788,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                           <img
                             src={toAbsoluteUrl('/media/illustrations/sketchy-1/9.png')}
                             alt=''
-                            className='mw-100 mh-300px'
-                          />
+                            className='mw-100 mh-300px' />
                         </div>
                       </div>
                     </div>
@@ -826,8 +803,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                         >
                           <KTSVG
                             path='/media/icons/duotune/arrows/arr063.svg'
-                            className='svg-icon-4 me-1'
-                          />
+                            className='svg-icon-4 me-1' />
                           Back
                         </button>
                       </div>
@@ -841,8 +817,7 @@ const Main: FC<Props> = ({show, handleClose}) => {
                               stepper.current?.totatStepsNumber! - 1 && 'Submit'}
                             <KTSVG
                               path='/media/icons/duotune/arrows/arr064.svg'
-                              className='svg-icon-3 ms-2 me-0'
-                            />
+                              className='svg-icon-3 ms-2 me-0' />
                           </span>
                         </button>
                       </div>

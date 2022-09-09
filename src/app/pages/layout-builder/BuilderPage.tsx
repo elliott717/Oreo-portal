@@ -1,18 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import clsx from 'clsx'
-import React, {useState} from 'react'
+import {useState} from 'react'
 import {KTSVG} from '../../../_theme/helpers'
 import {getLayout, ILayout, LayoutSetup, useLayout} from '../../../_theme/layout/core'
 
-const BuilderPage: React.FC = () => {
-  const {setLayout} = useLayout()
+function BuilderPage() {
+  const { setLayout } = useLayout()
   const [tab, setTab] = useState('Header')
   const [config, setConfig] = useState<ILayout>(getLayout())
   const [configLoading, setConfigLoading] = useState<boolean>(false)
   const [resetLoading, setResetLoading] = useState<boolean>(false)
 
   const updateData = (fieldsToUpdate: Partial<ILayout>) => {
-    const updatedData = {...config, ...fieldsToUpdate}
+    const updatedData = { ...config, ...fieldsToUpdate }
     setConfig(updatedData)
   }
 
@@ -46,12 +46,10 @@ const BuilderPage: React.FC = () => {
             <KTSVG
               path='/media/icons/duotune/abstract/abs051.svg'
               className='svg-icon-primary position-absolute opacity-15'
-              svgClassName='h-80px w-80px'
-            />
+              svgClassName='h-80px w-80px' />
             <KTSVG
               path='/media/icons/duotune/coding/cod009.svg'
-              className='svg-icon-3x svg-icon-primary position-absolute'
-            />
+              className='svg-icon-3x svg-icon-primary position-absolute' />
           </div>
           {/* end::Icon */}
 
@@ -76,7 +74,7 @@ const BuilderPage: React.FC = () => {
           >
             <li className='nav-item'>
               <a
-                className={clsx(`nav-link cursor-pointer`, {active: tab === 'Header'})}
+                className={clsx(`nav-link cursor-pointer`, { active: tab === 'Header' })}
                 onClick={() => setTab('Header')}
                 role='tab'
               >
@@ -85,7 +83,7 @@ const BuilderPage: React.FC = () => {
             </li>
             <li className='nav-item'>
               <a
-                className={clsx(`nav-link cursor-pointer`, {active: tab === 'Toolbar'})}
+                className={clsx(`nav-link cursor-pointer`, { active: tab === 'Toolbar' })}
                 onClick={() => setTab('Toolbar')}
                 role='tab'
               >
@@ -94,7 +92,7 @@ const BuilderPage: React.FC = () => {
             </li>
             <li className='nav-item'>
               <a
-                className={clsx(`nav-link cursor-pointer`, {active: tab === 'Content'})}
+                className={clsx(`nav-link cursor-pointer`, { active: tab === 'Content' })}
                 onClick={() => setTab('Content')}
                 role='tab'
               >
@@ -103,7 +101,7 @@ const BuilderPage: React.FC = () => {
             </li>
             <li className='nav-item'>
               <a
-                className={clsx(`nav-link cursor-pointer`, {active: tab === 'Footer'})}
+                className={clsx(`nav-link cursor-pointer`, { active: tab === 'Footer' })}
                 onClick={() => setTab('Footer')}
                 role='tab'
               >
@@ -119,7 +117,7 @@ const BuilderPage: React.FC = () => {
           {/* begin::Body */}
           <div className='card-body'>
             <div className='tab-content pt-3'>
-              <div className={clsx('tab-pane', {active: tab === 'Header'})}>
+              <div className={clsx('tab-pane', { active: tab === 'Header' })}>
                 <div className='row mb-10'>
                   <label className='col-lg-3 col-form-label text-lg-end'>Fixed Header:</label>
                   <div className='col-lg-9 col-xl-4'>
@@ -129,18 +127,15 @@ const BuilderPage: React.FC = () => {
                         type='checkbox'
                         name='layout-builder[layout][header][fixed][desktop]'
                         checked={config.header.fixed.desktop}
-                        onChange={() =>
-                          updateData({
-                            header: {
-                              ...config.header,
-                              fixed: {
-                                ...config.header.fixed,
-                                desktop: !config.header.fixed.desktop,
-                              },
+                        onChange={() => updateData({
+                          header: {
+                            ...config.header,
+                            fixed: {
+                              ...config.header.fixed,
+                              desktop: !config.header.fixed.desktop,
                             },
-                          })
-                        }
-                      />
+                          },
+                        })} />
                       <span className='form-check-label text-muted'>Desktop</span>
                     </label>
 
@@ -149,18 +144,15 @@ const BuilderPage: React.FC = () => {
                         className='form-check-input'
                         type='checkbox'
                         checked={config.header.fixed.tabletAndMobile}
-                        onChange={() =>
-                          updateData({
-                            header: {
-                              ...config.header,
-                              fixed: {
-                                ...config.header.fixed,
-                                tabletAndMobile: !config.header.fixed.tabletAndMobile,
-                              },
+                        onChange={() => updateData({
+                          header: {
+                            ...config.header,
+                            fixed: {
+                              ...config.header.fixed,
+                              tabletAndMobile: !config.header.fixed.tabletAndMobile,
                             },
-                          })
-                        }
-                      />
+                          },
+                        })} />
                       <span className='form-check-label text-muted'>Tablet & Mobile</span>
                     </label>
 
@@ -174,14 +166,12 @@ const BuilderPage: React.FC = () => {
                       className='form-select form-select-solid'
                       name='layout-builder[layout][header][width]'
                       value={config.header.width}
-                      onChange={(e) =>
-                        updateData({
-                          header: {
-                            ...config.header,
-                            width: e.target.value as 'fixed' | 'fluid',
-                          },
-                        })
-                      }
+                      onChange={(e) => updateData({
+                        header: {
+                          ...config.header,
+                          width: e.target.value as 'fixed' | 'fluid',
+                        },
+                      })}
                     >
                       <option value='fluid'>Fluid</option>
                       <option value='fixed'>Fixed</option>
@@ -191,7 +181,7 @@ const BuilderPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className={clsx('tab-pane', {active: tab === 'Toolbar'})}>
+              <div className={clsx('tab-pane', { active: tab === 'Toolbar' })}>
                 <div className='row mb-10'>
                   <label className='col-lg-3 col-form-label text-lg-end'>Display:</label>
                   <div className='col-lg-9 col-xl-4'>
@@ -201,15 +191,12 @@ const BuilderPage: React.FC = () => {
                         type='checkbox'
                         name='layout-builder[layout][toolbar][display]'
                         checked={config.toolbar.display}
-                        onChange={() =>
-                          updateData({
-                            toolbar: {
-                              ...config.toolbar,
-                              display: !config.toolbar.display,
-                            },
-                          })
-                        }
-                      />
+                        onChange={() => updateData({
+                          toolbar: {
+                            ...config.toolbar,
+                            display: !config.toolbar.display,
+                          },
+                        })} />
                     </div>
                     <div className='form-text text-muted'>Display toolbar</div>
                   </div>
@@ -223,18 +210,15 @@ const BuilderPage: React.FC = () => {
                         type='checkbox'
                         name='layout-builder[layout][header][fixed][desktop]'
                         checked={config.toolbar.fixed.desktop}
-                        onChange={() =>
-                          updateData({
-                            toolbar: {
-                              ...config.toolbar,
-                              fixed: {
-                                ...config.toolbar.fixed,
-                                desktop: !config.toolbar.fixed.desktop,
-                              },
+                        onChange={() => updateData({
+                          toolbar: {
+                            ...config.toolbar,
+                            fixed: {
+                              ...config.toolbar.fixed,
+                              desktop: !config.toolbar.fixed.desktop,
                             },
-                          })
-                        }
-                      />
+                          },
+                        })} />
                       <span className='form-check-label text-muted'>Desktop</span>
                     </label>
 
@@ -243,18 +227,15 @@ const BuilderPage: React.FC = () => {
                         className='form-check-input'
                         type='checkbox'
                         checked={config.toolbar.fixed.tabletAndMobileMode}
-                        onChange={() =>
-                          updateData({
-                            toolbar: {
-                              ...config.toolbar,
-                              fixed: {
-                                ...config.toolbar.fixed,
-                                tabletAndMobileMode: !config.toolbar.fixed.tabletAndMobileMode,
-                              },
+                        onChange={() => updateData({
+                          toolbar: {
+                            ...config.toolbar,
+                            fixed: {
+                              ...config.toolbar.fixed,
+                              tabletAndMobileMode: !config.toolbar.fixed.tabletAndMobileMode,
                             },
-                          })
-                        }
-                      />
+                          },
+                        })} />
                       <span className='form-check-label text-muted'>Tablet & Mobile</span>
                     </label>
 
@@ -268,14 +249,12 @@ const BuilderPage: React.FC = () => {
                       className='form-select form-select-solid'
                       name='layout-builder[layout][toolbar][width]'
                       value={config.toolbar.width}
-                      onChange={(e) =>
-                        updateData({
-                          toolbar: {
-                            ...config.toolbar,
-                            width: e.target.value as 'fixed' | 'fluid',
-                          },
-                        })
-                      }
+                      onChange={(e) => updateData({
+                        toolbar: {
+                          ...config.toolbar,
+                          width: e.target.value as 'fixed' | 'fluid',
+                        },
+                      })}
                     >
                       <option value='fluid'>Fluid</option>
                       <option value='fixed'>Fixed</option>
@@ -285,7 +264,7 @@ const BuilderPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className={clsx('tab-pane', {active: tab === 'Content'})}>
+              <div className={clsx('tab-pane', { active: tab === 'Content' })}>
                 <div className='row mb-10'>
                   <label className='col-lg-3 col-form-label text-lg-end'>Width:</label>
                   <div className='col-lg-9 col-xl-4'>
@@ -293,14 +272,12 @@ const BuilderPage: React.FC = () => {
                       className='form-select form-select-solid'
                       name='layout-builder[layout][content][width]'
                       value={config.content.width}
-                      onChange={(e) =>
-                        updateData({
-                          content: {
-                            ...config.content,
-                            width: e.target.value as 'fixed' | 'fluid',
-                          },
-                        })
-                      }
+                      onChange={(e) => updateData({
+                        content: {
+                          ...config.content,
+                          width: e.target.value as 'fixed' | 'fluid',
+                        },
+                      })}
                     >
                       <option value='fluid'>Fluid</option>
                       <option value='fixed'>Fixed</option>
@@ -310,21 +287,19 @@ const BuilderPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className={clsx('tab-pane', {active: tab === 'Footer'})}>
+              <div className={clsx('tab-pane', { active: tab === 'Footer' })}>
                 <div className='row mb-10'>
                   <label className='col-lg-3 col-form-label text-lg-end'>Width:</label>
                   <div className='col-lg-9 col-xl-4'>
                     <select
                       className='form-select form-select-solid'
                       value={config.footer.width}
-                      onChange={(e) =>
-                        updateData({
-                          footer: {
-                            ...config.footer,
-                            width: e.target.value as 'fixed' | 'fluid',
-                          },
-                        })
-                      }
+                      onChange={(e) => updateData({
+                        footer: {
+                          ...config.footer,
+                          width: e.target.value as 'fixed' | 'fluid',
+                        },
+                      })}
                     >
                       <option value='fluid'>Fluid</option>
                       <option value='fixed'>Fixed</option>
@@ -345,7 +320,7 @@ const BuilderPage: React.FC = () => {
                 <button type='button' onClick={updateConfig} className='btn btn-primary me-2'>
                   {!configLoading && <span className='indicator-label'>Preview</span>}
                   {configLoading && (
-                    <span className='indicator-progress' style={{display: 'block'}}>
+                    <span className='indicator-progress' style={{ display: 'block' }}>
                       Please wait...{' '}
                       <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
                     </span>
@@ -360,7 +335,7 @@ const BuilderPage: React.FC = () => {
                 >
                   {!resetLoading && <span className='indicator-label'>Reset</span>}
                   {resetLoading && (
-                    <span className='indicator-progress' style={{display: 'block'}}>
+                    <span className='indicator-progress' style={{ display: 'block' }}>
                       Please wait...{' '}
                       <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
                     </span>

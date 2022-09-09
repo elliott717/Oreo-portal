@@ -1,11 +1,10 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React from 'react'
 import {useDispatch} from 'react-redux'
 import * as auth from '../../../../app/modules/auth/redux/AuthRedux'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {HeaderUserMenu} from '../../../partials'
 
-const AsideUser: React.FC = () => {
+function AsideUser() {
   const dispatch = useDispatch()
   const logout = () => {
     dispatch(auth.actions.logout())
@@ -40,13 +39,12 @@ const AsideUser: React.FC = () => {
           <button
             onClick={() => {
               logout()
-            }}
+            } }
             className='btn btn-icon btn-active-color-primary me-n4'
           >
             <KTSVG
               path='/media/icons/duotune/arrows/arr076.svg'
-              className='svg-icon-2 svg-icon-gray-400'
-            />
+              className='svg-icon-2 svg-icon-gray-400' />
           </button>
         </div>
       </div>

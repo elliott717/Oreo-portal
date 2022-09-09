@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC, useState} from 'react'
+import {useState} from 'react'
 import {toAbsoluteUrl} from '../../../helpers'
 import {Main} from '../../modals/create-app/Main'
 
@@ -11,13 +11,9 @@ type Props = {
   secondaryLinkText: string
 }
 
-export const EngageWidget1: FC<Props> = ({
-  className,
-  title,
-  image,
-  primaryLinkText,
-  secondaryLinkText,
-}) => {
+export function EngageWidget1({
+  className, title, image, primaryLinkText, secondaryLinkText,
+}: Props) {
   const [show, setShow] = useState(false)
 
   return (
@@ -29,7 +25,7 @@ export const EngageWidget1: FC<Props> = ({
             {/* begin::Item */}
             <h1
               className='fw-bold text-gray-800 text-center lh-lg'
-              dangerouslySetInnerHTML={{__html: title}}
+              dangerouslySetInnerHTML={{ __html: title }}
             ></h1>
             {/* end::Item */}
             {/* begin::Image */}
@@ -47,7 +43,7 @@ export const EngageWidget1: FC<Props> = ({
               className='btn btn-sm btn-primary me-2'
               onClick={() => {
                 setShow(!show)
-              }}
+              } }
             >
               {primaryLinkText}
             </a>
@@ -63,8 +59,7 @@ export const EngageWidget1: FC<Props> = ({
         show={show}
         handleClose={() => {
           setShow(false)
-        }}
-      />
+        } } />
     </>
   )
 }

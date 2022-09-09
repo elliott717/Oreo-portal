@@ -1,11 +1,10 @@
-import {FC} from 'react'
 import {toAbsoluteUrl} from '../../../helpers'
 
 type Props = {
   className: string
 }
 
-export const CardsWidget7: FC<Props> = ({className}) => {
+export function CardsWidget7({ className }: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}

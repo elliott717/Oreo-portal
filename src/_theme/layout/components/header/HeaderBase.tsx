@@ -1,10 +1,9 @@
-import React from 'react'
 import HeaderTopbar from './HeaderTopbar'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {Link} from 'react-router-dom'
 import {Dropdown3} from '../../../partials/content/dropdown/Dropdown3'
 
-const HeaderBase: React.FC = () => {
+const HeaderBase = () => {
   return (
     <div id='kt_header' className='header align-items-stretch'>
       <div className='header-brand'>

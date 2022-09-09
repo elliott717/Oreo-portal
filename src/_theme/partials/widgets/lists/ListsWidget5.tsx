@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {Dropdown2} from '../../content/dropdown/Dropdown2'
 
@@ -52,7 +51,7 @@ const products = [
   },
 ]
 
-export const ListsWidget5: FC<Props> = ({className}) => {
+export function ListsWidget5({ className }: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -77,13 +76,11 @@ export const ListsWidget5: FC<Props> = ({className}) => {
       {/* begin::Body */}
       <div className='card-body'>
         {/* begin::Scroll */}
-        <div className='hover-scroll-overlay-y pe-6 me-n6' style={{height: '415px'}}>
+        <div className='hover-scroll-overlay-y pe-6 me-n6' style={{ height: '415px' }}>
           {products.map((product, key) => {
             return (
               <div
-                className={`rounded border-gray-300 border-1 border-gray-300 border-dashed px-7 py-3 ${
-                  key === products.length ? '' : 'mb-6'
-                }`}
+                className={`rounded border-gray-300 border-1 border-gray-300 border-dashed px-7 py-3 ${key === products.length ? '' : 'mb-6'}`}
                 key={key}
               >
                 {/* begin::Info */}
@@ -113,8 +110,7 @@ export const ListsWidget5: FC<Props> = ({className}) => {
                     >
                       <KTSVG
                         path='/media/icons/duotune/general/gen023.svg'
-                        className='svg-icon-1'
-                      />
+                        className='svg-icon-1' />
                     </button>
                     <Dropdown2 />
                     {/* end::Menu */}

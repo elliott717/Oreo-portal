@@ -1,4 +1,4 @@
-import {FC, useEffect, useRef} from 'react'
+import {useEffect, useRef} from 'react'
 import {KTSVG} from '../../../helpers'
 import {Dropdown2} from '../..'
 import ApexCharts, {ApexOptions} from 'apexcharts'
@@ -9,7 +9,7 @@ type Props = {
   chartHeight: number
 }
 
-export const ChartsWidget3: FC<Props> = ({className, chartHeight}) => {
+export function ChartsWidget3({ className, chartHeight }: Props) {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -74,7 +74,7 @@ export const ChartsWidget3: FC<Props> = ({className, chartHeight}) => {
         </div>
         {/* end::Statistics */}
         {/* begin::Chart */}
-        <div ref={chartRef} className='min-h-auto ps-4 pe-6' style={{height: '300px'}}></div>
+        <div ref={chartRef} className='min-h-auto ps-4 pe-6' style={{ height: '300px' }}></div>
         {/* end::Chart */}
       </div>
       {/* end::Card body */}

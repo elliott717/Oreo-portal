@@ -1,7 +1,6 @@
 import {
   createContext,
   Dispatch,
-  FC,
   SetStateAction,
   useContext,
   useEffect,
@@ -45,8 +44,10 @@ function GoodSplashScreenProvider({ children }: any) {
     <GoodSplashScreenContext.Provider value={setCount}>{children}</GoodSplashScreenContext.Provider>
   )
 }
-
-const LayoutSplashScreen: FC<{visible?: boolean}> = ({visible = true}) => {
+type Props = {
+  visible?: boolean
+}
+function LayoutSplashScreen({ visible = true }: Props) {
   // Everything are ready - remove splashscreen
   const setCount = useContext(GoodSplashScreenContext)
 

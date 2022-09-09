@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import clsx from 'clsx'
-import {FC} from 'react'
 import {toAbsoluteUrl} from '../../../helpers'
 import {setLanguage, useLang} from '../../../i18n/Goodi18n'
 
@@ -41,7 +40,7 @@ type Props = {
   languageMenuPlacement?: 'lert-start' | 'right-end'
 }
 
-const Languages: FC<Props> = ({languageMenuPlacement = 'lert-start'}) => {
+function Languages({ languageMenuPlacement = 'lert-start' }: Props) {
   const lang = useLang()
   const currentLanguage = languages.find((x) => x.lang === lang)
   return (
@@ -68,11 +67,11 @@ const Languages: FC<Props> = ({languageMenuPlacement = 'lert-start'}) => {
             key={l.lang}
             onClick={() => {
               setLanguage(l.lang)
-            }}
+            } }
           >
             <a
               href='#'
-              className={clsx('menu-link d-flex px-5', {active: l.lang === currentLanguage?.lang})}
+              className={clsx('menu-link d-flex px-5', { active: l.lang === currentLanguage?.lang })}
             >
               <span className='symbol symbol-20px me-4'>
                 <img className='rounded-1' src={l.flag} alt='good' />

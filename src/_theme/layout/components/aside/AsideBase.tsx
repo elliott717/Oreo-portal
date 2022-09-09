@@ -1,9 +1,8 @@
-import React from 'react'
 import AsideToolbar from './AsideToolbar'
 import AsideMenu from './AsideMenu'
 import AsideUser from './AsideUser'
 
-const AsideBase: React.FC = () => {
+function AsideBase() {
   return (
     <div
       id='kt_aside'

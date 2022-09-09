@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {Dropdown1} from '../../content/dropdown/Dropdown1'
 
@@ -7,7 +6,7 @@ type Props = {
   className: string
 }
 
-const FeedsWidget5: React.FC<Props> = ({className}) => {
+function FeedsWidget5({ className }: Props) {
   return (
     <div className={`card ${className}`}>
       {/* begin::Body */}
@@ -107,8 +106,7 @@ const FeedsWidget5: React.FC<Props> = ({className}) => {
             <span className='btn btn-icon btn-sm btn-active-color-primary pe-0 me-2'>
               <KTSVG
                 path='/media/icons/duotune/communication/com008.svg'
-                className='svg-icon-3 mb-3'
-              />
+                className='svg-icon-3 mb-3' />
             </span>
 
             <span className='btn btn-icon btn-sm btn-active-color-primary ps-0'>

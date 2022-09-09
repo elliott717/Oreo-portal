@@ -1,4 +1,4 @@
-import {FC, useEffect, useRef} from 'react'
+import {useEffect, useRef} from 'react'
 import ApexCharts, {ApexOptions} from 'apexcharts'
 
 type Props = {
@@ -6,7 +6,7 @@ type Props = {
   chartHeight: number
 }
 
-export const CardsWidget4: FC<Props> = ({className, chartHeight}) => {
+export function CardsWidget4({ className, chartHeight }: Props) {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {

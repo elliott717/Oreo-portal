@@ -1,12 +1,11 @@
 /* eslint-disable react/jsx-no-target-blank */
-import React from 'react'
 import {KTSVG} from '../../../helpers'
 import {PageTitle} from './page-title/PageTitle'
 import {HeaderNotificationsMenu, QuickLinks, Search} from '../../../partials'
 import {useLayout} from '../../core'
 
-const HeaderTopbar: React.FC = () => {
-  const {classes} = useLayout()
+function HeaderTopbar() {
+  const { classes } = useLayout()
   return (
     <div
       className={`${classes.headerContainer} py-6 py-lg-0 d-flex flex-column flex-sm-row align-items-lg-stretch justify-content-sm-between`}

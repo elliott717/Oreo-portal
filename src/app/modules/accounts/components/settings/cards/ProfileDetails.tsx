@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import {toAbsoluteUrl} from '../../../../../../_theme/helpers'
 import {IProfileDetails, profileDetailsInitValues as initialValues} from '../SettingsModel'
 import * as Yup from 'yup'
@@ -16,7 +16,7 @@ const profileDetailsSchema = Yup.object().shape({
   currency: Yup.string().required('Currency is required'),
 })
 
-const ProfileDetails: React.FC = () => {
+function ProfileDetails() {
   const [data, setData] = useState<IProfileDetails>(initialValues)
   const updateData = (fieldsToUpdate: Partial<IProfileDetails>): void => {
     const updatedData = Object.assign(data, fieldsToUpdate)
@@ -64,11 +64,11 @@ const ProfileDetails: React.FC = () => {
                 <div
                   className='image-input image-input-outline'
                   data-kt-image-input='true'
-                  style={{backgroundImage: `url(${toAbsoluteUrl('/media/avatars/blank.png')})`}}
+                  style={{ backgroundImage: `url(${toAbsoluteUrl('/media/avatars/blank.png')})` }}
                 >
                   <div
                     className='image-input-wrapper w-125px h-125px'
-                    style={{backgroundImage: `url(${toAbsoluteUrl(data.avatar)})`}}
+                    style={{ backgroundImage: `url(${toAbsoluteUrl(data.avatar)})` }}
                   ></div>
                 </div>
               </div>
@@ -84,8 +84,7 @@ const ProfileDetails: React.FC = () => {
                       type='text'
                       className='form-control form-control-lg form-control-solid mb-3 mb-lg-0'
                       placeholder='First name'
-                      {...formik.getFieldProps('fName')}
-                    />
+                      {...formik.getFieldProps('fName')} />
                     {formik.touched.fName && formik.errors.fName && (
                       <div className='fv-plugins-message-container'>
                         <div className='fv-help-block'>{formik.errors.fName}</div>
@@ -98,8 +97,7 @@ const ProfileDetails: React.FC = () => {
                       type='text'
                       className='form-control form-control-lg form-control-solid'
                       placeholder='Last name'
-                      {...formik.getFieldProps('lName')}
-                    />
+                      {...formik.getFieldProps('lName')} />
                     {formik.touched.lName && formik.errors.lName && (
                       <div className='fv-plugins-message-container'>
                         <div className='fv-help-block'>{formik.errors.lName}</div>
@@ -118,8 +116,7 @@ const ProfileDetails: React.FC = () => {
                   type='text'
                   className='form-control form-control-lg form-control-solid'
                   placeholder='Company name'
-                  {...formik.getFieldProps('company')}
-                />
+                  {...formik.getFieldProps('company')} />
                 {formik.touched.company && formik.errors.company && (
                   <div className='fv-plugins-message-container'>
                     <div className='fv-help-block'>{formik.errors.company}</div>
@@ -138,8 +135,7 @@ const ProfileDetails: React.FC = () => {
                   type='tel'
                   className='form-control form-control-lg form-control-solid'
                   placeholder='Phone number'
-                  {...formik.getFieldProps('contactPhone')}
-                />
+                  {...formik.getFieldProps('contactPhone')} />
                 {formik.touched.contactPhone && formik.errors.contactPhone && (
                   <div className='fv-plugins-message-container'>
                     <div className='fv-help-block'>{formik.errors.contactPhone}</div>
@@ -158,8 +154,7 @@ const ProfileDetails: React.FC = () => {
                   type='text'
                   className='form-control form-control-lg form-control-solid'
                   placeholder='Company website'
-                  {...formik.getFieldProps('companySite')}
-                />
+                  {...formik.getFieldProps('companySite')} />
                 {formik.touched.companySite && formik.errors.companySite && (
                   <div className='fv-plugins-message-container'>
                     <div className='fv-help-block'>{formik.errors.companySite}</div>
@@ -716,8 +711,7 @@ const ProfileDetails: React.FC = () => {
                             phone: data.communications?.phone,
                           },
                         })
-                      }}
-                    />
+                      } } />
                     <span className='fw-bold ps-2 fs-6'>Email</span>
                   </label>
 
@@ -734,8 +728,7 @@ const ProfileDetails: React.FC = () => {
                             phone: !data.communications?.phone,
                           },
                         })
-                      }}
-                    />
+                      } } />
                     <span className='fw-bold ps-2 fs-6'>Phone</span>
                   </label>
                 </div>
@@ -753,9 +746,8 @@ const ProfileDetails: React.FC = () => {
                     id='allowmarketing'
                     defaultChecked={data.allowMarketing}
                     onChange={() => {
-                      updateData({allowMarketing: !data.allowMarketing})
-                    }}
-                  />
+                      updateData({ allowMarketing: !data.allowMarketing })
+                    } } />
                   <label className='form-check-label'></label>
                 </div>
               </div>
@@ -766,7 +758,7 @@ const ProfileDetails: React.FC = () => {
             <button type='submit' className='btn btn-primary' disabled={loading}>
               {!loading && 'Save Changes'}
               {loading && (
-                <span className='indicator-progress' style={{display: 'block'}}>
+                <span className='indicator-progress' style={{ display: 'block' }}>
                   Please wait...{' '}
                   <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
                 </span>

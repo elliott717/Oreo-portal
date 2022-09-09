@@ -1,11 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../_theme/helpers'
 import {Link} from 'react-router-dom'
 import {Dropdown1} from '../../../_theme/partials'
 import {useLocation} from 'react-router'
 
-const AccountHeader: React.FC = () => {
+function AccountHeader() {
   const location = useLocation()
 
   return (
@@ -29,8 +28,7 @@ const AccountHeader: React.FC = () => {
                   <a href='#'>
                     <KTSVG
                       path='/media/icons/duotune/general/gen026.svg'
-                      className='svg-icon-1 svg-icon-primary'
-                    />
+                      className='svg-icon-1 svg-icon-primary' />
                   </a>
                   <a
                     href='#'
@@ -49,8 +47,7 @@ const AccountHeader: React.FC = () => {
                   >
                     <KTSVG
                       path='/media/icons/duotune/communication/com006.svg'
-                      className='svg-icon-4 me-1'
-                    />
+                      className='svg-icon-4 me-1' />
                     Developer
                   </a>
                   <a
@@ -59,8 +56,7 @@ const AccountHeader: React.FC = () => {
                   >
                     <KTSVG
                       path='/media/icons/duotune/general/gen018.svg'
-                      className='svg-icon-4 me-1'
-                    />
+                      className='svg-icon-4 me-1' />
                     SF, Bay Area
                   </a>
                   <a
@@ -69,8 +65,7 @@ const AccountHeader: React.FC = () => {
                   >
                     <KTSVG
                       path='/media/icons/duotune/communication/com011.svg'
-                      className='svg-icon-4 me-1'
-                    />
+                      className='svg-icon-4 me-1' />
                     max@kt.com
                   </a>
                 </div>
@@ -80,8 +75,7 @@ const AccountHeader: React.FC = () => {
                 <a href='#' className='btn btn-sm btn-light me-2' id='kt_user_follow_button'>
                   <KTSVG
                     path='/media/icons/duotune/arrows/arr012.svg'
-                    className='svg-icon-3 d-none'
-                  />
+                    className='svg-icon-3 d-none' />
 
                   <span className='indicator-label'>Follow</span>
                   <span className='indicator-progress'>
@@ -118,8 +112,7 @@ const AccountHeader: React.FC = () => {
                     <div className='d-flex align-items-center'>
                       <KTSVG
                         path='/media/icons/duotune/arrows/arr066.svg'
-                        className='svg-icon-3 svg-icon-success me-2'
-                      />
+                        className='svg-icon-3 svg-icon-success me-2' />
                       <div className='fs-2 fw-bolder'>4500$</div>
                     </div>
 
@@ -130,8 +123,7 @@ const AccountHeader: React.FC = () => {
                     <div className='d-flex align-items-center'>
                       <KTSVG
                         path='/media/icons/duotune/arrows/arr065.svg'
-                        className='svg-icon-3 svg-icon-danger me-2'
-                      />
+                        className='svg-icon-3 svg-icon-danger me-2' />
                       <div className='fs-2 fw-bolder'>75</div>
                     </div>
 
@@ -142,8 +134,7 @@ const AccountHeader: React.FC = () => {
                     <div className='d-flex align-items-center'>
                       <KTSVG
                         path='/media/icons/duotune/arrows/arr066.svg'
-                        className='svg-icon-3 svg-icon-success me-2'
-                      />
+                        className='svg-icon-3 svg-icon-success me-2' />
                       <div className='fs-2 fw-bolder'>60%</div>
                     </div>
 
@@ -161,7 +152,7 @@ const AccountHeader: React.FC = () => {
                   <div
                     className='bg-success rounded h-5px'
                     role='progressbar'
-                    style={{width: '50%'}}
+                    style={{ width: '50%' }}
                   ></div>
                 </div>
               </div>
@@ -173,10 +164,8 @@ const AccountHeader: React.FC = () => {
           <ul className='nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bolder flex-nowrap'>
             <li className='nav-item'>
               <Link
-                className={
-                  `nav-link text-active-primary me-6 ` +
-                  (location.pathname === '/crafted/account/overview' && 'active')
-                }
+                className={`nav-link text-active-primary me-6 ` +
+                  (location.pathname === '/crafted/account/overview' && 'active')}
                 to='/crafted/account/overview'
               >
                 Overview
@@ -184,10 +173,8 @@ const AccountHeader: React.FC = () => {
             </li>
             <li className='nav-item'>
               <Link
-                className={
-                  `nav-link text-active-primary me-6 ` +
-                  (location.pathname === '/crafted/account/settings' && 'active')
-                }
+                className={`nav-link text-active-primary me-6 ` +
+                  (location.pathname === '/crafted/account/settings' && 'active')}
                 to='/crafted/account/settings'
               >
                 Settings

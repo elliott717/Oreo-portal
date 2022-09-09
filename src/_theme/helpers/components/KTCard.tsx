@@ -1,4 +1,3 @@
-import {FC} from 'react'
 import clsx from 'clsx'
 
 // Wrapper on html card:
@@ -20,20 +19,9 @@ type Props = {
   children?: React.ReactNode
 }
 
-const KTCard: FC<Props> = (props) => {
+function KTCard(props: Props) {
   const {
-    className,
-    shadow,
-    flush,
-    resetSidePaddings,
-    border,
-    dashed,
-    stretch,
-    rounded,
-    utilityP,
-    utilityPY,
-    utilityPX,
-    children,
+    className, shadow, flush, resetSidePaddings, border, dashed, stretch, rounded, utilityP, utilityPY, utilityPX, children,
   } = props
   return (
     <div

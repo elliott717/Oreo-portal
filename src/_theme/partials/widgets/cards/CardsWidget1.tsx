@@ -1,4 +1,4 @@
-import {FC, useEffect, useRef} from 'react'
+import {useEffect, useRef} from 'react'
 import {KTSVG} from '../../../helpers'
 import {Dropdown2} from '../..'
 import ApexCharts, {ApexOptions} from 'apexcharts'
@@ -11,7 +11,7 @@ type Props = {
   chartColor: string
 }
 
-export const CardsWidget1: FC<Props> = ({className, color, chartColor, chartHeight}) => {
+export const CardsWidget1 = ({className, color, chartColor, chartHeight}:Props) => {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {

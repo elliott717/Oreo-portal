@@ -1,4 +1,4 @@
-import React, {Dispatch, SetStateAction, useEffect, useState} from 'react'
+import {Dispatch, SetStateAction, useEffect, useState} from 'react'
 import {Modal} from 'react-bootstrap'
 import {KTSVG} from '../../../../../_theme/helpers'
 
@@ -8,7 +8,7 @@ type Props = {
   handleClose: () => void
 }
 
-const SelectLocationModal: React.FC<Props> = ({show, handleClose, data}) => {
+function SelectLocationModal({ show, handleClose, data }: Props) {
   useEffect(() => {
     initMap()
   }, [])
@@ -22,7 +22,7 @@ const SelectLocationModal: React.FC<Props> = ({show, handleClose, data}) => {
     data.setLocation(location)
     handleClose()
   }
-  const initMap = () => {}
+  const initMap = () => { }
 
   return (
     <Modal
