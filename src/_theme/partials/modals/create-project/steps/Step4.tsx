@@ -1,6 +1,5 @@
-import {FC} from 'react'
-
-const Step4: FC = () => {
+/* eslint-disable jsx-a11y/anchor-is-valid */
+function Step4() {
   return (
     <>
       {/* begin::Team */}
@@ -35,8 +34,7 @@ const Step4: FC = () => {
               type='text'
               className='form-control form-control-solid'
               placeholder='Add project memnbers by name or email..'
-              name='invite_teammates'
-            />
+              name='invite_teammates' />
             {/* end::Input */}
           </div>
           {/* end::Input group */}

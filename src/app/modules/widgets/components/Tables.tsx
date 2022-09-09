@@ -1,6 +1,4 @@
-import React, {FC} from 'react'
-
-const Tables: FC = () => {
+function Tables() {
   return (
     <>
       {/* begin::Row */}

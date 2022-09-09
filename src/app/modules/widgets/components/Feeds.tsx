@@ -1,6 +1,4 @@
-import React, {FC} from 'react'
-
-const Feeds: FC = () => {
+function Feeds() {
   return (
     <div className='row g-5 g-xl-8'>
       {/* begin::Col */}

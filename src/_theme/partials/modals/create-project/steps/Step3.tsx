@@ -1,7 +1,8 @@
-import {FC} from 'react'
-import {KTSVG} from '../../../../helpers'
 
-const Step3: FC = () => {
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { KTSVG } from '../../../../helpers'
+
+function Step3() {
   return (
     <>
       {/* begin::Budget */}
@@ -55,8 +56,7 @@ const Step3: FC = () => {
                 placeholder='Amount'
                 name='budget_setup'
                 readOnly
-                value='$50'
-              />
+                value='$50' />
               {/* end::Input control */}
 
               {/* begin::Increase control */}
@@ -99,8 +99,7 @@ const Step3: FC = () => {
                       type='radio'
                       name='budget_usage'
                       value='1'
-                      checked
-                    />
+                      checked />
                   </span>
                   {/* end::Radio */}
 
@@ -131,8 +130,7 @@ const Step3: FC = () => {
                       className='form-check-input'
                       type='radio'
                       name='budget_usage'
-                      value='2'
-                    />
+                      value='2' />
                   </span>
                   {/* end::Radio */}
 
@@ -173,8 +171,7 @@ const Step3: FC = () => {
                   type='checkbox'
                   value='1'
                   name='budget_allow'
-                  checked
-                />
+                  checked />
                 <span className='form-check-label fw-bold text-muted'>Allowed</span>
               </label>
               {/* end::Switch */}

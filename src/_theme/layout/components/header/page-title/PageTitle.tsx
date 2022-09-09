@@ -1,12 +1,11 @@
 import clsx from 'clsx'
-import React, {FC} from 'react'
 import {Link} from 'react-router-dom'
 import {useLayout} from '../../../core/LayoutProvider'
 import {usePageData} from '../../../core/PageData'
 
-const PageTitle: FC = () => {
-  const {pageTitle, pageDescription, pageBreadcrumbs} = usePageData()
-  const {config} = useLayout()
+function PageTitle() {
+  const { pageTitle, pageDescription, pageBreadcrumbs } = usePageData()
+  const { config } = useLayout()
   return (
     <div className='page-title d-flex flex-column me-5'>
       {/* begin::Title */}

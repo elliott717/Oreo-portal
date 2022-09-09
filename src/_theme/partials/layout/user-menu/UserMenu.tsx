@@ -1,6 +1,4 @@
-import React, {FC} from 'react'
-
-const UserMenu: FC = () => {
+function UserMenu() {
   return <></>
 }
 

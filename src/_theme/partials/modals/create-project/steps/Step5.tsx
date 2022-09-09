@@ -1,7 +1,7 @@
-import {FC} from 'react'
-import {KTSVG} from '../../../../helpers'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { KTSVG } from '../../../../helpers'
 
-const Step5: FC = () => {
+function Step5() {
   return (
     <>
       {/* begin::Targets */}
@@ -32,8 +32,7 @@ const Step5: FC = () => {
               type='text'
               className='form-control form-control-solid'
               placeholder='Enter Target Title'
-              name='target_title'
-            />
+              name='target_title' />
           </div>
           {/* end::Input group */}
 
@@ -68,16 +67,14 @@ const Step5: FC = () => {
                 {/* begin::Icon */}
                 <KTSVG
                   className='svg-icon-2 position-absolute mx-4'
-                  path='media/icons/duotune/general/gen014.svg'
-                />
+                  path='media/icons/duotune/general/gen014.svg' />
                 {/* end::Icon */}
 
                 {/* begin::Datepicker */}
                 <input
                   className='form-control form-control-solid ps-12'
                   placeholder='Pick date range'
-                  name='target_due_date'
-                />
+                  name='target_due_date' />
                 {/* end::Datepicker */}
               </div>
             </div>
@@ -106,8 +103,7 @@ const Step5: FC = () => {
             <input
               className='form-control form-control-solid'
               value='Important, Urgent'
-              name='target_tags'
-            />
+              name='target_tags' />
           </div>
           {/* end::Input group */}
 
@@ -131,8 +127,7 @@ const Step5: FC = () => {
                   type='checkbox'
                   value='1'
                   name='target_allow'
-                  checked
-                />
+                  checked />
                 <span className='form-check-label fw-bold text-muted'>Allowed</span>
               </label>
               {/* end::Switch */}
@@ -161,8 +156,7 @@ const Step5: FC = () => {
                     className='form-check-input h-20px w-20px'
                     type='checkbox'
                     value='email'
-                    name='target_notifications[]'
-                  />
+                    name='target_notifications[]' />
                   {/* end::Input */}
 
                   {/* begin::Label */}
@@ -179,8 +173,7 @@ const Step5: FC = () => {
                     type='checkbox'
                     value='phone'
                     checked
-                    name='target_notifications[]'
-                  />
+                    name='target_notifications[]' />
                   {/* end::Input */}
 
                   {/* begin::Label */}

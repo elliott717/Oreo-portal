@@ -1,4 +1,3 @@
-import {FC} from 'react'
 import {
   CardsWidget5,
   CardsWidget6,
@@ -12,7 +11,7 @@ import {
   TablesWidget5,
 } from '../../../_theme/partials/widgets'
 
-export const ECommerce: FC = () => {
+export function ECommerce() {
   return (
     <>
       <div className='row g-5 g-xl-10 mb-xl-10'>
@@ -61,8 +60,7 @@ export const ECommerce: FC = () => {
             image='/media/svg/illustrations/easy/2.svg'
             title={`Have you tried <br>new <span className="fw-bolder">Mobile Application ?</span>`}
             primaryLinkText='Try now'
-            secondaryLinkText='Learn more'
-          />
+            secondaryLinkText='Learn more' />
         </div>
         {/* end::Col */}
 

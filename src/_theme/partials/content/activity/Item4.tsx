@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 
-const Item4: FC = () => {
+function Item4() {
   return (
     <div className='timeline-item'>
       <div className='timeline-line w-40px'></div>
@@ -11,8 +10,7 @@ const Item4: FC = () => {
         <div className='symbol-label bg-light'>
           <KTSVG
             path='/media/icons/duotune/abstract/abs027.svg'
-            className='svg-icon-2 svg-icon-gray-500'
-          />
+            className='svg-icon-2 svg-icon-gray-500' />
         </div>
       </div>
 

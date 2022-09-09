@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../../../_theme/helpers'
 import {ChatInner, Dropdown1} from '../../../../../_theme/partials'
 
-const Group: FC = () => {
+function Group() {
   return (
     <div className='d-flex flex-column flex-lg-row'>
       <div className='flex-column flex-lg-row-auto w-100 w-lg-300px w-xl-400px mb-10 mb-lg-0'>
@@ -12,15 +11,13 @@ const Group: FC = () => {
             <form className='w-100 position-relative' autoComplete='off'>
               <KTSVG
                 path='/media/icons/duotune/general/gen021.svg'
-                className='svg-icon-2 svg-icon-lg-1 svg-icon-gray-500 position-absolute top-50 ms-5 translate-middle-y'
-              />
+                className='svg-icon-2 svg-icon-lg-1 svg-icon-gray-500 position-absolute top-50 ms-5 translate-middle-y' />
 
               <input
                 type='text'
                 className='form-control form-control-solid px-15'
                 name='search'
-                placeholder='Search by username or email...'
-              />
+                placeholder='Search by username or email...' />
             </form>
           </div>
 
@@ -291,8 +288,6 @@ const Group: FC = () => {
                 <a
                   href='#'
                   className='symbol symbol-35px symbol-circle'
-                  // data-bs-toggle='modal'
-                  // data-bs-target='#kt_modal_view_users'
                 >
                   <span
                     className='symbol-label fs-8 fw-bolder'

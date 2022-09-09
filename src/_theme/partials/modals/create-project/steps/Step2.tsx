@@ -1,7 +1,7 @@
-import {FC} from 'react'
-import {KTSVG} from '../../../../helpers'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { KTSVG } from '../../../../helpers'
 
-const Step2: FC = () => {
+function Step2() {
   return (
     <>
       {/* begin::Settings */}
@@ -34,8 +34,7 @@ const Step2: FC = () => {
                 {/* begin::Icon */}
                 <KTSVG
                   className='svg-icon-3hx svg-icon-primary'
-                  path='assets/icons/duotune/files/fil010.svg'
-                />
+                  path='assets/icons/duotune/files/fil010.svg' />
                 {/* end::Icon */}
 
                 {/* begin::Info */}
@@ -93,8 +92,7 @@ const Step2: FC = () => {
               className='form-control form-control-solid'
               placeholder='Enter Project Name'
               value='StockPro Mobile App'
-              name='settings_name'
-            />
+              name='settings_name' />
             {/* end::Input */}
           </div>
           {/* end::Input group */}
@@ -130,16 +128,14 @@ const Step2: FC = () => {
               {/* begin::Icon */}
               <KTSVG
                 className='svg-icon-2 position-absolute mx-4'
-                path='icons/duotune/general/gen014.svg'
-              />
+                path='icons/duotune/general/gen014.svg' />
               {/* end::Icon */}
 
               {/* begin::Input */}
               <input
                 className='form-control form-control-solid ps-12'
                 placeholder='Pick date range'
-                name='settings_release_date'
-              />
+                name='settings_release_date' />
               {/* end::Input */}
             </div>
             {/* end::Wrapper */}
@@ -166,8 +162,7 @@ const Step2: FC = () => {
                     className='form-check-input h-20px w-20px'
                     type='checkbox'
                     value='email'
-                    name='settings_notifications[]'
-                  />
+                    name='settings_notifications[]' />
                   {/* end::Input */}
 
                   {/* begin::Label */}
@@ -184,8 +179,7 @@ const Step2: FC = () => {
                     type='checkbox'
                     value='phone'
                     checked
-                    name='settings_notifications[]'
-                  />
+                    name='settings_notifications[]' />
                   {/* end::Input */}
 
                   {/* begin::Label */}

@@ -1,4 +1,3 @@
-import {FC} from 'react'
 import {
   CardsWidget1,
   CardsWidget2,
@@ -11,7 +10,7 @@ import {
 } from '../../../_theme/partials/widgets'
 import {socials} from '../../../_theme/helpers/data/social'
 
-export const Social: FC = () => {
+export function Social() {
   return (
     <>
       <div className='row gy-5 g-xl-10'>
@@ -28,8 +27,7 @@ export const Social: FC = () => {
             image='/media/svg/illustrations/easy/1.svg'
             title={`Have you tried <br>new <span className="fw-bolder">Mobile Application ?</span>`}
             primaryLinkText='Try now'
-            secondaryLinkText='Learn more'
-          />
+            secondaryLinkText='Learn more' />
         </div>
         {/* end::Col */}
       </div>
@@ -44,8 +42,7 @@ export const Social: FC = () => {
             image='/media/svg/brand-logos/instagram-2-1.svg'
             cardNumber='320k'
             color='success'
-            statistics='2.1'
-          />
+            statistics='2.1' />
         </div>
         {/* end::Col */}
 
@@ -56,8 +53,7 @@ export const Social: FC = () => {
             image='/media/svg/brand-logos/facebook-3.svg'
             cardNumber='1.5M'
             color='danger'
-            statistics='0.47'
-          />
+            statistics='0.47' />
         </div>
         {/* end::Col */}
 
@@ -68,8 +64,7 @@ export const Social: FC = () => {
             image='/media/svg/brand-logos/dribbble-icon-1.svg'
             cardNumber='84k'
             color='success'
-            statistics='0.6'
-          />
+            statistics='0.6' />
         </div>
         {/* end::Col */}
 
@@ -80,8 +75,7 @@ export const Social: FC = () => {
             image='/media/svg/brand-logos/twitter.svg'
             cardNumber='570k'
             color='success'
-            statistics='3'
-          />
+            statistics='3' />
         </div>
         {/* end::Col */}
 
@@ -91,8 +85,7 @@ export const Social: FC = () => {
             className='h-sm-100'
             color='#7239EA'
             chartHeight='105px'
-            chartColor='#8F5FF4'
-          />
+            chartColor='#8F5FF4' />
         </div>
         {/* end::Col */}
       </div>

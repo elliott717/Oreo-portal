@@ -1,4 +1,4 @@
-import React, {
+import {
   createContext,
   Dispatch,
   FC,
@@ -12,7 +12,7 @@ const GoodSplashScreenContext = createContext<Dispatch<SetStateAction<number>> |
   undefined
 )
 
-const GoodSplashScreenProvider: FC = ({children}:any) => {
+function GoodSplashScreenProvider({ children }: any) {
   const [count, setCount] = useState(0)
   let visible = count > 0
 

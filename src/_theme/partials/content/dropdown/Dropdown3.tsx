@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {FC} from 'react'
 
-const Dropdown3: FC = () => {
+function Dropdown3() {
   return (
     <div
       className='menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-bold w-200px py-3'
@@ -74,8 +73,7 @@ const Dropdown3: FC = () => {
                   type='checkbox'
                   value='1'
                   defaultChecked
-                  name='notifications'
-                />
+                  name='notifications' />
 
                 <span className='form-check-label text-muted fs-6'>Recuring</span>
               </label>

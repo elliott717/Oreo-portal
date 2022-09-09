@@ -1,7 +1,7 @@
-import {FC} from 'react'
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import {KTSVG} from '../../../../helpers'
 
-const Step6: FC = () => {
+function Step6() {
   return (
     <>
       {/* begin::Files */}
@@ -34,8 +34,7 @@ const Step6: FC = () => {
                 {/* begin::Icon */}
                 <KTSVG
                   path='media/icons/duotune/files/fil010.svg'
-                  className='svg-icon-3hx svg-icon-primary'
-                />
+                  className='svg-icon-3hx svg-icon-primary' />
                 {/* end::Icon */}
 
                 {/* begin::Info */}
@@ -88,8 +87,7 @@ const Step6: FC = () => {
                   type='checkbox'
                   value='1'
                   name='target_allow'
-                  checked
-                />
+                  checked />
                 <span className='form-check-label fw-bold text-muted'>Allowed</span>
               </label>
               {/* end::Switch */}

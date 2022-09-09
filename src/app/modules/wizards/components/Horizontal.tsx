@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useRef, useState} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import {Step1} from './steps/Step1'
 import {Step2} from './steps/Step2'
 import {Step3} from './steps/Step3'
@@ -9,7 +9,7 @@ import {StepperComponent} from '../../../../_theme/assets/ts/components'
 import {Form, Formik, FormikValues} from 'formik'
 import {createAccountSchemas, ICreateAccount, inits} from './CreateAccountWizardHelper'
 
-const Horizontal: FC = () => {
+function Horizontal() {
   const stepperRef = useRef<HTMLDivElement | null>(null)
   const stepper = useRef<StepperComponent | null>(null)
   const [currentSchema, setCurrentSchema] = useState(createAccountSchemas[0])
@@ -120,8 +120,7 @@ const Horizontal: FC = () => {
                     >
                       <KTSVG
                         path='/media/icons/duotune/arrows/arr063.svg'
-                        className='svg-icon-4 me-1'
-                      />
+                        className='svg-icon-4 me-1' />
                       Back
                     </button>
                   </div>
@@ -133,8 +132,7 @@ const Horizontal: FC = () => {
                         {isSubmitButton && 'Submit'}
                         <KTSVG
                           path='/media/icons/duotune/arrows/arr064.svg'
-                          className='svg-icon-3 ms-2 me-0'
-                        />
+                          className='svg-icon-3 ms-2 me-0' />
                       </span>
                     </button>
                   </div>

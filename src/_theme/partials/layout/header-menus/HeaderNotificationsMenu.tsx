@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import clsx from 'clsx'
-import {FC, useState} from 'react'
+import {useState} from 'react'
 import {Link} from 'react-router-dom'
 import {defaultAlerts, defaultLogs, KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {OverlayTrigger, Tooltip} from 'react-bootstrap'
 
-const HeaderNotificationsMenu: FC = () => {
+function HeaderNotificationsMenu() {
   const [currentTab, setCurrentTab] = useState<string>('kt_topbar_notifications_2')
 
   return (
@@ -15,7 +15,7 @@ const HeaderNotificationsMenu: FC = () => {
     >
       <div
         className='d-flex flex-column bgi-no-repeat rounded-top'
-        style={{backgroundImage: `url('${toAbsoluteUrl('/media/misc/header-dropdown.png')}')`}}
+        style={{ backgroundImage: `url('${toAbsoluteUrl('/media/misc/header-dropdown.png')}')` }}
       >
         <h3 className='text-white fw-bold px-9 mt-10 mb-6'>
           Notifications <span className='fs-8 opacity-75 ps-3'>24 reports</span>
@@ -26,10 +26,8 @@ const HeaderNotificationsMenu: FC = () => {
             <a
               onClick={() => {
                 setCurrentTab('kt_topbar_notifications_1')
-              }}
-              className={`nav-link text-white opacity-75 opacity-state-100 pb-4 cursor-pointer ${
-                currentTab === 'kt_topbar_notifications_1' ? 'active' : ''
-              }`}
+              } }
+              className={`nav-link text-white opacity-75 opacity-state-100 pb-4 cursor-pointer ${currentTab === 'kt_topbar_notifications_1' ? 'active' : ''}`}
             >
               Alerts
             </a>
@@ -39,10 +37,8 @@ const HeaderNotificationsMenu: FC = () => {
             <a
               onClick={() => {
                 setCurrentTab('kt_topbar_notifications_2')
-              }}
-              className={`nav-link text-white opacity-75 opacity-state-100 pb-4 cursor-pointer ${
-                currentTab === 'kt_topbar_notifications_2' ? 'active' : ''
-              }`}
+              } }
+              className={`nav-link text-white opacity-75 opacity-state-100 pb-4 cursor-pointer ${currentTab === 'kt_topbar_notifications_2' ? 'active' : ''}`}
             >
               Updates
             </a>
@@ -52,10 +48,8 @@ const HeaderNotificationsMenu: FC = () => {
             <a
               onClick={() => {
                 setCurrentTab('kt_topbar_notifications_3')
-              }}
-              className={`nav-link text-white opacity-75 opacity-state-100 pb-4 cursor-pointer ${
-                currentTab === 'kt_topbar_notifications_3' ? 'active' : ''
-              }`}
+              } }
+              className={`nav-link text-white opacity-75 opacity-state-100 pb-4 cursor-pointer ${currentTab === 'kt_topbar_notifications_3' ? 'active' : ''}`}
             >
               Logs
             </a>
@@ -65,9 +59,7 @@ const HeaderNotificationsMenu: FC = () => {
 
       <div className='tab-content'>
         <div
-          className={`tab-pane fade ${
-            currentTab === 'kt_topbar_notifications_1' ? 'active show' : ''
-          }`}
+          className={`tab-pane fade ${currentTab === 'kt_topbar_notifications_1' ? 'active show' : ''}`}
           id='kt_topbar_notifications_1'
           role='tabpanel'
         >
@@ -80,8 +72,7 @@ const HeaderNotificationsMenu: FC = () => {
                       {' '}
                       <KTSVG
                         path={`/media/${alert.icon}`}
-                        className={`svg-icon-2 svg-icon-${alert.state}`}
-                      />
+                        className={`svg-icon-2 svg-icon-${alert.state}`} />
                     </span>
                   </div>
 
@@ -110,9 +101,7 @@ const HeaderNotificationsMenu: FC = () => {
         </div>
 
         <div
-          className={`tab-pane fade ${
-            currentTab === 'kt_topbar_notifications_2' ? 'active show' : ''
-          }`}
+          className={`tab-pane fade ${currentTab === 'kt_topbar_notifications_2' ? 'active show' : ''}`}
           id='kt_topbar_notifications_2'
           role='tabpanel'
         >
@@ -139,16 +128,13 @@ const HeaderNotificationsMenu: FC = () => {
               <img
                 className='mw-100 mh-200px'
                 alt='good'
-                src={toAbsoluteUrl('/media/illustrations/sketchy-1/1.png')}
-              />
+                src={toAbsoluteUrl('/media/illustrations/sketchy-1/1.png')} />
             </div>
           </div>
         </div>
 
         <div
-          className={`tab-pane fade ${
-            currentTab === 'kt_topbar_notifications_3' ? 'active show' : ''
-          }`}
+          className={`tab-pane fade ${currentTab === 'kt_topbar_notifications_3' ? 'active show' : ''}`}
           id='kt_topbar_notifications_3'
           role='tabpanel'
         >

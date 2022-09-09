@@ -1,6 +1,4 @@
-import React, {FC} from 'react'
-
-const Charts: FC = () => {
+function Charts() {
   return (
     <>
       {/* begin::Row */}

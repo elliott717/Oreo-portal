@@ -4,8 +4,6 @@
  * Note: It's recommended to compose related routes in internal router
  * components (e.g: `src/app/modules/Auth/pages/AuthPage`, `src/app/BasePage`).
  */
-
-import {FC} from 'react'
 import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom'
 import {shallowEqual, useSelector} from 'react-redux'
 import {PrivateRoutes} from './PrivateRoutes'
@@ -21,8 +19,8 @@ import {App} from '../App'
  */
 const {PUBLIC_URL} = process.env
 
-const AppRoutes: FC = () => {
-  const isAuthorized = useSelector<RootState>(({auth}) => auth.user, shallowEqual)
+function AppRoutes() {
+  const isAuthorized = useSelector<RootState>(({ auth }) => auth.user, shallowEqual)
   return (
     <BrowserRouter basename={PUBLIC_URL}>
       <Routes>

@@ -1,7 +1,6 @@
-import React, {FC} from 'react'
 import {ErrorMessage, Field} from 'formik'
 
-const Step3: FC = () => {
+function Step3() {
   return (
     <div className='w-100'>
       <div className='pb-10 pb-lg-12'>
@@ -33,8 +32,7 @@ const Step3: FC = () => {
 
         <Field
           name='businessDescriptor'
-          className='form-control form-control-lg form-control-solid'
-        />
+          className='form-control form-control-lg form-control-solid' />
         <div className='text-danger mt-2'>
           <ErrorMessage name='businessDescriptor' />
         </div>

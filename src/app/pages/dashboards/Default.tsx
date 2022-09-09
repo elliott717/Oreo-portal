@@ -1,4 +1,3 @@
-import {FC} from 'react'
 import {
   CardsWidget6,
   ChartsWidget1,
@@ -14,7 +13,7 @@ import {
 } from '../../../_theme/partials/widgets'
 import {socials} from '../../../_theme/helpers/data/social'
 
-export const Default: FC = () => {
+export function Default() {
   return (
     <>
       <div className='row g-5 g-xxl-10'>
@@ -31,8 +30,7 @@ export const Default: FC = () => {
             text='Good admin theme </br> is a tool of enthusiasm'
             textClass='text-gray-800'
             buttonClass='btn-danger'
-            buttonText='Create App'
-          />
+            buttonText='Create App' />
         </div>
         {/* end::Col */}
       </div>
@@ -50,8 +48,7 @@ export const Default: FC = () => {
           <ChartsWidget1
             className='h-xl-100'
             chartHeight={300}
-            chartColor='rgba(150, 142, 126, 0.2)'
-          />
+            chartColor='rgba(150, 142, 126, 0.2)' />
         </div>
         {/* end::Col */}
       </div>

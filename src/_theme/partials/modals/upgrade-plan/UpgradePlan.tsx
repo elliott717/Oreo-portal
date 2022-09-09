@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {FC, useState} from 'react'
+import {useState} from 'react'
 import {KTSVG} from '../../../helpers'
 
 const plans = [
@@ -132,7 +132,7 @@ const plans = [
   },
 ]
 
-const UpgradePlan: FC = () => {
+function UpgradePlan() {
   const [currentState, setCurrentState] = useState<'month' | 'annual'>('month')
   const [selected, setSelected] = useState('Startup')
 
@@ -163,26 +163,22 @@ const UpgradePlan: FC = () => {
               <div className='nav-group nav-group-outline mx-auto' data-kt-buttons='true'>
                 <a
                   href='#'
-                  className={
-                    'btn btn-color-gray-400 btn-active btn-active-secondary px-6 py-3 me-2 ' +
-                    (currentState === 'month' && 'active')
-                  }
+                  className={'btn btn-color-gray-400 btn-active btn-active-secondary px-6 py-3 me-2 ' +
+                    (currentState === 'month' && 'active')}
                   onClick={() => {
                     setCurrentState('month')
-                  }}
+                  } }
                   data-kt-plan='month'
                 >
                   Monthly
                 </a>
                 <a
                   href='#'
-                  className={
-                    'btn btn-color-gray-400 btn-active btn-active-secondary px-6 py-3 me-2 ' +
-                    (currentState === 'annual' && 'active')
-                  }
+                  className={'btn btn-color-gray-400 btn-active btn-active-secondary px-6 py-3 me-2 ' +
+                    (currentState === 'annual' && 'active')}
                   onClick={() => {
                     setCurrentState('annual')
-                  }}
+                  } }
                   data-kt-plan='annual'
                 >
                   Annual
@@ -197,13 +193,11 @@ const UpgradePlan: FC = () => {
                         <div
                           onClick={() => {
                             setSelected(plan.title)
-                          }}
-                          className={
-                            `nav-link btn btn-outline btn-outline-dashed btn-color-dark d-flex flex-stack text-start p-6 ` +
+                          } }
+                          className={`nav-link btn btn-outline btn-outline-dashed btn-color-dark d-flex flex-stack text-start p-6 ` +
                             (index !== plans.length - 1 && 'mb-6 ') +
                             (plan.default && 'active ') +
-                            (!plan.custom && 'btn-active btn-active-primary ')
-                          }
+                            (!plan.custom && 'btn-active btn-active-primary ')}
                           data-bs-toggle='tab'
                           data-bs-target={`#kt_upgrade_plan_${index}`}
                           key={index}
@@ -216,8 +210,7 @@ const UpgradePlan: FC = () => {
                                 name='plan'
                                 value={plan.title}
                                 checked={selected === plan.title}
-                                onChange={(e) => setSelected(e.target.value)}
-                              />
+                                onChange={(e) => setSelected(e.target.value)} />
                             </div>
 
                             <div className='flex-grow-1'>
@@ -280,10 +273,8 @@ const UpgradePlan: FC = () => {
                                   {plan.features!.map((feature, i) => {
                                     return (
                                       <div
-                                        className={
-                                          `d-flex align-items-center` +
-                                          (i !== plan.features!.length - 1 && ' mb-7')
-                                        }
+                                        className={`d-flex align-items-center` +
+                                          (i !== plan.features!.length - 1 && ' mb-7')}
                                         key={`${i}-${feature.title}`}
                                       >
                                         {feature.supported && (
@@ -294,8 +285,7 @@ const UpgradePlan: FC = () => {
 
                                             <KTSVG
                                               path='/media/icons/duotune/general/gen043.svg'
-                                              className='svg-icon-1 svg-icon-success'
-                                            />
+                                              className='svg-icon-1 svg-icon-success' />
                                           </>
                                         )}
                                         {!feature.supported && (
@@ -305,8 +295,7 @@ const UpgradePlan: FC = () => {
                                             </span>
                                             <KTSVG
                                               path='/media/icons/duotune/general/gen040.svg'
-                                              className='svg-icon-1'
-                                            />
+                                              className='svg-icon-1' />
                                           </>
                                         )}
                                       </div>

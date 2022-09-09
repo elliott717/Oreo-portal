@@ -1,8 +1,7 @@
-import React, {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../../../_theme/helpers'
 import {ErrorMessage, Field} from 'formik'
 
-const Step4: FC = () => {
+function Step4() {
   return (
     <div className='w-100'>
       <div className='pb-10 pb-lg-15'>
@@ -32,8 +31,7 @@ const Step4: FC = () => {
           type='text'
           className='form-control form-control-solid'
           placeholder=''
-          name='nameOnCard'
-        />
+          name='nameOnCard' />
         <div className='text-danger mt-2'>
           <ErrorMessage name='nameOnCard' />
         </div>
@@ -47,8 +45,7 @@ const Step4: FC = () => {
             type='text'
             className='form-control form-control-solid'
             placeholder='Enter card number'
-            name='cardNumber'
-          />
+            name='cardNumber' />
           <div className='text-danger mt-2'>
             <ErrorMessage name='cardNumber' />
           </div>
@@ -58,13 +55,11 @@ const Step4: FC = () => {
             <img
               src={toAbsoluteUrl('/media/svg/card-logos/mastercard.svg')}
               alt=''
-              className='h-25px'
-            />
+              className='h-25px' />
             <img
               src={toAbsoluteUrl('/media/svg/card-logos/american-express.svg')}
               alt=''
-              className='h-25px'
-            />
+              className='h-25px' />
           </div>
         </div>
       </div>
@@ -134,8 +129,7 @@ const Step4: FC = () => {
               minLength={3}
               maxLength={4}
               placeholder='CVV'
-              name='cardCvv'
-            />
+              name='cardCvv' />
             <div className='text-danger mt-2'>
               <ErrorMessage name='cardCvv' />
             </div>

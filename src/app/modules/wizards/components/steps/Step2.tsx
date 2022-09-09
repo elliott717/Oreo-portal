@@ -1,8 +1,7 @@
-import React, {FC} from 'react'
 import {KTSVG} from '../../../../../_theme/helpers'
 import {ErrorMessage, Field} from 'formik'
 
-const Step2: FC = () => {
+function Step2() {
   return (
     <div className='w-100'>
       <div className='pb-10 pb-lg-15'>
@@ -35,8 +34,7 @@ const Step2: FC = () => {
               className='btn-check'
               name='accountTeamSize'
               value='1-1'
-              id='kt_account_team_size_select_1'
-            />
+              id='kt_account_team_size_select_1' />
             <label
               className='btn btn-outline btn-outline-dashed btn-outline-default w-100 p-4'
               htmlFor='kt_account_team_size_select_1'
@@ -51,8 +49,7 @@ const Step2: FC = () => {
               className='btn-check'
               name='accountTeamSize'
               value='2-10'
-              id='kt_account_team_size_select_2'
-            />
+              id='kt_account_team_size_select_2' />
             <label
               className='btn btn-outline btn-outline-dashed btn-outline-default w-100 p-4'
               htmlFor='kt_account_team_size_select_2'
@@ -67,8 +64,7 @@ const Step2: FC = () => {
               className='btn-check'
               name='accountTeamSize'
               value='10-50'
-              id='kt_account_team_size_select_3'
-            />
+              id='kt_account_team_size_select_3' />
             <label
               className='btn btn-outline btn-outline-dashed btn-outline-default w-100 p-4'
               htmlFor='kt_account_team_size_select_3'
@@ -83,8 +79,7 @@ const Step2: FC = () => {
               className='btn-check'
               name='accountTeamSize'
               value='50+'
-              id='kt_account_team_size_select_4'
-            />
+              id='kt_account_team_size_select_4' />
             <label
               className='btn btn-outline btn-outline-dashed btn-outline-default w-100 p-4'
               htmlFor='kt_account_team_size_select_4'
@@ -105,8 +100,7 @@ const Step2: FC = () => {
         <Field
           type='text'
           className='form-control form-control-lg form-control-solid'
-          name='accountName'
-        />
+          name='accountName' />
         <div className='text-danger mt-2'>
           <ErrorMessage name='accountName' />
         </div>
@@ -129,8 +123,7 @@ const Step2: FC = () => {
                 <span className='symbol-label'>
                   <KTSVG
                     path='/media/icons/duotune/finance/fin001.svg'
-                    className='svg-icon-1 svg-icon-gray-600'
-                  />
+                    className='svg-icon-1 svg-icon-gray-600' />
                 </span>
               </span>
 
@@ -155,8 +148,7 @@ const Step2: FC = () => {
                 <span className='symbol-label'>
                   <KTSVG
                     path='/media/icons/duotune/graphs/gra006.svg'
-                    className='svg-icon-1 svg-icon-gray-600'
-                  />
+                    className='svg-icon-1 svg-icon-gray-600' />
                 </span>
               </span>
 
@@ -179,8 +171,7 @@ const Step2: FC = () => {
                 <span className='symbol-label'>
                   <KTSVG
                     path='/media/icons/duotune/graphs/gra008.svg'
-                    className='svg-icon-1 svg-icon-gray-600'
-                  />
+                    className='svg-icon-1 svg-icon-gray-600' />
                 </span>
               </span>
 

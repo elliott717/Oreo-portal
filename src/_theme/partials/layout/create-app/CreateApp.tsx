@@ -1,6 +1,4 @@
-import React, {FC} from 'react'
-
-const CreateApp: FC = () => {
+function CreateApp() {
   return <></>
 }
 

@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {FC} from 'react'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 
-const InviteUsers: FC = () => {
+function InviteUsers() {
   const users = [
     {
       avatar: '/media/avatars/300-6.jpg',
@@ -136,8 +135,7 @@ const InviteUsers: FC = () => {
               <img
                 alt='Logo'
                 src={toAbsoluteUrl('/media/svg/brand-logos/google-icon.svg')}
-                className='h-20px me-3'
-              />
+                className='h-20px me-3' />
               Invite Gmail Contacts
             </div>
 

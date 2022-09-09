@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, {FC} from 'react'
 import {Card1} from '../../../../../_theme/partials/content/cards/Card1'
 
-const Drawer: FC = () => {
+function Drawer() {
   return (
     <>
       <div className='d-flex flex-wrap flex-stack mb-6'>
@@ -34,8 +33,7 @@ const Drawer: FC = () => {
             name='Emma Smith'
             job='Art Director'
             avgEarnings='$14,560'
-            totalEarnings='$236,400'
-          />
+            totalEarnings='$236,400' />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -44,8 +42,7 @@ const Drawer: FC = () => {
             job='Marketing Analytic'
             avgEarnings='$14,560'
             totalEarnings='$236,400'
-            online={true}
-          />
+            online={true} />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -53,8 +50,7 @@ const Drawer: FC = () => {
             name='Max Smith'
             job='Software Enginer'
             avgEarnings='$14,560'
-            totalEarnings='$236,400'
-          />
+            totalEarnings='$236,400' />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -62,8 +58,7 @@ const Drawer: FC = () => {
             name='Sean Bean'
             job='Web Developer'
             avgEarnings='$14,560'
-            totalEarnings='$236,400'
-          />
+            totalEarnings='$236,400' />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -71,8 +66,7 @@ const Drawer: FC = () => {
             name='Brian Cox'
             job='UI/UX Designer'
             avgEarnings='$14,560'
-            totalEarnings='$236,400'
-          />
+            totalEarnings='$236,400' />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -81,8 +75,7 @@ const Drawer: FC = () => {
             job='Head Of Marketing'
             avgEarnings='$14,560'
             totalEarnings='$236,400'
-            online={true}
-          />
+            online={true} />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -90,8 +83,7 @@ const Drawer: FC = () => {
             name='Francis Mitcham'
             job='Software Arcitect'
             avgEarnings='$14,560'
-            totalEarnings='$236,400'
-          />
+            totalEarnings='$236,400' />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -100,8 +92,7 @@ const Drawer: FC = () => {
             job='System Admin'
             avgEarnings='$14,560'
             totalEarnings='$236,400'
-            online={true}
-          />
+            online={true} />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -110,8 +101,7 @@ const Drawer: FC = () => {
             job='Account Manager'
             avgEarnings='$14,560'
             totalEarnings='$236,400'
-            online={true}
-          />
+            online={true} />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -119,8 +109,7 @@ const Drawer: FC = () => {
             name='Dan Wilson'
             job='Web Desinger'
             avgEarnings='$14,560'
-            totalEarnings='$236,400'
-          />
+            totalEarnings='$236,400' />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -129,8 +118,7 @@ const Drawer: FC = () => {
             job='Corporate Finance'
             avgEarnings='$14,560'
             totalEarnings='$236,400'
-            online={true}
-          />
+            online={true} />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -138,8 +126,7 @@ const Drawer: FC = () => {
             name='Ana Crown'
             job='Customer Relationship'
             avgEarnings='$14,560'
-            totalEarnings='$236,400'
-          />
+            totalEarnings='$236,400' />
         </div>
       </div>
 

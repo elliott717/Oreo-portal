@@ -1,7 +1,7 @@
-import {FC} from 'react'
-import {KTSVG} from '../../../../helpers'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { KTSVG } from '../../../../helpers'
 
-const Step1: FC = () => {
+function Step1() {
   return (
     <>
       {/* begin::Type */}
@@ -38,8 +38,7 @@ const Step1: FC = () => {
                 {/* begin::Icon */}
                 <KTSVG
                   className='svg-icon-3hx'
-                  path='/media/icons/duotune/communication/com006.svg'
-                />
+                  path='/media/icons/duotune/communication/com006.svg' />
                 {/* end::Icon */}
 
                 {/* begin::Info */}

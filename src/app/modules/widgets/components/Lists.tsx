@@ -1,6 +1,4 @@
-import React, {FC} from 'react'
-
-const Lists: FC = () => {
+function Lists() {
   return (
     <>
       {/* begin::Row */}

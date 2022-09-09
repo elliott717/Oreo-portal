@@ -1,4 +1,3 @@
-import {FC} from 'react'
 import {
   CardsWidget1,
   ChartsWidget8,
@@ -13,7 +12,7 @@ import {
 import {socials} from '../../../_theme/helpers/data/social'
 import {getItems} from '../../../_theme/helpers'
 
-export const Marketing: FC = () => {
+export function Marketing() {
   return (
     <>
       <div className='row gy-5 g-xl-10'>
@@ -57,8 +56,7 @@ export const Marketing: FC = () => {
                 className='h-sm-100'
                 color='#22232B'
                 chartHeight='105px'
-                chartColor='primary'
-              />
+                chartColor='primary' />
             </div>
             {/* end::Col */}
 
@@ -88,8 +86,7 @@ export const Marketing: FC = () => {
             image='/media/svg/illustrations/easy/1.svg'
             title={`Have you tried <br>new <span className="fw-bolder">Mobile Application ?</span>`}
             primaryLinkText='Try now'
-            secondaryLinkText='Learn more'
-          />
+            secondaryLinkText='Learn more' />
         </div>
         {/* end::Col */}
 

@@ -1,7 +1,6 @@
-import {FC} from 'react'
 import {toAbsoluteUrl} from '../../../../helpers'
 
-const Step7: FC = () => {
+function Step7() {
   return (
     <>
       {/* begin::Complete */}
@@ -27,8 +26,7 @@ const Step7: FC = () => {
             <img
               src={toAbsoluteUrl('/media/illustrations/sketchy-1/9.png')}
               alt=''
-              className='mww-100 mh-350px'
-            />
+              className='mww-100 mh-350px' />
           </div>
           {/* end::Illustration */}
         </div>
