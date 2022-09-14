@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {KTSVG, toAbsoluteUrl} from '../../../../../_theme/helpers'
-import {ChatInner, Dropdown1} from '../../../../../_theme/partials'
+import {KTSVG, toAbsoluteUrl} from '../../../../../res/helpers'
+import {ChatInner, Dropdown1} from '../../../../../res/partials'
 
 function Group() {
   return (

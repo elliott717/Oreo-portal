@@ -8,9 +8,9 @@ import {
   TablesWidget1,
   TablesWidget6,
   TimelineWidget1,
-} from '../../../_theme/partials/widgets'
-import {socials} from '../../../_theme/helpers/data/social'
-import {getItems} from '../../../_theme/helpers'
+} from '../../../res/partials/widgets'
+import {socials} from '../../../res/helpers/data/social'
+import {getItems} from '../../../res/helpers'
 
 export function Marketing() {
   return (

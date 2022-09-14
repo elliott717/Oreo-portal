@@ -48,11 +48,11 @@ function LayoutProvider({ children }: any) {
   const [classes, setClasses] = useState(LayoutSetup.classes)
   const [attributes, setAttributes] = useState(LayoutSetup.attributes)
   const [cssVariables, setCSSVariables] = useState(LayoutSetup.cssVariables)
-  const setLayout = (_themeConfig: Partial<ILayout>) => {
+  const setLayout = (resConfig: Partial<ILayout>) => {
     enableSplashScreen()
     const bodyClasses = Array.from(document.body.classList)
     bodyClasses.forEach((cl) => document.body.classList.remove(cl))
-    LayoutSetup.updatePartialConfig(_themeConfig)
+    LayoutSetup.updatePartialConfig(resConfig)
     setConfig(Object.assign({}, LayoutSetup.config))
     setClasses(LayoutSetup.classes)
     setAttributes(LayoutSetup.attributes)

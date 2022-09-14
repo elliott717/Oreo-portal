@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {OverlayTrigger, Tooltip} from 'react-bootstrap'
-import {KTSVG} from '../../../../_theme/helpers'
-import {Card4} from '../../../../_theme/partials/content/cards/Card4'
+import {KTSVG} from '../../../../res/helpers'
+import {Card4} from '../../../../res/partials/content/cards/Card4'
 
 export function Documents() {
   return (

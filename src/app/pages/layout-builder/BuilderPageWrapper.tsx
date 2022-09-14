@@ -1,4 +1,4 @@
-import {PageTitle} from '../../../_theme/layout/core'
+import {PageTitle} from '../../../res/layout/core'
 import {BuilderPage} from './BuilderPage'
 
 function BuilderPageWrapper() {

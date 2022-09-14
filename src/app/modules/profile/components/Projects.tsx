@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import {Card2} from '../../../../_theme/partials/content/cards/Card2'
+import {Card2} from '../../../../res/partials/content/cards/Card2'
 import {IconUserModel} from '../ProfileModels'
 import {OverlayTrigger, Tooltip} from 'react-bootstrap'
 

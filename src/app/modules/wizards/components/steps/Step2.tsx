@@ -1,4 +1,4 @@
-import {KTSVG} from '../../../../../_theme/helpers'
+import {KTSVG} from '../../../../../res/helpers'
 import {ErrorMessage, Field} from 'formik'
 
 function Step2() {

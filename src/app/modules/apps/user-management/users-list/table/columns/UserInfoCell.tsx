@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import clsx from 'clsx'
-import {toAbsoluteUrl} from '../../../../../../../_theme/helpers'
+import {toAbsoluteUrl} from '../../../../../../../res/helpers'
 import {User} from '../../core/_models'
 
 type Props = {

@@ -1,8 +1,8 @@
 import {Suspense} from 'react'
 import {Outlet} from 'react-router-dom'
-import {I18nProvider} from '../_theme/i18n/i18nProvider'
-import {LayoutProvider, LayoutSplashScreen} from '../_theme/layout/core'
-import {MasterInit} from '../_theme/layout/MasterInit'
+import {I18nProvider} from '../res/i18n/i18nProvider'
+import {LayoutProvider, LayoutSplashScreen} from '../res/layout/core'
+import {MasterInit} from '../res/layout/MasterInit'
 import AuthInit from './modules/auth/redux/AuthInit'
 
 const App = () => {

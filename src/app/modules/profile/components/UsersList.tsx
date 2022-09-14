@@ -1,5 +1,5 @@
 import {IconUserModel} from '../ProfileModels'
-import {toAbsoluteUrl} from '../../../../_theme/helpers'
+import {toAbsoluteUrl} from '../../../../res/helpers'
 import {OverlayTrigger, Tooltip} from 'react-bootstrap'
 
 type Props = {

@@ -1,4 +1,4 @@
-import {ID, Response} from '../../../../../../_theme/helpers'
+import {ID, Response} from '../../../../../../res/helpers'
 
 export type User = {
   id?: ID

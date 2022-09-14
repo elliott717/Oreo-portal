@@ -1,4 +1,4 @@
-import {KTSVG} from '../../../../../_theme/helpers'
+import {KTSVG} from '../../../../../res/helpers'
 import {Link} from 'react-router-dom'
 
 function Step5() {

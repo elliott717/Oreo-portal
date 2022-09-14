@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
-import {MenuComponent} from '../../../../../../../_theme/assets/ts/components'
-import {initialQueryState, KTSVG} from '../../../../../../../_theme/helpers'
+import {MenuComponent} from '../../../../../../../res/assets/ts/components'
+import {initialQueryState, KTSVG} from '../../../../../../../res/helpers'
 import {useQueryRequest} from '../../core/QueryRequestProvider'
 import {useQueryResponse} from '../../core/QueryResponseProvider'
 

@@ -1,5 +1,5 @@
 import {Navigate, Outlet, Route, Routes} from 'react-router-dom'
-import {PageLink, PageTitle} from '../../../_theme/layout/core'
+import {PageLink, PageTitle} from '../../../res/layout/core'
 import {Vertical} from './components/Vertical'
 import {Horizontal} from './components/Horizontal'
 

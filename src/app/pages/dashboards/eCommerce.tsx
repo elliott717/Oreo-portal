@@ -9,7 +9,7 @@ import {
   TablesWidget2,
   TablesWidget4,
   TablesWidget5,
-} from '../../../_theme/partials/widgets'
+} from '../../../res/partials/widgets'
 
 export function ECommerce() {
   return (

@@ -10,19 +10,19 @@ import store, {persistor} from './setup/redux/Store'
 import axios from 'axios'
 
 // Apps
-import {GoodI18nProvider} from './_theme/i18n/Goodi18n'
+import {GoodI18nProvider} from './res/i18n/Goodi18n'
 /**
  * TIP: Replace this style import with dark styles to enable dark mode
  *
- * import './_theme/assets/sass/style.dark.scss'
+ * import './res/assets/sass/style.dark.scss'
  *
  * TIP: Replace this style import with rtl styles to enable rtl mode
  *
- * import './_theme/assets/css/style.rtl.css'
+ * import './res/assets/css/style.rtl.css'
  **/
-import './_theme/assets/sass/style.scss'
-import './_theme/assets/sass/plugins.scss'
-import './_theme/assets/sass/style.react.scss'
+import './res/assets/sass/style.scss'
+import './res/assets/sass/plugins.scss'
+import './res/assets/sass/style.react.scss'
 import {AppRoutes} from './app/routing/AppRoutes'
 
 /**

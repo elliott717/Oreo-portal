@@ -1,11 +1,11 @@
 import {useEffect, useRef, useState} from 'react'
-import {KTSVG} from '../../../../_theme/helpers'
+import {KTSVG} from '../../../../res/helpers'
 import {Step1} from './steps/Step1'
 import {Step2} from './steps/Step2'
 import {Step3} from './steps/Step3'
 import {Step4} from './steps/Step4'
 import {Step5} from './steps/Step5'
-import {StepperComponent} from '../../../../_theme/assets/ts/components'
+import {StepperComponent} from '../../../../res/assets/ts/components'
 import {Form, Formik, FormikValues} from 'formik'
 import {createAccountSchemas, ICreateAccount, inits} from './CreateAccountWizardHelper'
 
