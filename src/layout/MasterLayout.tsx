@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import {PageDataProvider} from './core'
 import {Outlet, useLocation} from 'react-router-dom'
-import {MenuComponent} from '../assets/ts/components'
+import {MenuComponent} from 'assets/ts/components'
 import HeaderBase from './components/header/HeaderBase'
 import Footer from './components/Footer'
 import AsideBase from './components/aside/AsideBase'

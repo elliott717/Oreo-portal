@@ -5,7 +5,7 @@ import {
   ScrollTopComponent,
   StickyComponent,
   ToggleComponent,
-} from '../../assets/ts/components'
+} from 'assets/ts/components'
 import {KTSVG} from 'helpers'
 
 export function ScrollTop() {

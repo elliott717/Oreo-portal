@@ -4,13 +4,13 @@ import ReactDOM from "react-dom/client";
 // https://github.com/rt2zz/redux-persist
 import {PersistGate} from 'redux-persist/integration/react'
 import {Provider} from 'react-redux'
-import * as _redux from './setup'
-import store, {persistor} from './setup/redux/Store'
+import * as _redux from 'setup'
+import store, {persistor} from 'setup/redux/Store'
 // Axios
 import axios from 'axios'
 
 // Apps
-import {GoodI18nProvider} from './i18n/Goodi18n'
+import {GoodI18nProvider} from 'i18n/Goodi18n'
 /**
  * TIP: Replace this style import with dark styles to enable dark mode
  *
@@ -23,7 +23,7 @@ import {GoodI18nProvider} from './i18n/Goodi18n'
 import './assets/sass/style.scss'
 import './assets/sass/plugins.scss'
 import './assets/sass/style.react.scss'
-import {AppRoutes} from './app/routing/AppRoutes'
+import {AppRoutes} from 'routing/AppRoutes'
 
 /**
  * Inject Good interceptors for axios.

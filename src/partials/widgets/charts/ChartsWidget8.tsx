@@ -1,7 +1,7 @@
 import {useEffect, useRef, useState} from 'react'
 import {KTSVG} from 'helpers'
 import ApexCharts from 'apexcharts'
-import {getCSSVariableValue} from '../../../assets/ts/_utils'
+import {getCSSVariableValue} from 'assets/ts/_utils'
 
 type Props = {
   className: string

@@ -3,7 +3,7 @@ import {useEffect, useRef} from 'react'
 import ApexCharts, {ApexOptions} from 'apexcharts'
 import {KTSVG} from 'helpers'
 import {Dropdown1} from '../content/dropdown/Dropdown1'
-import {getCSS, getCSSVariableValue} from '../../assets/ts/_utils'
+import {getCSS, getCSSVariableValue} from 'assets/ts/_utils'
 
 type Props = {
   className: string

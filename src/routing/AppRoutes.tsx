@@ -2,7 +2,7 @@
  * High level router.
  *
  * Note: It's recommended to compose related routes in internal router
- * components (e.g: `src/app/modules/Auth/pages/AuthPage`, `src/app/BasePage`).
+ * components (e.g: `srcmodules/Auth/pages/AuthPage`, `srcBasePage`).
  */
 import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom'
 import {shallowEqual, useSelector} from 'react-redux'

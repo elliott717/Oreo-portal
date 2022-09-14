@@ -3,7 +3,7 @@ import React, {useEffect, useRef} from 'react'
 import ApexCharts, {ApexOptions} from 'apexcharts'
 import {KTSVG, toAbsoluteUrl} from 'helpers'
 import {Dropdown1} from '../../content/dropdown/Dropdown1'
-import {getCSS} from '../../../assets/ts/_utils'
+import {getCSS} from 'assets/ts/_utils'
 
 export function SidebarUser() {
   const chartRef = useRef<HTMLDivElement | null>(null)
