@@ -9,7 +9,7 @@ import {shallowEqual, useSelector} from 'react-redux'
 import {PrivateRoutes} from './PrivateRoutes'
 import {ErrorsPage} from '../modules/errors/ErrorsPage'
 import {AuthPage, Logout} from '../modules/auth'
-import {RootState} from '../../setup'
+import {RootState} from 'setup'
 import {App} from '../App'
 
 /**

@@ -1,4 +1,4 @@
-import {KTSVG} from '../../../../../../res/helpers'
+import {KTSVG} from 'helpers'
 import {useListView} from '../core/ListViewProvider'
 
 const UserEditModalHeader = () => {

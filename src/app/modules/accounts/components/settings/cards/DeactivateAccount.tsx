@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {useState} from 'react'
-import {KTSVG} from '../../../../../../res/helpers'
+import {KTSVG} from 'helpers'
 import {deactivateAccount, IDeactivateAccount} from '../SettingsModel'
 import * as Yup from 'yup'
 import {useFormik} from 'formik'

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {KTSVG, toAbsoluteUrl} from '../../../res/helpers'
+import {KTSVG, toAbsoluteUrl} from 'helpers'
 import {Link} from 'react-router-dom'
-import {Dropdown1} from '../../../res/partials'
+import {Dropdown1} from 'partials'
 import {useLocation} from 'react-router'
 
 function AccountHeader() {

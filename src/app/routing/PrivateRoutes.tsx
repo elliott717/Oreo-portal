@@ -1,10 +1,10 @@
 import {lazy, Suspense} from 'react'
 import {Navigate, Route, Routes} from 'react-router-dom'
-import {MasterLayout} from '../../res/layout/MasterLayout'
+import {MasterLayout} from '../../layout/MasterLayout'
 import TopBarProgress from 'react-topbar-progress-indicator'
 import {DashboardsPageWrapper} from '../pages/dashboards/DashboardsPageWrapper'
 import {MenuTestPage} from '../pages/MenuTestPage'
-import {getCSSVariableValue} from '../../res/assets/ts/_utils'
+import {getCSSVariableValue} from '../../assets/ts/_utils'
 
 const PrivateRoutes = () => {
   const BuilderPageWrapper = lazy(() => import('../pages/layout-builder/BuilderPageWrapper'))

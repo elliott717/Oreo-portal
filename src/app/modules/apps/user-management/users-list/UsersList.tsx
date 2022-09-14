@@ -4,7 +4,7 @@ import {QueryResponseProvider} from './core/QueryResponseProvider'
 import {UsersListHeader} from './components/header/UsersListHeader'
 import {UsersTable} from './table/UsersTable'
 import {UserEditModal} from './user-edit-modal/UserEditModal'
-import {KTCard} from '../../../../../res/helpers'
+import {KTCard} from 'helpers'
 
 const UsersList = () => {
   const {itemIdForUpdate} = useListView()

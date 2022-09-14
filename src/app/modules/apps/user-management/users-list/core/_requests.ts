@@ -1,5 +1,5 @@
 import axios, {AxiosResponse} from 'axios'
-import {ID, Response} from '../../../../../../res/helpers'
+import {ID, Response} from 'helpers'
 import {User, UsersQueryResponse} from './_models'
 
 const API_URL = process.env.REACT_APPres_API_URL

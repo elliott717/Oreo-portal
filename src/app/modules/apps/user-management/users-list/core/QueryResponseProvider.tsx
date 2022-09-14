@@ -8,7 +8,7 @@ import {
   PaginationState,
   QUERIES,
   stringifyRequestQuery,
-} from '../../../../../../res/helpers'
+} from 'helpers'
 import {getUsers} from './_requests'
 import {User} from './_models'
 import {useQueryRequest} from './QueryRequestProvider'

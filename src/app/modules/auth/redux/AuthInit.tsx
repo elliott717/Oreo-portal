@@ -2,7 +2,7 @@ import {useEffect, useRef} from 'react'
 import {connect, ConnectedProps, shallowEqual, useDispatch, useSelector} from 'react-redux'
 import * as auth from './AuthRedux'
 import {getUserByToken} from './AuthCRUD'
-import {RootState} from '../../../../setup'
+import {RootState} from 'setup'
 
 const mapState = (state: RootState) => ({auth: state.auth})
 const connector = connect(mapState, auth.actions)

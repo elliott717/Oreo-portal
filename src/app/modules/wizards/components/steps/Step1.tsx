@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {KTSVG} from '../../../../../res/helpers'
+import {KTSVG} from 'helpers'
 import {ErrorMessage, Field} from 'formik'
 
 function Step1() {

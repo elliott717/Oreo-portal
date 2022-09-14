@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import {Card5} from '../../../../res/partials/content/cards/Card5'
+import {Card5} from 'partials/content/cards/Card5'
 import {OverlayTrigger, Tooltip} from 'react-bootstrap'
 
 export function Campaigns() {

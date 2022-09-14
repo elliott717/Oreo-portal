@@ -2,8 +2,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {useRef, useState} from 'react'
 import {Modal} from 'react-bootstrap'
-import {StepperComponent} from '../../../../../res/assets/ts/components'
-import {KTSVG} from '../../../../../res/helpers'
+import {StepperComponent} from 'assets/ts/components'
+import {KTSVG} from 'helpers'
 import {defaultCreateAppData, ICreateAppData} from './IAppModels'
 
 type Props = {

@@ -1,4 +1,4 @@
-import {KTSVG, toAbsoluteUrl} from '../../../../../res/helpers'
+import {KTSVG, toAbsoluteUrl} from 'helpers'
 import {ErrorMessage, Field} from 'formik'
 
 function Step4() {

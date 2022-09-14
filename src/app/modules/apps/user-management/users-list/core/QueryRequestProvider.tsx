@@ -3,7 +3,7 @@ import {
   initialQueryRequest,
   QueryRequestContextProps,
   QueryState,
-} from '../../../../../../res/helpers'
+} from 'helpers'
 
 const QueryRequestContext = createContext<QueryRequestContextProps>(initialQueryRequest)
 

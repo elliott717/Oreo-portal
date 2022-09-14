@@ -1,5 +1,5 @@
 import {Navigate, Outlet, Route, Routes} from 'react-router-dom'
-import {PageLink, PageTitle} from '../../../res/layout/core'
+import {PageLink, PageTitle} from 'layout/core'
 import {Charts} from './components/Charts'
 import {Feeds} from './components/Feeds'
 import {Lists} from './components/Lists'

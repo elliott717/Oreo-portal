@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import SVG from 'react-inlinesvg'
-import {toAbsoluteUrl} from '../../res/helpers'
+import {toAbsoluteUrl} from 'helpers'
 
 function MenuTestPage() {
   return (

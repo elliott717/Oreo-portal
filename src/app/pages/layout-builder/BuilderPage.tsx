@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import clsx from 'clsx'
 import {useState} from 'react'
-import {KTSVG} from '../../../res/helpers'
-import {getLayout, ILayout, LayoutSetup, useLayout} from '../../../res/layout/core'
+import {KTSVG} from 'helpers'
+import {getLayout, ILayout, LayoutSetup, useLayout} from 'layout/core'
 
 function BuilderPage() {
   const { setLayout } = useLayout()

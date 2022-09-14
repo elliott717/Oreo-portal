@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {useState} from 'react'
-import {KTSVG, toAbsoluteUrl} from '../../../../../../res/helpers'
+import {KTSVG, toAbsoluteUrl} from 'helpers'
 import {connectedAccounts, IConnectedAccounts} from '../SettingsModel'
 
 function ConnectedAccounts() {

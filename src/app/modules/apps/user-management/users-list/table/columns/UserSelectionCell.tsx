@@ -1,5 +1,5 @@
 import {useMemo} from 'react'
-import {ID} from '../../../../../../../res/helpers'
+import {ID} from 'helpers'
 import {useListView} from '../../core/ListViewProvider'
 
 type Props = {

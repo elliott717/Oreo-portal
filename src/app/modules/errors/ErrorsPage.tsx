@@ -2,7 +2,7 @@
 import {Link, Outlet, Route, Routes} from 'react-router-dom'
 import {Error500} from './components/Error500'
 import {Error404} from './components/Error404'
-import {toAbsoluteUrl} from '../../../res/helpers'
+import {toAbsoluteUrl} from 'helpers'
 
 const ErrorsLayout = () => {
   return (

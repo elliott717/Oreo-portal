@@ -8,9 +8,9 @@ import {
   TablesWidget1,
   TablesWidget6,
   TimelineWidget1,
-} from '../../../res/partials/widgets'
-import {socials} from '../../../res/helpers/data/social'
-import {getItems} from '../../../res/helpers'
+} from 'partials/widgets'
+import {socials} from 'helpers/data/social'
+import {getItems} from 'helpers'
 
 export function Marketing() {
   return (

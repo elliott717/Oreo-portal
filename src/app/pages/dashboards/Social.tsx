@@ -7,8 +7,8 @@ import {
   ListsWidget4,
   TablesWidget3,
   TimelineWidget1,
-} from '../../../res/partials/widgets'
-import {socials} from '../../../res/helpers/data/social'
+} from 'partials/widgets'
+import {socials} from 'helpers/data/social'
 
 export function Social() {
   return (

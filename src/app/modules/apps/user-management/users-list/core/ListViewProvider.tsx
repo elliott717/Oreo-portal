@@ -7,7 +7,7 @@ import {
   ID,
   initialListView,
   ListViewContextProps,
-} from '../../../../../../res/helpers'
+} from 'helpers'
 import {useQueryResponse, useQueryResponseData} from './QueryResponseProvider'
 
 const ListViewContext = createContext<ListViewContextProps>(initialListView)
