@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import {Card1} from 'partials/content/cards/Card1'
+import {Card1} from 'shared/content/cards/Card1'
 
 function Drawer() {
   return (

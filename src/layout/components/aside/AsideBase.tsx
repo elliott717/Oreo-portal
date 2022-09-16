@@ -1,4 +1,3 @@
-import AsideToolbar from './AsideToolbar'
 import AsideMenu from './AsideMenu'
 import AsideUser from './AsideUser'
 
@@ -15,9 +14,7 @@ function AsideBase() {
       data-kt-drawer-direction='start'
       data-kt-drawer-toggle='#kt_aside_mobile_toggle'
     >
-      <div className='aside-toolbar py-5' id='kt_aside_toolbar'>
-        <AsideToolbar />
-      </div>
+      
 
       <div className='aside-menu flex-column-fluid'>
         <AsideMenu />

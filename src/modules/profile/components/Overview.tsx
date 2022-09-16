@@ -5,10 +5,10 @@ import {
   FeedsWidget4,
   FeedsWidget5,
   FeedsWidget6,
-} from 'partials/widgets'
-import {ChartsWidget1} from 'partials/profile-widgets/ChartsWidget1'
-import {ListsWidget5} from 'partials/profile-widgets/ListsWidget5'
-import {ListsWidget2} from 'partials/profile-widgets/ListsWidget2'
+} from 'shared/widgets'
+import {ChartsWidget1} from 'shared/profile-widgets/ChartsWidget1'
+import {ListsWidget5} from 'shared/profile-widgets/ListsWidget5'
+import {ListsWidget2} from 'shared/profile-widgets/ListsWidget2'
 
 export function Overview() {
   return (

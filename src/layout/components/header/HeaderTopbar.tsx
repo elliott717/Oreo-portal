@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import {KTSVG} from 'helpers'
 import {PageTitle} from './page-title/PageTitle'
-import {HeaderNotificationsMenu, QuickLinks, Search} from 'partials'
+import {HeaderNotificationsMenu, QuickLinks, Search} from 'shared'
 import {useLayout} from '../../core'
 
 function HeaderTopbar() {

@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {KTSVG, toAbsoluteUrl} from 'helpers'
-import {ChatInner, Dropdown1} from 'partials'
+import {Dropdown1} from 'shared'
 
 function Private() {
   return (
@@ -293,7 +293,6 @@ function Private() {
               </div>
             </div>
           </div>
-          <ChatInner />
         </div>
       </div>
     </div>

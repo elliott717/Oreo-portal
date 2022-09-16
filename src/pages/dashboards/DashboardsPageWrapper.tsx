@@ -1,9 +1,6 @@
 import {Navigate, Outlet, Route, Routes} from 'react-router-dom'
 import {PageLink, PageTitle} from 'layout/core'
 import {Default} from './Default'
-import {Marketing} from './Marketing'
-import {Social} from './Social'
-import {ECommerce} from './eCommerce'
 
 const dashboardBreadCrumbs: Array<PageLink> = [
   {
@@ -29,24 +26,6 @@ function DashboardsPageWrapper() {
           element={<>
             <PageTitle breadcrumbs={dashboardBreadCrumbs}>Default</PageTitle>
             <Default />
-          </>} />
-        <Route
-          path='marketing'
-          element={<>
-            <PageTitle breadcrumbs={dashboardBreadCrumbs}>Marketing</PageTitle>
-            <Marketing />
-          </>} />
-        <Route
-          path='/social'
-          element={<>
-            <PageTitle breadcrumbs={dashboardBreadCrumbs}>Social</PageTitle>
-            <Social />
-          </>} />
-        <Route
-          path='ecommerce'
-          element={<>
-            <PageTitle breadcrumbs={dashboardBreadCrumbs}>ECommerce</PageTitle>
-            <ECommerce />
           </>} />
         <Route index element={<Navigate to='/dashboards/default' />} />
       </Route>

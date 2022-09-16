@@ -5,7 +5,7 @@ import {UserModel} from 'modules/auth/models/UserModel'
 import {RootState} from 'setup'
 import {toAbsoluteUrl} from 'helpers'
 import {Link} from 'react-router-dom'
-import {Languages} from '../header-menus/Languages'
+import {Languages} from './Languages'
 
 const HeaderUserMenu = () => {
   const user: UserModel = useSelector<RootState>(({auth}) => auth.user, shallowEqual) as UserModel

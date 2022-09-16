@@ -1,17 +1,9 @@
 import {
   CardsWidget6,
   ChartsWidget1,
-  ChartsWidget5,
   ChartsWidget9,
   EngageWidget2,
-  ListsWidget13,
-  ListsWidget14,
-  ListsWidget15,
-  ListsWidget3,
-  TablesWidget3,
-  TimelineWidget1,
-} from 'partials/widgets'
-import {socials} from 'helpers/data/social'
+} from 'shared/widgets'
 
 export function Default() {
   return (
@@ -53,56 +45,6 @@ export function Default() {
         {/* end::Col */}
       </div>
       {/* end::Row */}
-      {/* begin::Row */}
-      <div className='row g-5 g-xxl-10'>
-        {/* begin::Col */}
-        <div className='col-xl-4 mb-xl-5 mb-xxl-10'>
-          <ListsWidget3 className='h-xl-100' stat='234,456' data={socials} />
-        </div>
-        {/* end::Col */}
-
-        {/* begin::Col */}
-        <div className='col-xl-8 mb-5 mb-xxl-10'>
-          <TablesWidget3 className='h-xl-100' />
-        </div>
-        {/* end::Col */}
-      </div>
-      {/* end::Row */}
-      {/* begin::Row */}
-      <div className='row g-5 g-xxl-10'>
-        {/* begin::Col */}
-        <div className='col-xl-4 mb-xl-5 mb-xxl-10'>
-          <ListsWidget13 className='h-xl-100' />
-        </div>
-        {/* end::Col */}
-
-        {/* begin::Col */}
-        <div className='col-xl-8 mb-5 mb-xxl-10'>
-          <TimelineWidget1 className='h-xl-100' />
-        </div>
-        {/* end::Col */}
-      </div>
-      {/* end::Row */}
-      {/* begin::Row */}
-      <div className='row g-5 g-xxl-10'>
-        {/* begin::Col */}
-        <div className='col-xl-4 mb-xxl-10'>
-          <ChartsWidget5 className='h-xl-100' />
-        </div>
-        {/* end::Col */}
-
-        {/* begin::Col */}
-        <div className='col-xl-4 mb-xxl-10'>
-          <ListsWidget14 className='h-xl-100' />
-        </div>
-        {/* end::Col */}
-
-        {/* begin::Col */}
-        <div className='col-xl-4 mb-xxl-10'>
-          <ListsWidget15 className='h-xl-100' />
-        </div>
-        {/* end::Col */}
-      </div>
     </>
   )
 }

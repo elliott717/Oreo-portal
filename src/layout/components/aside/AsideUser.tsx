@@ -2,7 +2,7 @@
 import {useDispatch} from 'react-redux'
 import * as auth from 'modules/auth/redux/AuthRedux'
 import {KTSVG, toAbsoluteUrl} from 'helpers'
-import {HeaderUserMenu} from 'partials'
+import {HeaderUserMenu} from 'shared'
 
 function AsideUser() {
   const dispatch = useDispatch()

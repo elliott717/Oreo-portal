@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import {useEffect} from 'react'
 import {PageDataProvider} from './core'
 import {Outlet, useLocation} from 'react-router-dom'
 import {MenuComponent} from 'assets/ts/components'
@@ -6,7 +6,7 @@ import HeaderBase from './components/header/HeaderBase'
 import Footer from './components/Footer'
 import AsideBase from './components/aside/AsideBase'
 import {ScrollTop} from './components/Scrolltop'
-import {ActivityDrawer, CreateApp, DrawerMessenger} from '../partials'
+import {ActivityDrawer} from '../shared'
 import {Content} from './components/Content'
 
 function MasterLayout({ children }: any) {
@@ -44,10 +44,6 @@ function MasterLayout({ children }: any) {
       </div>
       {/* begin:: Drawers */}
       <ActivityDrawer />
-      <DrawerMessenger />
-      {/* end:: Drawers */}
-
-      <CreateApp />
       <ScrollTop />
     </PageDataProvider>
   )

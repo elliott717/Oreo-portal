@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {KTSVG} from 'helpers'
-import {ChatInner} from '../../chat/ChatInner'
 import {Dropdown4} from '../..'
 
 function DrawerMessenger() {
@@ -50,8 +49,6 @@ function DrawerMessenger() {
             </div>
           </div>
         </div>
-
-        <ChatInner isDrawer={true} />
       </div>
     </div>
   )
