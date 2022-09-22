@@ -14,11 +14,10 @@ type Props = {
   children?: React.ReactNode
 }
 
-function Portal({ children, className = '' }: Props) {
+function Portal({children, className = ''}: Props) {
   const [container] = useState(document.createElement('div'))
 
-  if (className)
-    container.classList.add(className)
+  if (className) container.classList.add(className)
 
   useEffect(() => {
     document.body.appendChild(container)

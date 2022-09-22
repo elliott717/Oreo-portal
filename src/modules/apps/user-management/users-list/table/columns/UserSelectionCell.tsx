@@ -6,8 +6,8 @@ type Props = {
   id: ID
 }
 
-function UserSelectionCell({ id }: Props) {
-  const { selected, onSelect } = useListView()
+function UserSelectionCell({id}: Props) {
+  const {selected, onSelect} = useListView()
   const isSelected = useMemo(() => selected.includes(id), [id, selected])
   return (
     <div className='form-check form-check-sm form-check-custom form-check-solid'>
@@ -17,7 +17,8 @@ function UserSelectionCell({ id }: Props) {
         data-kt-check={isSelected}
         data-kt-check-target='#kt_table_users .form-check-input'
         checked={isSelected}
-        onChange={() => onSelect(id)} />
+        onChange={() => onSelect(id)}
+      />
     </div>
   )
 }

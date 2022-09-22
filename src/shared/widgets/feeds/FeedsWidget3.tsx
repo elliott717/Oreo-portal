@@ -6,7 +6,7 @@ type Props = {
   className: string
 }
 
-function FeedsWidget3({ className }: Props) {
+function FeedsWidget3({className}: Props) {
   return (
     <div className={`card ${className}`}>
       {/* begin::Body */}
@@ -170,7 +170,8 @@ function FeedsWidget3({ className }: Props) {
             <span className='btn btn-icon btn-sm btn-active-color-primary pe-0 me-2'>
               <KTSVG
                 path='/media/icons/duotune/communication/com012.svg'
-                className='svg-icon-3 mb-3' />
+                className='svg-icon-3 mb-3'
+              />
             </span>
 
             <span className='btn btn-icon btn-sm btn-active-color-primary ps-0'>

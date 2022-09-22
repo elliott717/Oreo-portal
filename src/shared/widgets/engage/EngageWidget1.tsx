@@ -12,7 +12,11 @@ type Props = {
 }
 
 export function EngageWidget1({
-  className, title, image, primaryLinkText, secondaryLinkText,
+  className,
+  title,
+  image,
+  primaryLinkText,
+  secondaryLinkText,
 }: Props) {
   const [show, setShow] = useState(false)
 
@@ -25,7 +29,7 @@ export function EngageWidget1({
             {/* begin::Item */}
             <h1
               className='fw-bold text-gray-800 text-center lh-lg'
-              dangerouslySetInnerHTML={{ __html: title }}
+              dangerouslySetInnerHTML={{__html: title}}
             ></h1>
             {/* end::Item */}
             {/* begin::Image */}
@@ -43,7 +47,7 @@ export function EngageWidget1({
               className='btn btn-sm btn-primary me-2'
               onClick={() => {
                 setShow(!show)
-              } }
+              }}
             >
               {primaryLinkText}
             </a>
@@ -59,7 +63,8 @@ export function EngageWidget1({
         show={show}
         handleClose={() => {
           setShow(false)
-        } } />
+        }}
+      />
     </>
   )
 }

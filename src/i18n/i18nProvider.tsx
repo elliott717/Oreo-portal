@@ -24,7 +24,7 @@ const allMessages = {
   zh: zhMessages,
 }
 
-function I18nProvider({ children }: any) {
+function I18nProvider({children}: any) {
   const locale = useLang()
   const messages = allMessages[locale]
 

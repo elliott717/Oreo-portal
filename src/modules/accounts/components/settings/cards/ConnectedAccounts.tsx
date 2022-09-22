@@ -7,7 +7,7 @@ function ConnectedAccounts() {
   const [data, setData] = useState<IConnectedAccounts>(connectedAccounts)
 
   const updateData = (fieldsToUpdate: Partial<IConnectedAccounts>) => {
-    const updatedData = { ...data, ...fieldsToUpdate }
+    const updatedData = {...data, ...fieldsToUpdate}
     setData(updatedData)
   }
 
@@ -40,7 +40,8 @@ function ConnectedAccounts() {
           <div className='notice d-flex bg-light-primary rounded border-primary border border-dashed mb-9 p-6'>
             <KTSVG
               path='/media/icons/duotune/art/art006.svg'
-              className='svg-icon-2tx svg-icon-primary me-4' />
+              className='svg-icon-2tx svg-icon-primary me-4'
+            />
             <div className='d-flex flex-stack flex-grow-1'>
               <div className='fw-bold'>
                 <div className='fs-6 text-gray-600'>
@@ -60,7 +61,8 @@ function ConnectedAccounts() {
                 <img
                   src={toAbsoluteUrl('/media/svg/brand-logos/google-icon.svg')}
                   className='w-30px me-6'
-                  alt='' />
+                  alt=''
+                />
 
                 <div className='d-flex flex-column'>
                   <a href='#' className='fs-5 text-dark text-hover-primary fw-bolder'>
@@ -76,9 +78,12 @@ function ConnectedAccounts() {
                     type='checkbox'
                     id='googleswitch'
                     checked={data.google}
-                    onChange={() => updateData({
-                      google: !data.google,
-                    })} />
+                    onChange={() =>
+                      updateData({
+                        google: !data.google,
+                      })
+                    }
+                  />
                   <label className='form-check-label' htmlFor='googleswitch'></label>
                 </div>
               </div>
@@ -91,7 +96,8 @@ function ConnectedAccounts() {
                 <img
                   src={toAbsoluteUrl('/media/svg/brand-logos/github.svg')}
                   className='w-30px me-6'
-                  alt='' />
+                  alt=''
+                />
 
                 <div className='d-flex flex-column'>
                   <a href='#' className='fs-5 text-dark text-hover-primary fw-bolder'>
@@ -107,9 +113,12 @@ function ConnectedAccounts() {
                     type='checkbox'
                     id='githubswitch'
                     checked={data.github}
-                    onChange={() => updateData({
-                      github: !data.github,
-                    })} />
+                    onChange={() =>
+                      updateData({
+                        github: !data.github,
+                      })
+                    }
+                  />
                   <label className='form-check-label' htmlFor='githubswitch'></label>
                 </div>
               </div>
@@ -122,7 +131,8 @@ function ConnectedAccounts() {
                 <img
                   src={toAbsoluteUrl('/media/svg/brand-logos/slack-icon.svg')}
                   className='w-30px me-6'
-                  alt='' />
+                  alt=''
+                />
 
                 <div className='d-flex flex-column'>
                   <a href='#' className='fs-5 text-dark text-hover-primary fw-bolder'>
@@ -137,9 +147,12 @@ function ConnectedAccounts() {
                     className='form-check-input w-45px h-30px'
                     type='checkbox'
                     checked={data.stack}
-                    onChange={() => updateData({
-                      stack: !data.stack,
-                    })} />
+                    onChange={() =>
+                      updateData({
+                        stack: !data.stack,
+                      })
+                    }
+                  />
                   <label className='form-check-label' htmlFor='slackswitch'></label>
                 </div>
               </div>
@@ -152,7 +165,7 @@ function ConnectedAccounts() {
           <button onClick={click} className='btn btn-primary'>
             {!loading && 'Save Changes'}
             {loading && (
-              <span className='indicator-progress' style={{ display: 'block' }}>
+              <span className='indicator-progress' style={{display: 'block'}}>
                 Please wait...{' '}
                 <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
               </span>

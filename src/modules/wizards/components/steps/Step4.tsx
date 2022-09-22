@@ -31,7 +31,8 @@ function Step4() {
           type='text'
           className='form-control form-control-solid'
           placeholder=''
-          name='nameOnCard' />
+          name='nameOnCard'
+        />
         <div className='text-danger mt-2'>
           <ErrorMessage name='nameOnCard' />
         </div>
@@ -45,7 +46,8 @@ function Step4() {
             type='text'
             className='form-control form-control-solid'
             placeholder='Enter card number'
-            name='cardNumber' />
+            name='cardNumber'
+          />
           <div className='text-danger mt-2'>
             <ErrorMessage name='cardNumber' />
           </div>
@@ -55,11 +57,13 @@ function Step4() {
             <img
               src={toAbsoluteUrl('/media/svg/card-logos/mastercard.svg')}
               alt=''
-              className='h-25px' />
+              className='h-25px'
+            />
             <img
               src={toAbsoluteUrl('/media/svg/card-logos/american-express.svg')}
               alt=''
-              className='h-25px' />
+              className='h-25px'
+            />
           </div>
         </div>
       </div>
@@ -129,7 +133,8 @@ function Step4() {
               minLength={3}
               maxLength={4}
               placeholder='CVV'
-              name='cardCvv' />
+              name='cardCvv'
+            />
             <div className='text-danger mt-2'>
               <ErrorMessage name='cardCvv' />
             </div>

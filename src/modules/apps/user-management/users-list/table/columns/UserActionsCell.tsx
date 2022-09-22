@@ -11,9 +11,9 @@ type Props = {
   id: ID
 }
 
-function UserActionsCell({ id }: Props) {
-  const { setItemIdForUpdate } = useListView()
-  const { query } = useQueryResponse()
+function UserActionsCell({id}: Props) {
+  const {setItemIdForUpdate} = useListView()
+  const {query} = useQueryResponse()
   const queryClient = useQueryClient()
 
   useEffect(() => {

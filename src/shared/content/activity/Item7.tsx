@@ -10,7 +10,8 @@ function Item7() {
         <div className='symbol-label bg-light'>
           <KTSVG
             path='/media/icons/duotune/art/art005.svg'
-            className='svg-icon-2 svg-icon-gray-500' />
+            className='svg-icon-2 svg-icon-gray-500'
+          />
         </div>
       </div>
 
@@ -37,7 +38,8 @@ function Item7() {
           <div className='notice d-flex bg-light-primary rounded border-primary border border-dashed min-w-lg-600px flex-shrink-0 p-6'>
             <KTSVG
               path='/media/icons/duotune/coding/cod004.svg'
-              className='svg-icon-2tx svg-icon-primary me-4' />
+              className='svg-icon-2tx svg-icon-primary me-4'
+            />
             <div className='d-flex flex-stack flex-grow-1 flex-wrap flex-md-nowrap'>
               <div className='mb-3 mb-md-0 fw-bold'>
                 <h4 className='text-gray-800 fw-bolder'>Database Backup Process Completed!</h4>

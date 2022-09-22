@@ -13,7 +13,7 @@ function AsideToolbar() {
           className='btn btn-icon btn-custom border-0 fw-bolder flex-shrink-0 ms-3'
           onClick={() => {
             setShow(true)
-          } }
+          }}
         >
           <KTSVG path='/media/icons/duotune/arrows/arr087.svg' className='svg-icon-2qx' />
         </button>
@@ -23,7 +23,8 @@ function AsideToolbar() {
         show={show}
         handleClose={() => {
           setShow(false)
-        } } />
+        }}
+      />
     </>
   )
 }

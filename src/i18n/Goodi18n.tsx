@@ -33,7 +33,7 @@ const useLang = () => {
   return useContext(I18nContext).selectedLang
 }
 
-function GoodI18nProvider({ children }:any) {
+function GoodI18nProvider({children}: any) {
   const lang = getConfig()
   return <I18nContext.Provider value={lang}>{children}</I18nContext.Provider>
 }

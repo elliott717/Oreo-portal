@@ -8,7 +8,7 @@ type Props = {
   className: string
 }
 
-export function TablesWidget6({ className }: Props) {
+export function TablesWidget6({className}: Props) {
   const [tabNumber, setTabNumber] = useState<number>(1)
 
   return (
@@ -21,8 +21,10 @@ export function TablesWidget6({ className }: Props) {
           <div
             onClick={() => {
               setTabNumber(1)
-            } }
-            className={`fs-4 fw-bolder pb-3 cursor-pointer ${tabNumber === 1 ? 'border-bottom border-3 border-primary' : 'text-muted'}`}
+            }}
+            className={`fs-4 fw-bolder pb-3 cursor-pointer ${
+              tabNumber === 1 ? 'border-bottom border-3 border-primary' : 'text-muted'
+            }`}
           >
             All Campaigns (47)
           </div>
@@ -31,8 +33,10 @@ export function TablesWidget6({ className }: Props) {
           <div
             onClick={() => {
               setTabNumber(2)
-            } }
-            className={`fs-4 fw-bolder pb-3 cursor-pointer ${tabNumber === 2 ? 'border-bottom border-3 border-primary' : 'text-muted'}`}
+            }}
+            className={`fs-4 fw-bolder pb-3 cursor-pointer ${
+              tabNumber === 2 ? 'border-bottom border-3 border-primary' : 'text-muted'
+            }`}
           >
             Pending (8)
           </div>
@@ -41,8 +45,10 @@ export function TablesWidget6({ className }: Props) {
           <div
             onClick={() => {
               setTabNumber(3)
-            } }
-            className={`fs-4 fw-bolder pb-3 cursor-pointer ${tabNumber === 3 ? 'border-bottom border-3 border-primary' : 'text-muted'}`}
+            }}
+            className={`fs-4 fw-bolder pb-3 cursor-pointer ${
+              tabNumber === 3 ? 'border-bottom border-3 border-primary' : 'text-muted'
+            }`}
           >
             Completed (39)
           </div>
@@ -140,7 +146,8 @@ export function TablesWidget6({ className }: Props) {
             >
               <KTSVG
                 className='svg-icon-2 svg-icon-gray-400'
-                path='/media/icons/duotune/general/gen031.svg' />
+                path='/media/icons/duotune/general/gen031.svg'
+              />
             </a>
             <Dropdown1 />
             {/* end::Filter button */}
@@ -168,7 +175,7 @@ export function TablesWidget6({ className }: Props) {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Campaign: activate to sort column ascending'
-                    style={{ width: '0px' }}
+                    style={{width: '0px'}}
                   >
                     Campaign
                   </th>
@@ -179,7 +186,7 @@ export function TablesWidget6({ className }: Props) {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Platforms: activate to sort column ascending'
-                    style={{ width: '0px' }}
+                    style={{width: '0px'}}
                   >
                     Platforms
                   </th>
@@ -190,7 +197,7 @@ export function TablesWidget6({ className }: Props) {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Status: activate to sort column ascending'
-                    style={{ width: '0px' }}
+                    style={{width: '0px'}}
                   >
                     Status
                   </th>
@@ -201,7 +208,7 @@ export function TablesWidget6({ className }: Props) {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Team: activate to sort column ascending'
-                    style={{ width: '0px' }}
+                    style={{width: '0px'}}
                   >
                     Team
                   </th>
@@ -212,7 +219,7 @@ export function TablesWidget6({ className }: Props) {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Date: activate to sort column ascending'
-                    style={{ width: '0px' }}
+                    style={{width: '0px'}}
                   >
                     Date
                   </th>
@@ -223,7 +230,7 @@ export function TablesWidget6({ className }: Props) {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Progress: activate to sort column ascending'
-                    style={{ width: '0px' }}
+                    style={{width: '0px'}}
                   >
                     Progress
                   </th>
@@ -234,7 +241,7 @@ export function TablesWidget6({ className }: Props) {
                     rowSpan={1}
                     colSpan={1}
                     aria-label='Action: activate to sort column ascending'
-                    style={{ width: '0px' }}
+                    style={{width: '0px'}}
                   >
                     Action
                   </th>
@@ -260,25 +267,29 @@ export function TablesWidget6({ className }: Props) {
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/linkedin-2.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -359,19 +370,22 @@ export function TablesWidget6({ className }: Props) {
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -433,13 +447,15 @@ export function TablesWidget6({ className }: Props) {
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -510,19 +526,22 @@ export function TablesWidget6({ className }: Props) {
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/linkedin-2.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -603,7 +622,8 @@ export function TablesWidget6({ className }: Props) {
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -660,19 +680,22 @@ export function TablesWidget6({ className }: Props) {
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -749,27 +772,32 @@ export function TablesWidget6({ className }: Props) {
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/linkedin-2.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -863,17 +891,20 @@ export function TablesWidget6({ className }: Props) {
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -952,27 +983,32 @@ export function TablesWidget6({ className }: Props) {
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/linkedin-2.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#' className='symbol symbol-20px'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -1064,13 +1100,15 @@ export function TablesWidget6({ className }: Props) {
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/facebook-4.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -1141,19 +1179,22 @@ export function TablesWidget6({ className }: Props) {
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/twitter-2.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/instagram-2-1.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                           <a href='#'>
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/linkedin-2.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                         </div>
                         {/* end::Icons */}
@@ -1234,7 +1275,8 @@ export function TablesWidget6({ className }: Props) {
                             <img
                               src={toAbsoluteUrl('/media/svg/brand-logos/youtube-3.svg')}
                               className='w-20px'
-                              alt='' />
+                              alt=''
+                            />
                           </a>
                         </div>
                         {/* end::Icons */}

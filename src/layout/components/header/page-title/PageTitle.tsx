@@ -4,8 +4,8 @@ import {useLayout} from '../../../core/LayoutProvider'
 import {usePageData} from '../../../core/PageData'
 
 function PageTitle() {
-  const { pageTitle, pageDescription, pageBreadcrumbs } = usePageData()
-  const { config } = useLayout()
+  const {pageTitle, pageDescription, pageBreadcrumbs} = usePageData()
+  const {config} = useLayout()
   return (
     <div className='page-title d-flex flex-column me-5'>
       {/* begin::Title */}

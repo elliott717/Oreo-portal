@@ -14,8 +14,8 @@ import {User} from './_models'
 import {useQueryRequest} from './QueryRequestProvider'
 
 const QueryResponseContext = createResponseContext<User>(initialQueryResponse)
-function QueryResponseProvider({ children }: any) {
-  const { state } = useQueryRequest()
+function QueryResponseProvider({children}: any) {
+  const {state} = useQueryRequest()
   const [query, setQuery] = useState<string>(stringifyRequestQuery(state))
   const updatedQuery = useMemo(() => stringifyRequestQuery(state), [state])
 
@@ -26,17 +26,19 @@ function QueryResponseProvider({ children }: any) {
   }, [updatedQuery])
 
   const {
-    isFetching, refetch, data: response,
+    isFetching,
+    refetch,
+    data: response,
   } = useQuery(
     `${QUERIES.USERS_LIST}-${query}`,
     () => {
       return getUsers(query)
     },
-    { cacheTime: 0, keepPreviousData: true, refetchOnWindowFocus: false }
+    {cacheTime: 0, keepPreviousData: true, refetchOnWindowFocus: false}
   )
 
   return (
-    <QueryResponseContext.Provider value={{ isLoading: isFetching, refetch, response, query }}>
+    <QueryResponseContext.Provider value={{isLoading: isFetching, refetch, response, query}}>
       {children}
     </QueryResponseContext.Provider>
   )

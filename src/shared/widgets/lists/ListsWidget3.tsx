@@ -9,7 +9,7 @@ type Props = {
   data: Array<Social>
 }
 
-export function ListsWidget3({ className, title, stat, data }: Props) {
+export function ListsWidget3({className, title, stat, data}: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -68,7 +68,7 @@ export function ListsWidget3({ className, title, stat, data }: Props) {
                   <div className='progress h-6px w-100 me-2 bg-light-success'>
                     <div
                       className='progress-bar bg-success'
-                      style={{ width: `${item.progress.value}%` }}
+                      style={{width: `${item.progress.value}%`}}
                     ></div>
                   </div>
                   {/* end::Progress */}

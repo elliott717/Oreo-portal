@@ -21,7 +21,18 @@ type Props = {
 
 function KTCard(props: Props) {
   const {
-    className, shadow, flush, resetSidePaddings, border, dashed, stretch, rounded, utilityP, utilityPY, utilityPX, children,
+    className,
+    shadow,
+    flush,
+    resetSidePaddings,
+    border,
+    dashed,
+    stretch,
+    rounded,
+    utilityP,
+    utilityPY,
+    utilityPX,
+    children,
   } = props
   return (
     <div

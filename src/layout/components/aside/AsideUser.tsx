@@ -39,12 +39,13 @@ function AsideUser() {
           <button
             onClick={() => {
               logout()
-            } }
+            }}
             className='btn btn-icon btn-active-color-primary me-n4'
           >
             <KTSVG
               path='/media/icons/duotune/arrows/arr076.svg'
-              className='svg-icon-2 svg-icon-gray-400' />
+              className='svg-icon-2 svg-icon-gray-400'
+            />
           </button>
         </div>
       </div>

@@ -10,7 +10,8 @@ function Item1() {
         <div className='symbol-label bg-light'>
           <KTSVG
             path='/media/icons/duotune/communication/com003.svg'
-            className='svg-icon-2 svg-icon-gray-500' />
+            className='svg-icon-2 svg-icon-gray-500'
+          />
         </div>
       </div>
 

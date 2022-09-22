@@ -8,10 +8,11 @@ const sagaMiddleware = createSagaMiddleware()
 
 const store = configureStore({
   reducer: rootReducer,
-  middleware:(getDefaultMiddleware) => getDefaultMiddleware({
-        serializableCheck: false,
-        thunk: false
-      }).concat(sagaMiddleware),
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+      thunk: false,
+    }).concat(sagaMiddleware),
   devTools: process.env.NODE_ENV !== 'production',
   enhancers: [reduxBatch],
 })

@@ -6,7 +6,7 @@ type Props = {
   className: string
 }
 
-function ListsWidget2({ className }: Props) {
+function ListsWidget2({className}: Props) {
   return (
     <div className={`card ${className}`}>
       {/* begin::Header */}

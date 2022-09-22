@@ -64,7 +64,8 @@ function ActivityDrawer() {
             View All Activities
             <KTSVG
               path='/media/icons/duotune/arrows/arr064.svg'
-              className='svg-icon-3 svg-icon-primary' />
+              className='svg-icon-3 svg-icon-primary'
+            />
           </Link>
         </div>
       </div>

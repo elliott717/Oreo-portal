@@ -5,7 +5,7 @@ function EmailPreferences() {
   const [data, setData] = useState<IEmailPreferences>(emailPreferences)
 
   const updateData = (fieldsToUpdate: Partial<IEmailPreferences>) => {
-    const updatedData = { ...data, ...fieldsToUpdate }
+    const updatedData = {...data, ...fieldsToUpdate}
     setData(updatedData)
   }
 
@@ -42,9 +42,12 @@ function EmailPreferences() {
                 type='checkbox'
                 name='email-preferences[]'
                 defaultChecked={data.successfulPayments}
-                onChange={() => updateData({
-                  successfulPayments: !data.successfulPayments,
-                })} />
+                onChange={() =>
+                  updateData({
+                    successfulPayments: !data.successfulPayments,
+                  })
+                }
+              />
 
               <span className='form-check-label d-flex flex-column align-items-start'>
                 <span className='fw-bolder fs-5 mb-0'>Successful Payments</span>
@@ -62,9 +65,12 @@ function EmailPreferences() {
                 type='checkbox'
                 name='email-preferences[]'
                 defaultChecked={data.payouts}
-                onChange={() => updateData({
-                  payouts: !data.payouts,
-                })} />
+                onChange={() =>
+                  updateData({
+                    payouts: !data.payouts,
+                  })
+                }
+              />
 
               <span className='form-check-label d-flex flex-column align-items-start'>
                 <span className='fw-bolder fs-5 mb-0'>Payouts</span>
@@ -82,9 +88,12 @@ function EmailPreferences() {
                 type='checkbox'
                 name='email-preferences[]'
                 defaultChecked={data.freeCollections}
-                onChange={() => updateData({
-                  freeCollections: !data.freeCollections,
-                })} />
+                onChange={() =>
+                  updateData({
+                    freeCollections: !data.freeCollections,
+                  })
+                }
+              />
 
               <span className='form-check-label d-flex flex-column align-items-start'>
                 <span className='fw-bolder fs-5 mb-0'>Fee Collection</span>
@@ -102,9 +111,12 @@ function EmailPreferences() {
                 type='checkbox'
                 name='email-preferences[]'
                 defaultChecked={data.customerPaymentDispute}
-                onChange={() => updateData({
-                  customerPaymentDispute: !data.customerPaymentDispute,
-                })} />
+                onChange={() =>
+                  updateData({
+                    customerPaymentDispute: !data.customerPaymentDispute,
+                  })
+                }
+              />
 
               <span className='form-check-label d-flex flex-column align-items-start'>
                 <span className='fw-bolder fs-5 mb-0'>Customer Payment Dispute</span>
@@ -123,9 +135,12 @@ function EmailPreferences() {
                 type='checkbox'
                 name='email-preferences[]'
                 defaultChecked={data.refundAlert}
-                onChange={() => updateData({
-                  refundAlert: !data.refundAlert,
-                })} />
+                onChange={() =>
+                  updateData({
+                    refundAlert: !data.refundAlert,
+                  })
+                }
+              />
 
               <span className='form-check-label d-flex flex-column align-items-start'>
                 <span className='fw-bolder fs-5 mb-0'>Refund Alerts</span>
@@ -143,9 +158,12 @@ function EmailPreferences() {
                 type='checkbox'
                 name='email-preferences[]'
                 defaultChecked={data.invoicePayments}
-                onChange={() => updateData({
-                  invoicePayments: !data.invoicePayments,
-                })} />
+                onChange={() =>
+                  updateData({
+                    invoicePayments: !data.invoicePayments,
+                  })
+                }
+              />
 
               <span className='form-check-label d-flex flex-column align-items-start'>
                 <span className='fw-bolder fs-5 mb-0'>Invoice Payments</span>
@@ -164,9 +182,12 @@ function EmailPreferences() {
                 type='checkbox'
                 name='email-preferences[]'
                 defaultChecked={data.webhookAPIEndpoints}
-                onChange={() => updateData({
-                  webhookAPIEndpoints: !data.webhookAPIEndpoints,
-                })} />
+                onChange={() =>
+                  updateData({
+                    webhookAPIEndpoints: !data.webhookAPIEndpoints,
+                  })
+                }
+              />
 
               <span className='form-check-label d-flex flex-column align-items-start'>
                 <span className='fw-bolder fs-5 mb-0'>Webhook API Endpoints</span>
@@ -182,7 +203,7 @@ function EmailPreferences() {
             <button type='button' onClick={click} className='btn btn-primary'>
               {!loading && 'Save Changes'}
               {loading && (
-                <span className='indicator-progress' style={{ display: 'block' }}>
+                <span className='indicator-progress' style={{display: 'block'}}>
                   Please wait...{' '}
                   <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
                 </span>

@@ -12,7 +12,13 @@ type Props = {
 }
 
 function Card1({
-  color = '', avatar = '', online = false, name, job, avgEarnings, totalEarnings,
+  color = '',
+  avatar = '',
+  online = false,
+  name,
+  job,
+  avgEarnings,
+  totalEarnings,
 }: Props) {
   return (
     <div className='card'>

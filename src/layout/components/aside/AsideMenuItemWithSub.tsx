@@ -13,17 +13,15 @@ type Props = {
   children?: React.ReactNode
 }
 
-function AsideMenuItemWithSub({
-  children, to, title, icon, fontIcon, hasBullet,
-}: Props) {
-  const { pathname } = useLocation()
+function AsideMenuItemWithSub({children, to, title, icon, fontIcon, hasBullet}: Props) {
+  const {pathname} = useLocation()
   const isActive = checkIsActive(pathname, to)
-  const { config } = useLayout()
-  const { aside } = config
+  const {config} = useLayout()
+  const {aside} = config
 
   return (
     <div
-      className={clsx('menu-item', { 'here show': isActive }, 'menu-accordion')}
+      className={clsx('menu-item', {'here show': isActive}, 'menu-accordion')}
       data-kt-menu-trigger='click'
     >
       <span className='menu-link'>
@@ -41,7 +39,7 @@ function AsideMenuItemWithSub({
         <span className='menu-title'>{title}</span>
         <span className='menu-arrow'></span>
       </span>
-      <div className={clsx('menu-sub menu-sub-accordion', { 'menu-active-bg': isActive })}>
+      <div className={clsx('menu-sub menu-sub-accordion', {'menu-active-bg': isActive})}>
         {children}
       </div>
     </div>

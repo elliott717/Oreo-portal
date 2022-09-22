@@ -23,23 +23,31 @@ function AccountPage() {
   return (
     <Routes>
       <Route
-        element={<>
-          <AccountHeader />
-          <Outlet />
-        </>}
+        element={
+          <>
+            <AccountHeader />
+            <Outlet />
+          </>
+        }
       >
         <Route
           path='overview'
-          element={<>
-            <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
-            <Overview />
-          </>} />
+          element={
+            <>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Overview</PageTitle>
+              <Overview />
+            </>
+          }
+        />
         <Route
           path='settings'
-          element={<>
-            <PageTitle breadcrumbs={accountBreadCrumbs}>Settings</PageTitle>
-            <Settings />
-          </>} />
+          element={
+            <>
+              <PageTitle breadcrumbs={accountBreadCrumbs}>Settings</PageTitle>
+              <Settings />
+            </>
+          }
+        />
         <Route index element={<Navigate to='/crafted/account/overview' />} />
       </Route>
     </Routes>

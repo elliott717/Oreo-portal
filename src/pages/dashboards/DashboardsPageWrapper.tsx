@@ -23,10 +23,13 @@ function DashboardsPageWrapper() {
       <Route element={<Outlet />}>
         <Route
           path='default'
-          element={<>
-            <PageTitle breadcrumbs={dashboardBreadCrumbs}>Default</PageTitle>
-            <Default />
-          </>} />
+          element={
+            <>
+              <PageTitle breadcrumbs={dashboardBreadCrumbs}>Default</PageTitle>
+              <Default />
+            </>
+          }
+        />
         <Route index element={<Navigate to='/dashboards/default' />} />
       </Route>
     </Routes>

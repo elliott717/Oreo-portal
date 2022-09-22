@@ -7,7 +7,7 @@ type Props = {
   className: string
 }
 
-export const TablesWidget2 = ({className}:Props) => {
+export const TablesWidget2 = ({className}: Props) => {
   return (
     <div className={`card ${className}`}>
       <Tab.Container defaultActiveKey='kt_stats_widget_2_tab_1'>

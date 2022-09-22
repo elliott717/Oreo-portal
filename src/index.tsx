@@ -1,5 +1,5 @@
 // import ReactDOM from 'react-dom'
-import ReactDOM from "react-dom/client";
+import ReactDOM from 'react-dom/client'
 // Redux
 // https://github.com/rt2zz/redux-persist
 import {PersistGate} from 'redux-persist/integration/react'
@@ -32,15 +32,15 @@ import {AppRoutes} from 'routing/AppRoutes'
  */
 _redux.setupAxios(axios, store)
 
-const root = ReactDOM.createRoot(document.getElementById('root')!);
+const root = ReactDOM.createRoot(document.getElementById('root')!)
 
 root.render(
-    <GoodI18nProvider>
-      <Provider store={store}>
-        {/* Asynchronously persist redux stores and show `SplashScreen` while it's loading. */}
-        <PersistGate persistor={persistor} loading={<div>Loading...</div>}>
-          <AppRoutes />
-        </PersistGate>
-      </Provider>
-    </GoodI18nProvider>
+  <GoodI18nProvider>
+    <Provider store={store}>
+      {/* Asynchronously persist redux stores and show `SplashScreen` while it's loading. */}
+      <PersistGate persistor={persistor} loading={<div>Loading...</div>}>
+        <AppRoutes />
+      </PersistGate>
+    </Provider>
+  </GoodI18nProvider>
 )

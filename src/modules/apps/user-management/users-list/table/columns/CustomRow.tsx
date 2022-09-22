@@ -6,14 +6,14 @@ type Props = {
   row: Row<User>
 }
 
-function CustomRow({ row }: Props) {
+function CustomRow({row}: Props) {
   return (
     <tr {...row.getRowProps()}>
       {row.cells.map((cell) => {
         return (
           <td
             {...cell.getCellProps()}
-            className={clsx({ 'text-end min-w-100px': cell.column.id === 'actions' })}
+            className={clsx({'text-end min-w-100px': cell.column.id === 'actions'})}
           >
             {cell.render('Cell')}
           </td>

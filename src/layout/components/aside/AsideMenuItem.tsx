@@ -14,17 +14,15 @@ type Props = {
   children?: React.ReactNode
 }
 
-function AsideMenuItem({
-  children, to, title, icon, fontIcon, hasBullet = false,
-}: Props) {
-  const { pathname } = useLocation()
+function AsideMenuItem({children, to, title, icon, fontIcon, hasBullet = false}: Props) {
+  const {pathname} = useLocation()
   const isActive = checkIsActive(pathname, to)
-  const { config } = useLayout()
-  const { aside } = config
+  const {config} = useLayout()
+  const {aside} = config
 
   return (
     <div className='menu-item'>
-      <Link className={clsx('menu-link without-sub', { active: isActive })} to={to}>
+      <Link className={clsx('menu-link without-sub', {active: isActive})} to={to}>
         {hasBullet && (
           <span className='menu-bullet'>
             <span className='bullet bullet-dot'></span>

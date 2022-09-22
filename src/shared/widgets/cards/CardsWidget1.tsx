@@ -11,7 +11,7 @@ type Props = {
   chartColor: string
 }
 
-export const CardsWidget1 = ({className, color, chartColor, chartHeight}:Props) => {
+export const CardsWidget1 = ({className, color, chartColor, chartHeight}: Props) => {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {

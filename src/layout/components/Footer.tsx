@@ -3,7 +3,7 @@
 import {useLayout} from '../core'
 
 function Footer() {
-  const { classes } = useLayout()
+  const {classes} = useLayout()
   return (
     <div className='footer py-4 d-flex flex-lg-column' id='kt_footer'>
       <div
@@ -11,11 +11,7 @@ function Footer() {
       >
         <div className='text-dark order-2 order-md-1'>
           <span className='text-muted fw-bold me-1'>{new Date().getFullYear()} &copy;</span>
-          <a
-            href='#'
-            target='_blank'
-            className='text-gray-800 text-hover-primary'
-          >
+          <a href='#' target='_blank' className='text-gray-800 text-hover-primary'>
             Oreo
           </a>
         </div>

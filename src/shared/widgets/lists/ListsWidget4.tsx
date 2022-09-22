@@ -27,7 +27,7 @@ const slides = [
   ],
 ]
 
-export function ListsWidget4({ className }: Props) {
+export function ListsWidget4({className}: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -101,7 +101,7 @@ export function ListsWidget4({ className }: Props) {
                               <div
                                 className='progress-bar bg-warning'
                                 role='progressbar'
-                                style={{ width: `${item.value}%` }}
+                                style={{width: `${item.value}%`}}
                               ></div>
                             </div>
                             {/* end::Progress */}

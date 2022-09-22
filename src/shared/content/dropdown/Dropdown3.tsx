@@ -73,7 +73,8 @@ function Dropdown3() {
                   type='checkbox'
                   value='1'
                   defaultChecked
-                  name='notifications' />
+                  name='notifications'
+                />
 
                 <span className='form-check-label text-muted fs-6'>Recuring</span>
               </label>

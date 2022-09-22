@@ -1,17 +1,10 @@
-import {
-  createContext,
-  Dispatch,
-  SetStateAction,
-  useContext,
-  useEffect,
-  useState,
-} from 'react'
+import {createContext, Dispatch, SetStateAction, useContext, useEffect, useState} from 'react'
 
 const GoodSplashScreenContext = createContext<Dispatch<SetStateAction<number>> | undefined>(
   undefined
 )
 
-function GoodSplashScreenProvider({ children }: any) {
+function GoodSplashScreenProvider({children}: any) {
   const [count, setCount] = useState(0)
   let visible = count > 0
 
@@ -47,7 +40,7 @@ function GoodSplashScreenProvider({ children }: any) {
 type Props = {
   visible?: boolean
 }
-function LayoutSplashScreen({ visible = true }: Props) {
+function LayoutSplashScreen({visible = true}: Props) {
   // Everything are ready - remove splashscreen
   const setCount = useContext(GoodSplashScreenContext)
 

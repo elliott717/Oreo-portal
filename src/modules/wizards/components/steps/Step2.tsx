@@ -34,7 +34,8 @@ function Step2() {
               className='btn-check'
               name='accountTeamSize'
               value='1-1'
-              id='kt_account_team_size_select_1' />
+              id='kt_account_team_size_select_1'
+            />
             <label
               className='btn btn-outline btn-outline-dashed btn-outline-default w-100 p-4'
               htmlFor='kt_account_team_size_select_1'
@@ -49,7 +50,8 @@ function Step2() {
               className='btn-check'
               name='accountTeamSize'
               value='2-10'
-              id='kt_account_team_size_select_2' />
+              id='kt_account_team_size_select_2'
+            />
             <label
               className='btn btn-outline btn-outline-dashed btn-outline-default w-100 p-4'
               htmlFor='kt_account_team_size_select_2'
@@ -64,7 +66,8 @@ function Step2() {
               className='btn-check'
               name='accountTeamSize'
               value='10-50'
-              id='kt_account_team_size_select_3' />
+              id='kt_account_team_size_select_3'
+            />
             <label
               className='btn btn-outline btn-outline-dashed btn-outline-default w-100 p-4'
               htmlFor='kt_account_team_size_select_3'
@@ -79,7 +82,8 @@ function Step2() {
               className='btn-check'
               name='accountTeamSize'
               value='50+'
-              id='kt_account_team_size_select_4' />
+              id='kt_account_team_size_select_4'
+            />
             <label
               className='btn btn-outline btn-outline-dashed btn-outline-default w-100 p-4'
               htmlFor='kt_account_team_size_select_4'
@@ -100,7 +104,8 @@ function Step2() {
         <Field
           type='text'
           className='form-control form-control-lg form-control-solid'
-          name='accountName' />
+          name='accountName'
+        />
         <div className='text-danger mt-2'>
           <ErrorMessage name='accountName' />
         </div>
@@ -123,7 +128,8 @@ function Step2() {
                 <span className='symbol-label'>
                   <KTSVG
                     path='/media/icons/duotune/finance/fin001.svg'
-                    className='svg-icon-1 svg-icon-gray-600' />
+                    className='svg-icon-1 svg-icon-gray-600'
+                  />
                 </span>
               </span>
 
@@ -148,7 +154,8 @@ function Step2() {
                 <span className='symbol-label'>
                   <KTSVG
                     path='/media/icons/duotune/graphs/gra006.svg'
-                    className='svg-icon-1 svg-icon-gray-600' />
+                    className='svg-icon-1 svg-icon-gray-600'
+                  />
                 </span>
               </span>
 
@@ -171,7 +178,8 @@ function Step2() {
                 <span className='symbol-label'>
                   <KTSVG
                     path='/media/icons/duotune/graphs/gra008.svg'
-                    className='svg-icon-1 svg-icon-gray-600' />
+                    className='svg-icon-1 svg-icon-gray-600'
+                  />
                 </span>
               </span>
 

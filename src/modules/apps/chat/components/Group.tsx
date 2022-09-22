@@ -11,13 +11,15 @@ function Group() {
             <form className='w-100 position-relative' autoComplete='off'>
               <KTSVG
                 path='/media/icons/duotune/general/gen021.svg'
-                className='svg-icon-2 svg-icon-lg-1 svg-icon-gray-500 position-absolute top-50 ms-5 translate-middle-y' />
+                className='svg-icon-2 svg-icon-lg-1 svg-icon-gray-500 position-absolute top-50 ms-5 translate-middle-y'
+              />
 
               <input
                 type='text'
                 className='form-control form-control-solid px-15'
                 name='search'
-                placeholder='Search by username or email...' />
+                placeholder='Search by username or email...'
+              />
             </form>
           </div>
 
@@ -285,10 +287,7 @@ function Group() {
                 <div className='symbol symbol-35px symbol-circle'>
                   <img alt='Pic' src={toAbsoluteUrl('/media/avatars/300-23.jpg')} />
                 </div>
-                <a
-                  href='#'
-                  className='symbol symbol-35px symbol-circle'
-                >
+                <a href='#' className='symbol symbol-35px symbol-circle'>
                   <span
                     className='symbol-label fs-8 fw-bolder'
                     data-bs-toggle='tooltip'

@@ -8,7 +8,7 @@ type Props = {
   handleClose: () => void
 }
 
-function SearchModal({ show, handleClose }: Props) {
+function SearchModal({show, handleClose}: Props) {
   return (
     <Modal
       className='bg-white'
@@ -34,7 +34,8 @@ function SearchModal({ show, handleClose }: Props) {
                 type='text'
                 className='form-control bg-transparent border-0 fs-4x text-center fw-normal'
                 name='query'
-                placeholder='Search...' />
+                placeholder='Search...'
+              />
             </form>
             {/* end::Search */}
 
@@ -55,7 +56,8 @@ function SearchModal({ show, handleClose }: Props) {
                               backgroundImage: `url('${toAbsoluteUrl(
                                 '/media/stock/600x400/img-17.jpg'
                               )}')`,
-                            }} />
+                            }}
+                          />
                           <div className='overlay-layer bg-white bg-opacity-50'>
                             <a href='#' className='btn btn-sm fw-bold btn-primary'>
                               Explore
@@ -71,7 +73,8 @@ function SearchModal({ show, handleClose }: Props) {
                               backgroundImage: `url('${toAbsoluteUrl(
                                 '/media/stock/600x400/img-1.jpg'
                               )}')`,
-                            }} />
+                            }}
+                          />
                           <div className='overlay-layer bg-white bg-opacity-50'>
                             <a href='#' className='btn btn-sm fw-bold btn-primary'>
                               Explore
@@ -89,7 +92,8 @@ function SearchModal({ show, handleClose }: Props) {
                               backgroundImage: `url('${toAbsoluteUrl(
                                 '/media/stock/600x400/img-23.jpg'
                               )}')`,
-                            }} />
+                            }}
+                          />
                           <div className='overlay-layer bg-white bg-opacity-50'>
                             <a href='#' className='btn btn-sm fw-bold btn-primary'>
                               Explore

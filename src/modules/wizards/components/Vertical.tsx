@@ -169,7 +169,8 @@ function Vertical() {
                   >
                     <KTSVG
                       path='/media/icons/duotune/arrows/arr063.svg'
-                      className='svg-icon-4 me-1' />
+                      className='svg-icon-4 me-1'
+                    />
                     Back
                   </button>
                 </div>
@@ -183,7 +184,8 @@ function Vertical() {
                         stepper.current?.totatStepsNumber! - 1 && 'Submit'}
                       <KTSVG
                         path='/media/icons/duotune/arrows/arr064.svg'
-                        className='svg-icon-3 ms-2 me-0' />
+                        className='svg-icon-3 ms-2 me-0'
+                      />
                     </span>
                   </button>
                 </div>

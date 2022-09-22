@@ -9,7 +9,7 @@ type Props = {
   chartHeight: number
 }
 
-export function ChartsWidget4({ className, chartHeight }: Props) {
+export function ChartsWidget4({className, chartHeight}: Props) {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -67,7 +67,8 @@ export function ChartsWidget4({ className, chartHeight }: Props) {
             <span className='badge badge-success fs-6 p-2 d-flex align-items-center align-self-center'>
               <KTSVG
                 path='/media/icons/duotune/arrows/arr067.svg'
-                className='svg-icon-7 svg-icon-white' />
+                className='svg-icon-7 svg-icon-white'
+              />
               2.2%
             </span>
           </div>
@@ -78,7 +79,7 @@ export function ChartsWidget4({ className, chartHeight }: Props) {
         </div>
         {/* end::Statistics */}
         {/* begin::Chart */}
-        <div ref={chartRef} className='min-h-auto ps-4 pe-6' style={{ height: '300px' }}></div>
+        <div ref={chartRef} className='min-h-auto ps-4 pe-6' style={{height: '300px'}}></div>
         {/* end::Chart */}
       </div>
       {/* end::Card body */}

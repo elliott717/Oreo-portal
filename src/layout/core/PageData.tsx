@@ -23,7 +23,7 @@ const PageDataContext = createContext<PageDataContextModel>({
   setPageDescription: (_description: string) => {},
 })
 
-function PageDataProvider({ children }: any) {
+function PageDataProvider({children}: any) {
   const [pageTitle, setPageTitle] = useState<string>('')
   const [pageDescription, setPageDescription] = useState<string>('')
   const [pageBreadcrumbs, setPageBreadcrumbs] = useState<Array<PageLink>>([])
@@ -48,8 +48,8 @@ type Props = {
   children?: React.ReactNode
 }
 
-function PageTitle({ children, description, breadcrumbs }: Props) {
-  const { setPageTitle, setPageDescription, setPageBreadcrumbs } = usePageData()
+function PageTitle({children, description, breadcrumbs}: Props) {
+  const {setPageTitle, setPageDescription, setPageBreadcrumbs} = usePageData()
   useEffect(() => {
     if (children) {
       setPageTitle(children.toString())
@@ -80,8 +80,8 @@ function PageTitle({ children, description, breadcrumbs }: Props) {
   return <></>
 }
 
-function PageDescription({ children }: any) {
-  const { setPageDescription } = usePageData()
+function PageDescription({children}: any) {
+  const {setPageDescription} = usePageData()
   useEffect(() => {
     if (children) {
       setPageDescription(children.toString())

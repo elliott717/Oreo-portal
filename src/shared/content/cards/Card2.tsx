@@ -18,7 +18,16 @@ type Props = {
 }
 
 function Card2({
-  icon, badgeColor, status, statusColor, title, description, date, budget, progress, users = undefined,
+  icon,
+  badgeColor,
+  status,
+  statusColor,
+  title,
+  description,
+  date,
+  budget,
+  progress,
+  users = undefined,
 }: Props) {
   return (
     <Link
@@ -64,7 +73,7 @@ function Card2({
           <div
             className={`bg-${statusColor} rounded h-4px`}
             role='progressbar'
-            style={{ width: `${progress}%` }}
+            style={{width: `${progress}%`}}
           ></div>
         </div>
 

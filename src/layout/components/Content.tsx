@@ -4,8 +4,8 @@ import {useLocation} from 'react-router'
 import {useLayout} from '../core'
 import {DrawerComponent} from 'assets/ts/components'
 
-function Content({ children }: any) {
-  const { classes } = useLayout()
+function Content({children}: any) {
+  const {classes} = useLayout()
   const location = useLocation()
   useEffect(() => {
     DrawerComponent.hideAll()

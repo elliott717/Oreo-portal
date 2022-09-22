@@ -5,7 +5,7 @@ import {HeaderNotificationsMenu, QuickLinks, Search} from 'shared'
 import {useLayout} from '../../core'
 
 function HeaderTopbar() {
-  const { classes } = useLayout()
+  const {classes} = useLayout()
   return (
     <div
       className={`${classes.headerContainer} py-6 py-lg-0 d-flex flex-column flex-sm-row align-items-lg-stretch justify-content-sm-between`}

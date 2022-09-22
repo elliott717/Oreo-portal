@@ -15,7 +15,7 @@ function HeaderNotificationsMenu() {
     >
       <div
         className='d-flex flex-column bgi-no-repeat rounded-top'
-        style={{ backgroundImage: `url('${toAbsoluteUrl('/media/misc/header-dropdown.png')}')` }}
+        style={{backgroundImage: `url('${toAbsoluteUrl('/media/misc/header-dropdown.png')}')`}}
       >
         <h3 className='text-white fw-bold px-9 mt-10 mb-6'>
           Notifications <span className='fs-8 opacity-75 ps-3'>24 reports</span>
@@ -26,8 +26,10 @@ function HeaderNotificationsMenu() {
             <a
               onClick={() => {
                 setCurrentTab('kt_topbar_notifications_1')
-              } }
-              className={`nav-link text-white opacity-75 opacity-state-100 pb-4 cursor-pointer ${currentTab === 'kt_topbar_notifications_1' ? 'active' : ''}`}
+              }}
+              className={`nav-link text-white opacity-75 opacity-state-100 pb-4 cursor-pointer ${
+                currentTab === 'kt_topbar_notifications_1' ? 'active' : ''
+              }`}
             >
               Alerts
             </a>
@@ -37,8 +39,10 @@ function HeaderNotificationsMenu() {
             <a
               onClick={() => {
                 setCurrentTab('kt_topbar_notifications_2')
-              } }
-              className={`nav-link text-white opacity-75 opacity-state-100 pb-4 cursor-pointer ${currentTab === 'kt_topbar_notifications_2' ? 'active' : ''}`}
+              }}
+              className={`nav-link text-white opacity-75 opacity-state-100 pb-4 cursor-pointer ${
+                currentTab === 'kt_topbar_notifications_2' ? 'active' : ''
+              }`}
             >
               Updates
             </a>
@@ -48,8 +52,10 @@ function HeaderNotificationsMenu() {
             <a
               onClick={() => {
                 setCurrentTab('kt_topbar_notifications_3')
-              } }
-              className={`nav-link text-white opacity-75 opacity-state-100 pb-4 cursor-pointer ${currentTab === 'kt_topbar_notifications_3' ? 'active' : ''}`}
+              }}
+              className={`nav-link text-white opacity-75 opacity-state-100 pb-4 cursor-pointer ${
+                currentTab === 'kt_topbar_notifications_3' ? 'active' : ''
+              }`}
             >
               Logs
             </a>
@@ -59,7 +65,9 @@ function HeaderNotificationsMenu() {
 
       <div className='tab-content'>
         <div
-          className={`tab-pane fade ${currentTab === 'kt_topbar_notifications_1' ? 'active show' : ''}`}
+          className={`tab-pane fade ${
+            currentTab === 'kt_topbar_notifications_1' ? 'active show' : ''
+          }`}
           id='kt_topbar_notifications_1'
           role='tabpanel'
         >
@@ -72,7 +80,8 @@ function HeaderNotificationsMenu() {
                       {' '}
                       <KTSVG
                         path={`/media/${alert.icon}`}
-                        className={`svg-icon-2 svg-icon-${alert.state}`} />
+                        className={`svg-icon-2 svg-icon-${alert.state}`}
+                      />
                     </span>
                   </div>
 
@@ -101,7 +110,9 @@ function HeaderNotificationsMenu() {
         </div>
 
         <div
-          className={`tab-pane fade ${currentTab === 'kt_topbar_notifications_2' ? 'active show' : ''}`}
+          className={`tab-pane fade ${
+            currentTab === 'kt_topbar_notifications_2' ? 'active show' : ''
+          }`}
           id='kt_topbar_notifications_2'
           role='tabpanel'
         >
@@ -128,13 +139,16 @@ function HeaderNotificationsMenu() {
               <img
                 className='mw-100 mh-200px'
                 alt='good'
-                src={toAbsoluteUrl('/media/illustrations/sketchy-1/1.png')} />
+                src={toAbsoluteUrl('/media/illustrations/sketchy-1/1.png')}
+              />
             </div>
           </div>
         </div>
 
         <div
-          className={`tab-pane fade ${currentTab === 'kt_topbar_notifications_3' ? 'active show' : ''}`}
+          className={`tab-pane fade ${
+            currentTab === 'kt_topbar_notifications_3' ? 'active show' : ''
+          }`}
           id='kt_topbar_notifications_3'
           role='tabpanel'
         >

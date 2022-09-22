@@ -4,7 +4,7 @@ type Props = {
   className: string
 }
 
-export function ListsWidget13({ className }: Props) {
+export function ListsWidget13({className}: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -22,11 +22,12 @@ export function ListsWidget13({ className }: Props) {
             {/* begin::Badge */}
             <span
               className='badge badge-success fs-6 lh-1 py-1 px-2 d-flex flex-center'
-              style={{ height: '22px' }}
+              style={{height: '22px'}}
             >
               <KTSVG
                 path='/media/icons/duotune/arrows/arr067.svg'
-                className='svg-icon-7 svg-icon-white ms-n1' />
+                className='svg-icon-7 svg-icon-white ms-n1'
+              />
               3.5%
             </span>
             {/* end::Badge */}
@@ -138,7 +139,8 @@ export function ListsWidget13({ className }: Props) {
                         className='form-check-input w-30px h-20px'
                         type='checkbox'
                         value='1'
-                        name='notifications' />
+                        name='notifications'
+                      />
                       {/* end::Input */}
                       {/* end::Label */}
                       <span className='form-check-label text-muted fs-6'>Recuring</span>
@@ -179,8 +181,9 @@ export function ListsWidget13({ className }: Props) {
             <img
               src={toAbsoluteUrl('/media/flags/united-states.svg')}
               className='me-3'
-              style={{ width: '20px', borderRadius: '4px' }}
-              alt='' />
+              style={{width: '20px', borderRadius: '4px'}}
+              alt=''
+            />
             {/* end::Flag */}
             {/* eslint-disable-next-line */}
             <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
@@ -197,7 +200,8 @@ export function ListsWidget13({ className }: Props) {
             <span className='m-0'>
               <KTSVG
                 path='/media/icons/duotune/arrows/arr067.svg'
-                className='svg-icon-7 svg-icon-success' />
+                className='svg-icon-7 svg-icon-success'
+              />
               % 5.7
             </span>
             {/* end::Statistics */}
@@ -213,8 +217,9 @@ export function ListsWidget13({ className }: Props) {
             <img
               src={toAbsoluteUrl('/media/flags/brazil.svg')}
               className='me-3'
-              style={{ width: '20px', borderRadius: '4px' }}
-              alt='' />
+              style={{width: '20px', borderRadius: '4px'}}
+              alt=''
+            />
             {/* end::Flag */}
             {/* eslint-disable-next-line */}
             <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
@@ -231,7 +236,8 @@ export function ListsWidget13({ className }: Props) {
             <span className='m-0'>
               <KTSVG
                 path='/media/icons/duotune/arrows/arr068.svg'
-                className='svg-icon-7 svg-icon-danger' />
+                className='svg-icon-7 svg-icon-danger'
+              />
               % 2.1
             </span>
             {/* end::Statistics */}
@@ -247,8 +253,9 @@ export function ListsWidget13({ className }: Props) {
             <img
               src={toAbsoluteUrl('/media/flags/turkey.svg')}
               className='me-3'
-              style={{ width: '20px', borderRadius: '4px' }}
-              alt='' />
+              style={{width: '20px', borderRadius: '4px'}}
+              alt=''
+            />
             {/* end::Flag */}
             {/* eslint-disable-next-line */}
             <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
@@ -265,7 +272,8 @@ export function ListsWidget13({ className }: Props) {
             <span className='m-0'>
               <KTSVG
                 path='/media/icons/duotune/arrows/arr067.svg'
-                className='svg-icon-7 svg-icon-success' />
+                className='svg-icon-7 svg-icon-success'
+              />
               % 0.3
             </span>
             {/* end::Statistics */}
@@ -281,8 +289,9 @@ export function ListsWidget13({ className }: Props) {
             <img
               src={toAbsoluteUrl('/media/flags/france.svg')}
               className='me-3'
-              style={{ width: '20px', borderRadius: '4px' }}
-              alt='' />
+              style={{width: '20px', borderRadius: '4px'}}
+              alt=''
+            />
             {/* end::Flag */}
             {/* eslint-disable-next-line */}
             <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
@@ -299,7 +308,8 @@ export function ListsWidget13({ className }: Props) {
             <span className='m-0'>
               <KTSVG
                 path='/media/icons/duotune/arrows/arr067.svg'
-                className='svg-icon-7 svg-icon-success' />
+                className='svg-icon-7 svg-icon-success'
+              />
               % 1.9
             </span>
             {/* end::Statistics */}
@@ -315,8 +325,9 @@ export function ListsWidget13({ className }: Props) {
             <img
               src={toAbsoluteUrl('/media/flags/india.svg')}
               className='me-3'
-              style={{ width: '20px', borderRadius: '4px' }}
-              alt='' />
+              style={{width: '20px', borderRadius: '4px'}}
+              alt=''
+            />
             {/* end::Flag */}
             {/* eslint-disable-next-line */}
             <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
@@ -333,7 +344,8 @@ export function ListsWidget13({ className }: Props) {
             <span className='m-0'>
               <KTSVG
                 path='/media/icons/duotune/arrows/arr067.svg'
-                className='svg-icon-7 svg-icon-danger' />
+                className='svg-icon-7 svg-icon-danger'
+              />
               % 2.3
             </span>
             {/* end::Statistics */}
@@ -349,8 +361,9 @@ export function ListsWidget13({ className }: Props) {
             <img
               src={toAbsoluteUrl('/media/flags/sweden.svg')}
               className='me-3'
-              style={{ width: '20px', borderRadius: '4px' }}
-              alt='' />
+              style={{width: '20px', borderRadius: '4px'}}
+              alt=''
+            />
             {/* end::Flag */}
             {/* eslint-disable-next-line */}
             <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
@@ -367,7 +380,8 @@ export function ListsWidget13({ className }: Props) {
             <span className='m-0'>
               <KTSVG
                 path='/media/icons/duotune/arrows/arr067.svg'
-                className='svg-icon-7 svg-icon-success' />
+                className='svg-icon-7 svg-icon-success'
+              />
               % 4.8
             </span>
             {/* end::Statistics */}
@@ -383,8 +397,9 @@ export function ListsWidget13({ className }: Props) {
             <img
               src={toAbsoluteUrl('/media/flags/cuba.svg')}
               className='me-3'
-              style={{ width: '20px', borderRadius: '4px' }}
-              alt='' />
+              style={{width: '20px', borderRadius: '4px'}}
+              alt=''
+            />
             {/* end::Flag */}
             {/* eslint-disable-next-line */}
             <a href='#' className='text-dark fw-bolder text-hover-primary fs-6'>
@@ -401,7 +416,8 @@ export function ListsWidget13({ className }: Props) {
             <span className='m-0'>
               <KTSVG
                 path='/media/icons/duotune/arrows/arr068.svg'
-                className='svg-icon-7 svg-icon-danger' />
+                className='svg-icon-7 svg-icon-danger'
+              />
               % 7.5
             </span>
             {/* end::Statistics */}

@@ -7,7 +7,7 @@ type Props = {
   svgClassName?: string
 }
 
-function KTSVG({ className = '', path, svgClassName = 'mh-50px' }: Props) {
+function KTSVG({className = '', path, svgClassName = 'mh-50px'}: Props) {
   return (
     <span className={`svg-icon ${className}`}>
       <SVG src={toAbsoluteUrl(path)} className={svgClassName} />

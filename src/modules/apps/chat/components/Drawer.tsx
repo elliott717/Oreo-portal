@@ -33,7 +33,8 @@ function Drawer() {
             name='Emma Smith'
             job='Art Director'
             avgEarnings='$14,560'
-            totalEarnings='$236,400' />
+            totalEarnings='$236,400'
+          />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -42,7 +43,8 @@ function Drawer() {
             job='Marketing Analytic'
             avgEarnings='$14,560'
             totalEarnings='$236,400'
-            online={true} />
+            online={true}
+          />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -50,7 +52,8 @@ function Drawer() {
             name='Max Smith'
             job='Software Enginer'
             avgEarnings='$14,560'
-            totalEarnings='$236,400' />
+            totalEarnings='$236,400'
+          />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -58,7 +61,8 @@ function Drawer() {
             name='Sean Bean'
             job='Web Developer'
             avgEarnings='$14,560'
-            totalEarnings='$236,400' />
+            totalEarnings='$236,400'
+          />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -66,7 +70,8 @@ function Drawer() {
             name='Brian Cox'
             job='UI/UX Designer'
             avgEarnings='$14,560'
-            totalEarnings='$236,400' />
+            totalEarnings='$236,400'
+          />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -75,7 +80,8 @@ function Drawer() {
             job='Head Of Marketing'
             avgEarnings='$14,560'
             totalEarnings='$236,400'
-            online={true} />
+            online={true}
+          />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -83,7 +89,8 @@ function Drawer() {
             name='Francis Mitcham'
             job='Software Arcitect'
             avgEarnings='$14,560'
-            totalEarnings='$236,400' />
+            totalEarnings='$236,400'
+          />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -92,7 +99,8 @@ function Drawer() {
             job='System Admin'
             avgEarnings='$14,560'
             totalEarnings='$236,400'
-            online={true} />
+            online={true}
+          />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -101,7 +109,8 @@ function Drawer() {
             job='Account Manager'
             avgEarnings='$14,560'
             totalEarnings='$236,400'
-            online={true} />
+            online={true}
+          />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -109,7 +118,8 @@ function Drawer() {
             name='Dan Wilson'
             job='Web Desinger'
             avgEarnings='$14,560'
-            totalEarnings='$236,400' />
+            totalEarnings='$236,400'
+          />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -118,7 +128,8 @@ function Drawer() {
             job='Corporate Finance'
             avgEarnings='$14,560'
             totalEarnings='$236,400'
-            online={true} />
+            online={true}
+          />
         </div>
         <div className='col-md-6 col-xxl-4'>
           <Card1
@@ -126,7 +137,8 @@ function Drawer() {
             name='Ana Crown'
             job='Customer Relationship'
             avgEarnings='$14,560'
-            totalEarnings='$236,400' />
+            totalEarnings='$236,400'
+          />
         </div>
       </div>
 

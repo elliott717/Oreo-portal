@@ -116,7 +116,8 @@ function SignInMethod() {
                         className='form-control form-control-lg form-control-solid'
                         id='emailaddress'
                         placeholder='Email Address'
-                        {...formik1.getFieldProps('newEmail')} />
+                        {...formik1.getFieldProps('newEmail')}
+                      />
                       {formik1.touched.newEmail && formik1.errors.newEmail && (
                         <div className='fv-plugins-message-container'>
                           <div className='fv-help-block'>{formik1.errors.newEmail}</div>
@@ -136,7 +137,8 @@ function SignInMethod() {
                         type='password'
                         className='form-control form-control-lg form-control-solid'
                         id='confirmemailpassword'
-                        {...formik1.getFieldProps('confirmPassword')} />
+                        {...formik1.getFieldProps('confirmPassword')}
+                      />
                       {formik1.touched.confirmPassword && formik1.errors.confirmPassword && (
                         <div className='fv-plugins-message-container'>
                           <div className='fv-help-block'>{formik1.errors.confirmPassword}</div>
@@ -153,7 +155,7 @@ function SignInMethod() {
                   >
                     {!loading1 && 'Update Email'}
                     {loading1 && (
-                      <span className='indicator-progress' style={{ display: 'block' }}>
+                      <span className='indicator-progress' style={{display: 'block'}}>
                         Please wait...{' '}
                         <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
                       </span>
@@ -164,7 +166,7 @@ function SignInMethod() {
                     type='button'
                     onClick={() => {
                       setShowEmailForm(false)
-                    } }
+                    }}
                     className='btn btn-color-gray-400 btn-active-light-primary px-6'
                   >
                     Cancel
@@ -177,7 +179,7 @@ function SignInMethod() {
               <button
                 onClick={() => {
                   setShowEmailForm(true)
-                } }
+                }}
                 className='btn btn-light btn-active-light-primary'
               >
                 Change Email
@@ -213,7 +215,8 @@ function SignInMethod() {
                         type='password'
                         className='form-control form-control-lg form-control-solid '
                         id='currentpassword'
-                        {...formik2.getFieldProps('currentPassword')} />
+                        {...formik2.getFieldProps('currentPassword')}
+                      />
                       {formik2.touched.currentPassword && formik2.errors.currentPassword && (
                         <div className='fv-plugins-message-container'>
                           <div className='fv-help-block'>{formik2.errors.currentPassword}</div>
@@ -231,7 +234,8 @@ function SignInMethod() {
                         type='password'
                         className='form-control form-control-lg form-control-solid '
                         id='newpassword'
-                        {...formik2.getFieldProps('newPassword')} />
+                        {...formik2.getFieldProps('newPassword')}
+                      />
                       {formik2.touched.newPassword && formik2.errors.newPassword && (
                         <div className='fv-plugins-message-container'>
                           <div className='fv-help-block'>{formik2.errors.newPassword}</div>
@@ -249,7 +253,8 @@ function SignInMethod() {
                         type='password'
                         className='form-control form-control-lg form-control-solid '
                         id='confirmpassword'
-                        {...formik2.getFieldProps('passwordConfirmation')} />
+                        {...formik2.getFieldProps('passwordConfirmation')}
+                      />
                       {formik2.touched.passwordConfirmation && formik2.errors.passwordConfirmation && (
                         <div className='fv-plugins-message-container'>
                           <div className='fv-help-block'>{formik2.errors.passwordConfirmation}</div>
@@ -271,7 +276,7 @@ function SignInMethod() {
                   >
                     {!loading2 && 'Update Password'}
                     {loading2 && (
-                      <span className='indicator-progress' style={{ display: 'block' }}>
+                      <span className='indicator-progress' style={{display: 'block'}}>
                         Please wait...{' '}
                         <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
                       </span>
@@ -280,7 +285,7 @@ function SignInMethod() {
                   <button
                     onClick={() => {
                       setPasswordForm(false)
-                    } }
+                    }}
                     id='kt_password_cancel'
                     type='button'
                     className='btn btn-color-gray-400 btn-active-light-primary px-6'
@@ -298,7 +303,7 @@ function SignInMethod() {
               <button
                 onClick={() => {
                   setPasswordForm(true)
-                } }
+                }}
                 className='btn btn-light btn-active-light-primary'
               >
                 Reset Password
@@ -309,7 +314,8 @@ function SignInMethod() {
           <div className='notice d-flex bg-light-primary rounded border-primary border border-dashed p-6'>
             <KTSVG
               path='/media/icons/duotune/general/gen048.svg'
-              className='svg-icon-2tx svg-icon-primary me-4' />
+              className='svg-icon-2tx svg-icon-primary me-4'
+            />
             <div className='d-flex flex-stack flex-grow-1 flex-wrap flex-md-nowrap'>
               <div className='mb-3 mb-md-0 fw-bold'>
                 <h4 className='text-gray-800 fw-bolder'>Secure Your Account</h4>

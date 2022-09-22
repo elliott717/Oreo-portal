@@ -8,7 +8,7 @@ type Props = {
   statistics: string
 }
 
-export function CardsWidget2({ className, image, cardNumber, color, statistics }: Props) {
+export function CardsWidget2({className, image, cardNumber, color, statistics}: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Body */}
@@ -32,7 +32,8 @@ export function CardsWidget2({ className, image, cardNumber, color, statistics }
           <span className={`badge badge-${color} px-2`}>
             <KTSVG
               path={`/media/icons/duotune/arrows/${color === 'success' ? 'arr067' : 'arr068'}.svg`}
-              className='svg-icon-7 svg-icon-white' />
+              className='svg-icon-7 svg-icon-white'
+            />
             {statistics} %
           </span>
           {/* end::Badge */}

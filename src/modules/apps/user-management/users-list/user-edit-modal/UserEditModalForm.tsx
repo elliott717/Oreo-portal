@@ -26,9 +26,9 @@ const editUserSchema = Yup.object().shape({
     .required('Name is required'),
 })
 
-function UserEditModalForm({ user, isUserLoading }:Props) {
-  const { setItemIdForUpdate } = useListView()
-  const { refetch } = useQueryResponse()
+function UserEditModalForm({user, isUserLoading}: Props) {
+  const {setItemIdForUpdate} = useListView()
+  const {refetch} = useQueryResponse()
 
   const [userForEdit] = useState<User>({
     ...user,
@@ -52,7 +52,7 @@ function UserEditModalForm({ user, isUserLoading }:Props) {
   const formik = useFormik({
     initialValues: userForEdit,
     validationSchema: editUserSchema,
-    onSubmit: async (values, { setSubmitting }) => {
+    onSubmit: async (values, {setSubmitting}) => {
       setSubmitting(true)
       try {
         if (isNotEmpty(values.id)) {
@@ -93,12 +93,12 @@ function UserEditModalForm({ user, isUserLoading }:Props) {
             <div
               className='image-input image-input-outline'
               data-kt-image-input='true'
-              style={{ backgroundImage: `url('${blankImg}')` }}
+              style={{backgroundImage: `url('${blankImg}')`}}
             >
               {/* begin::Preview existing avatar */}
               <div
                 className='image-input-wrapper w-125px h-125px'
-                style={{ backgroundImage: `url('${userAvatarImg}')` }}
+                style={{backgroundImage: `url('${userAvatarImg}')`}}
               ></div>
               {/* end::Preview existing avatar */}
 
@@ -160,13 +160,14 @@ function UserEditModalForm({ user, isUserLoading }:Props) {
               name='name'
               className={clsx(
                 'form-control form-control-solid mb-3 mb-lg-0',
-                { 'is-invalid': formik.touched.name && formik.errors.name },
+                {'is-invalid': formik.touched.name && formik.errors.name},
                 {
                   'is-valid': formik.touched.name && !formik.errors.name,
                 }
               )}
               autoComplete='off'
-              disabled={formik.isSubmitting || isUserLoading} />
+              disabled={formik.isSubmitting || isUserLoading}
+            />
             {formik.touched.name && formik.errors.name && (
               <div className='fv-plugins-message-container'>
                 <div className='fv-help-block'>
@@ -190,7 +191,7 @@ function UserEditModalForm({ user, isUserLoading }:Props) {
               {...formik.getFieldProps('email')}
               className={clsx(
                 'form-control form-control-solid mb-3 mb-lg-0',
-                { 'is-invalid': formik.touched.email && formik.errors.email },
+                {'is-invalid': formik.touched.email && formik.errors.email},
                 {
                   'is-valid': formik.touched.email && !formik.errors.email,
                 }
@@ -198,7 +199,8 @@ function UserEditModalForm({ user, isUserLoading }:Props) {
               type='email'
               name='email'
               autoComplete='off'
-              disabled={formik.isSubmitting || isUserLoading} />
+              disabled={formik.isSubmitting || isUserLoading}
+            />
             {/* end::Input */}
             {formik.touched.email && formik.errors.email && (
               <div className='fv-plugins-message-container'>
@@ -227,7 +229,8 @@ function UserEditModalForm({ user, isUserLoading }:Props) {
                   value='Administrator'
                   id='kt_modal_update_role_option_0'
                   checked={formik.values.role === 'Administrator'}
-                  disabled={formik.isSubmitting || isUserLoading} />
+                  disabled={formik.isSubmitting || isUserLoading}
+                />
 
                 {/* end::Input */}
                 {/* begin::Label */}
@@ -256,7 +259,8 @@ function UserEditModalForm({ user, isUserLoading }:Props) {
                   value='Developer'
                   id='kt_modal_update_role_option_1'
                   checked={formik.values.role === 'Developer'}
-                  disabled={formik.isSubmitting || isUserLoading} />
+                  disabled={formik.isSubmitting || isUserLoading}
+                />
                 {/* end::Input */}
                 {/* begin::Label */}
                 <label className='form-check-label' htmlFor='kt_modal_update_role_option_1'>
@@ -284,7 +288,8 @@ function UserEditModalForm({ user, isUserLoading }:Props) {
                   value='Analyst'
                   id='kt_modal_update_role_option_2'
                   checked={formik.values.role === 'Analyst'}
-                  disabled={formik.isSubmitting || isUserLoading} />
+                  disabled={formik.isSubmitting || isUserLoading}
+                />
 
                 {/* end::Input */}
                 {/* begin::Label */}
@@ -314,7 +319,8 @@ function UserEditModalForm({ user, isUserLoading }:Props) {
                   value='Support'
                   id='kt_modal_update_role_option_3'
                   checked={formik.values.role === 'Support'}
-                  disabled={formik.isSubmitting || isUserLoading} />
+                  disabled={formik.isSubmitting || isUserLoading}
+                />
                 {/* end::Input */}
                 {/* begin::Label */}
                 <label className='form-check-label' htmlFor='kt_modal_update_role_option_3'>
@@ -342,7 +348,8 @@ function UserEditModalForm({ user, isUserLoading }:Props) {
                   id='kt_modal_update_role_option_4'
                   value='Trial'
                   checked={formik.values.role === 'Trial'}
-                  disabled={formik.isSubmitting || isUserLoading} />
+                  disabled={formik.isSubmitting || isUserLoading}
+                />
                 {/* end::Input */}
                 {/* begin::Label */}
                 <label className='form-check-label' htmlFor='kt_modal_update_role_option_4'>

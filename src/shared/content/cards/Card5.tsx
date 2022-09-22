@@ -14,7 +14,14 @@ type Props = {
 }
 
 function Card5({
-  image, title, description, status, statusValue, statusDesc, progress, progressType,
+  image,
+  title,
+  description,
+  status,
+  statusValue,
+  statusDesc,
+  progress,
+  progressType,
 }: Props) {
   return (
     <div className='card h-100'>
@@ -39,7 +46,8 @@ function Card5({
           >
             <KTSVG
               path='/media/icons/duotune/general/gen024.svg'
-              className='svg-icon-3 svg-icon-primary' />
+              className='svg-icon-3 svg-icon-primary'
+            />
           </button>
 
           <Dropdown1 />
@@ -53,13 +61,15 @@ function Card5({
           {status === 'up' && (
             <KTSVG
               path='/media/icons/duotune/arrows/arr007.svg'
-              className='svg-icon-3 me-1 svg-icon-success' />
+              className='svg-icon-3 me-1 svg-icon-success'
+            />
           )}
 
           {status === 'down' && (
             <KTSVG
               path='/media/icons/duotune/arrows/arr006.svg'
-              className='svg-icon-3 me-1 svg-icon-danger' />
+              className='svg-icon-3 me-1 svg-icon-danger'
+            />
           )}
 
           <div className={`fw-bolder me-2 ` + (status === 'up' ? 'text-success' : 'text-danger')}>

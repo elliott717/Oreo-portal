@@ -4,7 +4,7 @@ type Props = {
   className: string
 }
 
-export function CardsWidget7({ className }: Props) {
+export function CardsWidget7({className}: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}

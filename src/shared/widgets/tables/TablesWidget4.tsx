@@ -26,7 +26,7 @@ type TableContentProps = {
   item: IItem
 }
 
-function TableContent({ item }: TableContentProps) {
+function TableContent({item}: TableContentProps) {
   const [open, setOpen] = useState<boolean>(false)
 
   return (
@@ -58,7 +58,7 @@ function TableContent({ item }: TableContentProps) {
           <button
             onClick={() => {
               setOpen(!open)
-            } }
+            }}
             type='button'
             className='btn btn-sm btn-icon btn-light btn-active-light-primary toggle h-25px w-25px cursor-pointer'
           >
@@ -130,7 +130,7 @@ type WidgetProps = {
   className: string
 }
 
-export function TablesWidget4({ className }: WidgetProps) {
+export function TablesWidget4({className}: WidgetProps) {
   const items: Array<IItem> = [
     {
       orderId: 'XGT-346',
@@ -420,7 +420,7 @@ export function TablesWidget4({ className }: WidgetProps) {
                     className='min-w-100px sorting_disabled'
                     rowSpan={1}
                     colSpan={1}
-                    style={{ width: '100px' }}
+                    style={{width: '100px'}}
                   >
                     Order ID
                   </th>
@@ -428,7 +428,7 @@ export function TablesWidget4({ className }: WidgetProps) {
                     className='text-end min-w-100px sorting_disabled'
                     rowSpan={1}
                     colSpan={1}
-                    style={{ width: '100px' }}
+                    style={{width: '100px'}}
                   >
                     Created
                   </th>
@@ -436,7 +436,7 @@ export function TablesWidget4({ className }: WidgetProps) {
                     className='text-end min-w-150px sorting_disabled'
                     rowSpan={1}
                     colSpan={1}
-                    style={{ width: '150px' }}
+                    style={{width: '150px'}}
                   >
                     Customer
                   </th>
@@ -444,7 +444,7 @@ export function TablesWidget4({ className }: WidgetProps) {
                     className='text-end min-w-100px sorting_disabled'
                     rowSpan={1}
                     colSpan={1}
-                    style={{ width: '100px' }}
+                    style={{width: '100px'}}
                   >
                     Total
                   </th>
@@ -452,7 +452,7 @@ export function TablesWidget4({ className }: WidgetProps) {
                     className='text-end min-w-100px sorting_disabled'
                     rowSpan={1}
                     colSpan={1}
-                    style={{ width: '100px' }}
+                    style={{width: '100px'}}
                   >
                     Profit
                   </th>
@@ -460,7 +460,7 @@ export function TablesWidget4({ className }: WidgetProps) {
                     className='text-end min-w-50px sorting_disabled'
                     rowSpan={1}
                     colSpan={1}
-                    style={{ width: '93.1562px' }}
+                    style={{width: '93.1562px'}}
                   >
                     Status
                   </th>
@@ -468,7 +468,7 @@ export function TablesWidget4({ className }: WidgetProps) {
                     className='text-end sorting_disabled'
                     rowSpan={1}
                     colSpan={1}
-                    style={{ width: '25px' }}
+                    style={{width: '25px'}}
                   ></th>
                 </tr>
                 {/* end::Table row */}

@@ -46,7 +46,8 @@ function DeactivateAccount() {
             <div className='notice d-flex bg-light-warning rounded border-warning border border-dashed mb-9 p-6'>
               <KTSVG
                 path='/media/icons/duotune/general/gen044.svg'
-                className='svg-icon-2tx svg-icon-warning me-4' />
+                className='svg-icon-2tx svg-icon-warning me-4'
+              />
 
               <div className='d-flex flex-stack flex-grow-1'>
                 <div className='fw-bold'>
@@ -67,7 +68,8 @@ function DeactivateAccount() {
               <input
                 className='form-check-input'
                 type='checkbox'
-                {...formik.getFieldProps('confirm')} />
+                {...formik.getFieldProps('confirm')}
+              />
               <label className='form-check-label fw-bold ps-2 fs-6' htmlFor='deactivate'>
                 I confirm my account deactivation
               </label>
@@ -87,7 +89,7 @@ function DeactivateAccount() {
             >
               {!loading && 'Deactivate Account'}
               {loading && (
-                <span className='indicator-progress' style={{ display: 'block' }}>
+                <span className='indicator-progress' style={{display: 'block'}}>
                   Please wait...{' '}
                   <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
                 </span>

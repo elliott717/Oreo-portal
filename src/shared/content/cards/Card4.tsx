@@ -7,7 +7,7 @@ type Props = {
   description: string
 }
 
-function Card4({ icon, title, description }: Props) {
+function Card4({icon, title, description}: Props) {
   return (
     <div className='card h-100'>
       <div className='card-body d-flex justify-content-center text-center flex-column p-8'>

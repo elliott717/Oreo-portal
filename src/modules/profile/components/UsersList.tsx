@@ -6,7 +6,7 @@ type Props = {
   users?: Array<IconUserModel>
 }
 
-function UsersList({ users = undefined }:Props) {
+function UsersList({users = undefined}: Props) {
   return (
     <>
       {users &&

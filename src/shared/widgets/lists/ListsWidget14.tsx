@@ -6,7 +6,7 @@ type Props = {
   className: string
 }
 
-export function ListsWidget14({ className }: Props) {
+export function ListsWidget14({className}: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -28,7 +28,8 @@ export function ListsWidget14({ className }: Props) {
           >
             <KTSVG
               path='/media/icons/duotune/general/gen023.svg'
-              className='svg-icon-1 svg-icon-gray-300 me-n1' />
+              className='svg-icon-1 svg-icon-gray-300 me-n1'
+            />
           </button>
           <Dropdown2 />
           {/* end::Menu */}

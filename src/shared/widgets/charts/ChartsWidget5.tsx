@@ -8,7 +8,7 @@ type Props = {
   className: string
 }
 
-export function ChartsWidget5({ className }: Props) {
+export function ChartsWidget5({className}: Props) {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -49,7 +49,8 @@ export function ChartsWidget5({ className }: Props) {
           >
             <KTSVG
               path='/media/icons/duotune/general/gen023.svg'
-              className='svg-icon-1 svg-icon-gray-300 me-n1' />
+              className='svg-icon-1 svg-icon-gray-300 me-n1'
+            />
           </button>
           <Dropdown2 />
           {/* end::Menu */}

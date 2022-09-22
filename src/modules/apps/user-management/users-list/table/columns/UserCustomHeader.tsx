@@ -10,9 +10,9 @@ type Props = {
   title?: string
   tableProps: PropsWithChildren<HeaderProps<User>>
 }
-function UserCustomHeader({ className, title, tableProps }: Props) {
+function UserCustomHeader({className, title, tableProps}: Props) {
   const id = tableProps.column.id
-  const { state, updateState } = useQueryRequest()
+  const {state, updateState} = useQueryRequest()
 
   const isSelectedForSorting = useMemo(() => {
     return state.sort && state.sort === id
@@ -27,19 +27,19 @@ function UserCustomHeader({ className, title, tableProps }: Props) {
 
     if (!isSelectedForSorting) {
       // enable sort asc
-      updateState({ sort: id, order: 'asc', ...initialQueryState })
+      updateState({sort: id, order: 'asc', ...initialQueryState})
       return
     }
 
     if (isSelectedForSorting && order !== undefined) {
       if (order === 'asc') {
         // enable sort desc
-        updateState({ sort: id, order: 'desc', ...initialQueryState })
+        updateState({sort: id, order: 'desc', ...initialQueryState})
         return
       }
 
       // disable sort
-      updateState({ sort: undefined, order: undefined, ...initialQueryState })
+      updateState({sort: undefined, order: undefined, ...initialQueryState})
     }
   }
 
@@ -50,7 +50,7 @@ function UserCustomHeader({ className, title, tableProps }: Props) {
         className,
         isSelectedForSorting && order !== undefined && `table-sort-${order}`
       )}
-      style={{ cursor: 'pointer' }}
+      style={{cursor: 'pointer'}}
       onClick={sortColumn}
     >
       {title}

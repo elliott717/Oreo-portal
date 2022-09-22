@@ -1,11 +1,5 @@
 import React from 'react'
-import {
-  FeedsWidget2,
-  FeedsWidget3,
-  FeedsWidget4,
-  FeedsWidget5,
-  FeedsWidget6,
-} from 'shared/widgets'
+import {FeedsWidget2, FeedsWidget3, FeedsWidget4, FeedsWidget5, FeedsWidget6} from 'shared/widgets'
 import {ChartsWidget1} from 'shared/profile-widgets/ChartsWidget1'
 import {ListsWidget5} from 'shared/profile-widgets/ListsWidget5'
 import {ListsWidget2} from 'shared/profile-widgets/ListsWidget2'

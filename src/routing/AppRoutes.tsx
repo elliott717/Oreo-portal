@@ -20,7 +20,7 @@ import {App} from '../App'
 const {PUBLIC_URL} = process.env
 
 function AppRoutes() {
-  const isAuthorized = useSelector<RootState>(({ auth }) => auth.user, shallowEqual)
+  const isAuthorized = useSelector<RootState>(({auth}) => auth.user, shallowEqual)
   return (
     <BrowserRouter basename={PUBLIC_URL}>
       <Routes>

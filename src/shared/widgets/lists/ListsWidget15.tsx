@@ -6,7 +6,7 @@ type Props = {
   className: string
 }
 
-export function ListsWidget15({ className }: Props) {
+export function ListsWidget15({className}: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -28,7 +28,8 @@ export function ListsWidget15({ className }: Props) {
           >
             <KTSVG
               path='/media/icons/duotune/general/gen023.svg'
-              className='svg-icon-1 svg-icon-gray-300 me-n1' />
+              className='svg-icon-1 svg-icon-gray-300 me-n1'
+            />
           </button>
           <Dropdown3 />
           {/* end::Menu */}
@@ -44,7 +45,7 @@ export function ListsWidget15({ className }: Props) {
           <div className='symbol symbol-50px symbol-2by3 me-4'>
             <div
               className='symbol-label'
-              style={{ backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/20.jpg')})` }}
+              style={{backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/20.jpg')})`}}
             ></div>
           </div>
           {/* end::Symbol */}
@@ -79,7 +80,7 @@ export function ListsWidget15({ className }: Props) {
           <div className='symbol symbol-50px symbol-2by3 me-4'>
             <div
               className='symbol-label'
-              style={{ backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/23.jpg')})` }}
+              style={{backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/23.jpg')})`}}
             ></div>
           </div>
           {/* end::Symbol */}
@@ -114,7 +115,7 @@ export function ListsWidget15({ className }: Props) {
           <div className='symbol symbol-50px symbol-2by3 me-4'>
             <div
               className='symbol-label'
-              style={{ backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/22.jpg')})` }}
+              style={{backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/22.jpg')})`}}
             ></div>
           </div>
           {/* end::Symbol */}
@@ -149,7 +150,7 @@ export function ListsWidget15({ className }: Props) {
           <div className='symbol symbol-50px symbol-2by3 me-4'>
             <div
               className='symbol-label'
-              style={{ backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/19.jpg')})` }}
+              style={{backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/19.jpg')})`}}
             ></div>
           </div>
           {/* end::Symbol */}
@@ -186,7 +187,7 @@ export function ListsWidget15({ className }: Props) {
           <div className='symbol symbol-50px symbol-2by3 me-4'>
             <div
               className='symbol-label'
-              style={{ backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/3.jpg')})` }}
+              style={{backgroundImage: `url(${toAbsoluteUrl('/media/stock/900x600/3.jpg')})`}}
             ></div>
           </div>
           {/* end::Symbol */}

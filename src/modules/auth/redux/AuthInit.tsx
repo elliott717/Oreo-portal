@@ -8,19 +8,19 @@ const mapState = (state: RootState) => ({auth: state.auth})
 const connector = connect(mapState, auth.actions)
 type PropsFromRedux = ConnectedProps<typeof connector>
 type Props = PropsFromRedux & {
-   children?: React.ReactNode
+  children?: React.ReactNode
 }
-function AuthInit(props:Props) {
+function AuthInit(props: Props) {
   const didRequest = useRef(false)
   const dispatch = useDispatch()
-  const accessToken = useSelector<RootState>(({ auth }) => auth.accessToken, shallowEqual)
+  const accessToken = useSelector<RootState>(({auth}) => auth.accessToken, shallowEqual)
 
   // We should request user by authToken before rendering the application
   useEffect(() => {
     const requestUser = async () => {
       try {
         if (!didRequest.current) {
-          const { data: user } = await getUserByToken(accessToken as string)
+          const {data: user} = await getUserByToken(accessToken as string)
           dispatch(props.fulfillUser(user))
         }
       } catch (error) {

@@ -8,7 +8,7 @@ type Props = {
 }
 
 function KTCardBody(props: Props) {
-  const { className, scroll, height, children } = props
+  const {className, scroll, height, children} = props
   return (
     <div
       className={clsx(

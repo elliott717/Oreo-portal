@@ -9,7 +9,7 @@ type Props = {
   chartHeight: number
 }
 
-export function ChartsWidget3({ className, chartHeight }: Props) {
+export function ChartsWidget3({className, chartHeight}: Props) {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -74,7 +74,7 @@ export function ChartsWidget3({ className, chartHeight }: Props) {
         </div>
         {/* end::Statistics */}
         {/* begin::Chart */}
-        <div ref={chartRef} className='min-h-auto ps-4 pe-6' style={{ height: '300px' }}></div>
+        <div ref={chartRef} className='min-h-auto ps-4 pe-6' style={{height: '300px'}}></div>
         {/* end::Chart */}
       </div>
       {/* end::Card body */}

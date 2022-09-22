@@ -7,7 +7,7 @@ type Props = {
   className: string
 }
 
-export function TimelineWidget1({ className }: Props) {
+export function TimelineWidget1({className}: Props) {
   const [loading, setLoading] = useState(false)
   const timelineRef1 = useRef<HTMLDivElement>(null)
   let timeline1: vis.Timeline | null = null
@@ -115,7 +115,9 @@ export function TimelineWidget1({ className }: Props) {
       const users = item.users
       let userTemplate = ''
       users.forEach((user: any) => {
-        userTemplate += `<div class="symbol symbol-circle symbol-25px"><img src="${rootImagePath + user}" alt="" /></div>`
+        userTemplate += `<div class="symbol symbol-circle symbol-25px"><img src="${
+          rootImagePath + user
+        }" alt="" /></div>`
       })
 
       return `<div class="rounded-pill bg-light-${item.color} d-flex align-items-center position-relative h-40px w-100 p-2 overflow-hidden">
@@ -173,7 +175,8 @@ export function TimelineWidget1({ className }: Props) {
               <div className={'table-responsive pb-10'}>
                 <div
                   ref={timelineRef1}
-                  className={`vis-timeline-custom h-350px min-w-700px -pe-none`} />
+                  className={`vis-timeline-custom h-350px min-w-700px -pe-none`}
+                />
               </div>
               <div className={`overlay-layer card-rounded bg-white ${loading ? '' : 'd-none'}`}>
                 <div className={`spinner-border text-primary`} role='status'>

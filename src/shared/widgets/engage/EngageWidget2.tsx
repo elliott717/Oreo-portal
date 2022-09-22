@@ -10,7 +10,7 @@ type Props = {
   buttonClass: string
 }
 
-export function EngageWidget2({ className, text, textClass, buttonText, buttonClass }: Props) {
+export function EngageWidget2({className, text, textClass, buttonText, buttonClass}: Props) {
   const [show, setShow] = useState<boolean>(false)
 
   return (
@@ -28,7 +28,7 @@ export function EngageWidget2({ className, text, textClass, buttonText, buttonCl
           {/* begin::Title */}
           <h3
             className={`${textClass} fs-2qx fw-boldest mb-4 mb-lg-8`}
-            dangerouslySetInnerHTML={{ __html: text }}
+            dangerouslySetInnerHTML={{__html: text}}
           ></h3>
           {/* end::Title */}
 
@@ -41,7 +41,7 @@ export function EngageWidget2({ className, text, textClass, buttonText, buttonCl
               data-bs-target='#kt_modal_create_app'
               onClick={() => {
                 setShow(!show)
-              } }
+              }}
             >
               {buttonText}
             </a>
@@ -54,7 +54,8 @@ export function EngageWidget2({ className, text, textClass, buttonText, buttonCl
         show={show}
         handleClose={() => {
           setShow(false)
-        } } />
+        }}
+      />
     </>
   )
 }

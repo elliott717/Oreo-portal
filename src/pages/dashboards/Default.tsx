@@ -1,9 +1,4 @@
-import {
-  CardsWidget6,
-  ChartsWidget1,
-  ChartsWidget9,
-  EngageWidget2,
-} from 'shared/widgets'
+import {CardsWidget6, ChartsWidget1, ChartsWidget9, EngageWidget2} from 'shared/widgets'
 
 export function Default() {
   return (
@@ -22,7 +17,8 @@ export function Default() {
             text='Good admin theme </br> is a tool of enthusiasm'
             textClass='text-gray-800'
             buttonClass='btn-danger'
-            buttonText='Create App' />
+            buttonText='Create App'
+          />
         </div>
         {/* end::Col */}
       </div>
@@ -40,7 +36,8 @@ export function Default() {
           <ChartsWidget1
             className='h-xl-100'
             chartHeight={300}
-            chartColor='rgba(150, 142, 126, 0.2)' />
+            chartColor='rgba(150, 142, 126, 0.2)'
+          />
         </div>
         {/* end::Col */}
       </div>

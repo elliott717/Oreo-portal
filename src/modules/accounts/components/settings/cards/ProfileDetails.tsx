@@ -64,11 +64,11 @@ function ProfileDetails() {
                 <div
                   className='image-input image-input-outline'
                   data-kt-image-input='true'
-                  style={{ backgroundImage: `url(${toAbsoluteUrl('/media/avatars/blank.png')})` }}
+                  style={{backgroundImage: `url(${toAbsoluteUrl('/media/avatars/blank.png')})`}}
                 >
                   <div
                     className='image-input-wrapper w-125px h-125px'
-                    style={{ backgroundImage: `url(${toAbsoluteUrl(data.avatar)})` }}
+                    style={{backgroundImage: `url(${toAbsoluteUrl(data.avatar)})`}}
                   ></div>
                 </div>
               </div>
@@ -84,7 +84,8 @@ function ProfileDetails() {
                       type='text'
                       className='form-control form-control-lg form-control-solid mb-3 mb-lg-0'
                       placeholder='First name'
-                      {...formik.getFieldProps('fName')} />
+                      {...formik.getFieldProps('fName')}
+                    />
                     {formik.touched.fName && formik.errors.fName && (
                       <div className='fv-plugins-message-container'>
                         <div className='fv-help-block'>{formik.errors.fName}</div>
@@ -97,7 +98,8 @@ function ProfileDetails() {
                       type='text'
                       className='form-control form-control-lg form-control-solid'
                       placeholder='Last name'
-                      {...formik.getFieldProps('lName')} />
+                      {...formik.getFieldProps('lName')}
+                    />
                     {formik.touched.lName && formik.errors.lName && (
                       <div className='fv-plugins-message-container'>
                         <div className='fv-help-block'>{formik.errors.lName}</div>
@@ -116,7 +118,8 @@ function ProfileDetails() {
                   type='text'
                   className='form-control form-control-lg form-control-solid'
                   placeholder='Company name'
-                  {...formik.getFieldProps('company')} />
+                  {...formik.getFieldProps('company')}
+                />
                 {formik.touched.company && formik.errors.company && (
                   <div className='fv-plugins-message-container'>
                     <div className='fv-help-block'>{formik.errors.company}</div>
@@ -135,7 +138,8 @@ function ProfileDetails() {
                   type='tel'
                   className='form-control form-control-lg form-control-solid'
                   placeholder='Phone number'
-                  {...formik.getFieldProps('contactPhone')} />
+                  {...formik.getFieldProps('contactPhone')}
+                />
                 {formik.touched.contactPhone && formik.errors.contactPhone && (
                   <div className='fv-plugins-message-container'>
                     <div className='fv-help-block'>{formik.errors.contactPhone}</div>
@@ -154,7 +158,8 @@ function ProfileDetails() {
                   type='text'
                   className='form-control form-control-lg form-control-solid'
                   placeholder='Company website'
-                  {...formik.getFieldProps('companySite')} />
+                  {...formik.getFieldProps('companySite')}
+                />
                 {formik.touched.companySite && formik.errors.companySite && (
                   <div className='fv-plugins-message-container'>
                     <div className='fv-help-block'>{formik.errors.companySite}</div>
@@ -711,7 +716,8 @@ function ProfileDetails() {
                             phone: data.communications?.phone,
                           },
                         })
-                      } } />
+                      }}
+                    />
                     <span className='fw-bold ps-2 fs-6'>Email</span>
                   </label>
 
@@ -728,7 +734,8 @@ function ProfileDetails() {
                             phone: !data.communications?.phone,
                           },
                         })
-                      } } />
+                      }}
+                    />
                     <span className='fw-bold ps-2 fs-6'>Phone</span>
                   </label>
                 </div>
@@ -746,8 +753,9 @@ function ProfileDetails() {
                     id='allowmarketing'
                     defaultChecked={data.allowMarketing}
                     onChange={() => {
-                      updateData({ allowMarketing: !data.allowMarketing })
-                    } } />
+                      updateData({allowMarketing: !data.allowMarketing})
+                    }}
+                  />
                   <label className='form-check-label'></label>
                 </div>
               </div>
@@ -758,7 +766,7 @@ function ProfileDetails() {
             <button type='submit' className='btn btn-primary' disabled={loading}>
               {!loading && 'Save Changes'}
               {loading && (
-                <span className='indicator-progress' style={{ display: 'block' }}>
+                <span className='indicator-progress' style={{display: 'block'}}>
                   Please wait...{' '}
                   <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
                 </span>

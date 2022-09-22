@@ -135,7 +135,8 @@ function InviteUsers() {
               <img
                 alt='Logo'
                 src={toAbsoluteUrl('/media/svg/brand-logos/google-icon.svg')}
-                className='h-20px me-3' />
+                className='h-20px me-3'
+              />
               Invite Gmail Contacts
             </div>
 

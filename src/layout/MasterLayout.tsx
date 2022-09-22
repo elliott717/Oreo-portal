@@ -9,7 +9,7 @@ import {ScrollTop} from './components/Scrolltop'
 import {ActivityDrawer} from '../shared'
 import {Content} from './components/Content'
 
-function MasterLayout({ children }: any) {
+function MasterLayout({children}: any) {
   const location = useLocation()
   useEffect(() => {
     setTimeout(() => {

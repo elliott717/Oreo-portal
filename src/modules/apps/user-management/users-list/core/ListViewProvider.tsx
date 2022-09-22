@@ -12,10 +12,10 @@ import {useQueryResponse, useQueryResponseData} from './QueryResponseProvider'
 
 const ListViewContext = createContext<ListViewContextProps>(initialListView)
 
-function ListViewProvider({ children }: any) {
+function ListViewProvider({children}: any) {
   const [selected, setSelected] = useState<Array<ID>>(initialListView.selected)
   const [itemIdForUpdate, setItemIdForUpdate] = useState<ID>(initialListView.itemIdForUpdate)
-  const { isLoading } = useQueryResponse()
+  const {isLoading} = useQueryResponse()
   const data = useQueryResponseData()
   const disabled = useMemo(() => calculatedGroupingIsDisabled(isLoading, data), [isLoading, data])
   const isAllSelected = useMemo(() => calculateIsAllDataSelected(data, selected), [data, selected])

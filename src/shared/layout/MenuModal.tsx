@@ -7,11 +7,11 @@ import {KTSVG, toAbsoluteUrl} from 'helpers'
 
 type Props = {
   show: boolean
-  handleClose: () => void,
-  children?:React.ReactNode
+  handleClose: () => void
+  children?: React.ReactNode
 }
 
-function MenuModal({ show, handleClose, children }: Props) {
+function MenuModal({show, handleClose, children}: Props) {
   const location = useLocation()
   const isFirstRef = useRef(true)
   useEffect(() => {
@@ -40,7 +40,8 @@ function MenuModal({ show, handleClose, children }: Props) {
               <img
                 alt='logo'
                 className='h-30px'
-                src={toAbsoluteUrl('/media/logos/logo-default.svg')} />
+                src={toAbsoluteUrl('/media/logos/logo-default.svg')}
+              />
             </Link>
             {/* end::Logo */}
           </div>
@@ -156,7 +157,8 @@ function MenuModal({ show, handleClose, children }: Props) {
                           backgroundImage: `url('${toAbsoluteUrl(
                             '/media/illustrations/terms-1.png'
                           )}')`,
-                        }} />
+                        }}
+                      />
                     </div>
                   </a>
                 </div>

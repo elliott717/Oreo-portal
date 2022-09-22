@@ -51,7 +51,7 @@ const products = [
   },
 ]
 
-export function ListsWidget5({ className }: Props) {
+export function ListsWidget5({className}: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
@@ -76,11 +76,13 @@ export function ListsWidget5({ className }: Props) {
       {/* begin::Body */}
       <div className='card-body'>
         {/* begin::Scroll */}
-        <div className='hover-scroll-overlay-y pe-6 me-n6' style={{ height: '415px' }}>
+        <div className='hover-scroll-overlay-y pe-6 me-n6' style={{height: '415px'}}>
           {products.map((product, key) => {
             return (
               <div
-                className={`rounded border-gray-300 border-1 border-gray-300 border-dashed px-7 py-3 ${key === products.length ? '' : 'mb-6'}`}
+                className={`rounded border-gray-300 border-1 border-gray-300 border-dashed px-7 py-3 ${
+                  key === products.length ? '' : 'mb-6'
+                }`}
                 key={key}
               >
                 {/* begin::Info */}
@@ -110,7 +112,8 @@ export function ListsWidget5({ className }: Props) {
                     >
                       <KTSVG
                         path='/media/icons/duotune/general/gen023.svg'
-                        className='svg-icon-1' />
+                        className='svg-icon-1'
+                      />
                     </button>
                     <Dropdown2 />
                     {/* end::Menu */}

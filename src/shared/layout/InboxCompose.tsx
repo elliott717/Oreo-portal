@@ -8,7 +8,7 @@ export type Props = {
   handleClose: () => void
 }
 
-function InboxCompose({ show, handleClose }: Props) {
+function InboxCompose({show, handleClose}: Props) {
   const composeToRef = useRef<HTMLInputElement | null>(null)
   const formRef = useRef<HTMLFormElement | null>(null)
   const [composeCC, setComposeCC] = useState('')
@@ -56,7 +56,8 @@ function InboxCompose({ show, handleClose }: Props) {
                   type='text'
                   className='form-control border-0'
                   name='compose_to'
-                  ref={composeToRef} />
+                  ref={composeToRef}
+                />
               </div>
               <div className='ms-2'>
                 <span
@@ -84,7 +85,8 @@ function InboxCompose({ show, handleClose }: Props) {
                   className='form-control border-0'
                   name='compose_cc'
                   value={composeCC}
-                  onChange={(e) => setComposeCC(e.target.value)} />
+                  onChange={(e) => setComposeCC(e.target.value)}
+                />
               </div>
               <span className='btn btn-active-light-primary btn-sm btn-icon' data-inbox='cc-hide'>
                 <i className='la la-close '></i>
@@ -101,7 +103,8 @@ function InboxCompose({ show, handleClose }: Props) {
                   className='form-control border-0'
                   name='compose_bcc'
                   value={composeBCC}
-                  onChange={(e) => setComposeBCC(e.target.value)} />
+                  onChange={(e) => setComposeBCC(e.target.value)}
+                />
               </div>
               <span className='btn btn-active-light-primary btn-sm btn-icon' data-inbox='bcc-hide'>
                 <i className='la la-close '></i>
@@ -116,7 +119,8 @@ function InboxCompose({ show, handleClose }: Props) {
                 name='compose_subject'
                 placeholder='Subject'
                 value={subject}
-                onChange={(e) => setSubject(e.target.value)} />
+                onChange={(e) => setSubject(e.target.value)}
+              />
             </div>
             {/*end::Subject*/}
 
@@ -127,7 +131,7 @@ function InboxCompose({ show, handleClose }: Props) {
             {/*begin::Attachments*/}
             <div className='dropzone dropzone-multi px-8 py-4' id='kt_inbox_compose_attachments'>
               <div className='dropzone-items'>
-                <div className='dropzone-item' style={{ display: 'none' }}>
+                <div className='dropzone-item' style={{display: 'none'}}>
                   <div className='dropzone-file'>
                     <div className='dropzone-filename' title='some_image_file_name.jpg'>
                       <span data-dz-name>some_image_file_name.jpg</span>{' '}
@@ -158,7 +162,8 @@ function InboxCompose({ show, handleClose }: Props) {
                       >
                         <KTSVG
                           className='svg-icon-1'
-                          path='/media/icons/duotune/arrows/arr061.svg' />
+                          path='/media/icons/duotune/arrows/arr061.svg'
+                        />
                       </span>
                       {/*end::Close*/}
                     </span>

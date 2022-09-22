@@ -32,7 +32,8 @@ function Step3() {
 
         <Field
           name='businessDescriptor'
-          className='form-control form-control-lg form-control-solid' />
+          className='form-control form-control-lg form-control-solid'
+        />
         <div className='text-danger mt-2'>
           <ErrorMessage name='businessDescriptor' />
         </div>

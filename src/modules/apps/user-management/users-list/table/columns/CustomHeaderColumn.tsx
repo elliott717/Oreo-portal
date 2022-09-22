@@ -5,7 +5,7 @@ type Props = {
   column: ColumnInstance<User>
 }
 
-function CustomHeaderColumn({ column }: Props) {
+function CustomHeaderColumn({column}: Props) {
   return (
     <>
       {column.Header && typeof column.Header === 'string' ? (

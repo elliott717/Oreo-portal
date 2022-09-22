@@ -72,14 +72,16 @@ function Search() {
         <form data-kt-search-element='form' className='d-none d-lg-block w-100 position-relative'>
           <KTSVG
             className='svg-icon-3 search-icon position-absolute top-50 translate-middle-y ms-4'
-            path='/media/icons/duotune/general/gen004.svg' />
+            path='/media/icons/duotune/general/gen004.svg'
+          />
           <input
             type='text'
             className='form-control bg-transparent ps-12'
             name='search'
             placeholder='Search'
             data-kt-search-element='input'
-            autoComplete='off' />
+            autoComplete='off'
+          />
           <span
             className='position-absolute top-50 end-0 translate-middle-y lh-0 me-5 d-none'
             data-kt-search-element='spinner'
@@ -92,7 +94,8 @@ function Search() {
           >
             <KTSVG
               className='svg-icon svg-icon-2 svg-icon-lg-1 me-0'
-              path='/media/icons/duotune/arrows/arr061.svg' />
+              path='/media/icons/duotune/arrows/arr061.svg'
+            />
           </span>
         </form>
 
@@ -197,7 +200,8 @@ function Search() {
                       <img
                         className='w-20px h-20px'
                         src={toAbsoluteUrl('/media/svg/brand-logos/volicity-9.svg')}
-                        alt='' />
+                        alt=''
+                      />
                     </span>
                   </div>
 
@@ -216,7 +220,8 @@ function Search() {
                       <img
                         className='w-20px h-20px'
                         src={toAbsoluteUrl('/media/svg/brand-logos/tvit.svg')}
-                        alt='' />
+                        alt=''
+                      />
                     </span>
                   </div>
 
@@ -235,7 +240,8 @@ function Search() {
                       <img
                         className='w-20px h-20px'
                         src={toAbsoluteUrl('/media/svg/misc/infography.svg')}
-                        alt='' />
+                        alt=''
+                      />
                     </span>
                   </div>
 
@@ -254,7 +260,8 @@ function Search() {
                       <img
                         className='w-20px h-20px'
                         src={toAbsoluteUrl('/media/svg/brand-logos/leaf.svg')}
-                        alt='' />
+                        alt=''
+                      />
                     </span>
                   </div>
 
@@ -273,7 +280,8 @@ function Search() {
                       <img
                         className='w-20px h-20px'
                         src={toAbsoluteUrl('/media/svg/brand-logos/tower.svg')}
-                        alt='' />
+                        alt=''
+                      />
                     </span>
                   </div>
 
@@ -298,7 +306,8 @@ function Search() {
                     <span className='symbol-label bg-light'>
                       <KTSVG
                         path='/media/icons/duotune/general/gen005.svg'
-                        className='svg-icon-2 svg-icon-primary' />
+                        className='svg-icon-2 svg-icon-primary'
+                      />
                     </span>
                   </div>
 
@@ -316,7 +325,8 @@ function Search() {
                     <span className='symbol-label bg-light'>
                       <KTSVG
                         path='/media/icons/duotune/general/gen032.svg'
-                        className='svg-icon-2 svg-icon-primary' />
+                        className='svg-icon-2 svg-icon-primary'
+                      />
                     </span>
                   </div>
 
@@ -334,7 +344,8 @@ function Search() {
                     <span className='symbol-label bg-light'>
                       <KTSVG
                         path='/media/icons/duotune/communication/com012.svg'
-                        className='svg-icon-2 svg-icon-primary' />
+                        className='svg-icon-2 svg-icon-primary'
+                      />
                     </span>
                   </div>
 
@@ -352,7 +363,8 @@ function Search() {
                     <span className='symbol-label bg-light'>
                       <KTSVG
                         path='/media/icons/duotune/communication/com006.svg'
-                        className='svg-icon-2 svg-icon-primary' />
+                        className='svg-icon-2 svg-icon-primary'
+                      />
                     </span>
                   </div>
 
@@ -374,7 +386,7 @@ function Search() {
                     data-bs-toggle='tooltip'
                     onClick={() => {
                       setMenuState('preferences')
-                    } }
+                    }}
                     title='Show search preferences'
                   >
                     <KTSVG path='/media/icons/duotune/coding/cod001.svg' className='svg-icon-1' />
@@ -386,7 +398,7 @@ function Search() {
                     data-bs-toggle='tooltip'
                     onClick={() => {
                       setMenuState('advanced')
-                    } }
+                    }}
                     title='Show more search options'
                   >
                     <KTSVG path='/media/icons/duotune/arrows/arr072.svg' className='svg-icon-2' />
@@ -400,7 +412,8 @@ function Search() {
                     <span className='symbol-label bg-light'>
                       <KTSVG
                         path='/media/icons/duotune/electronics/elc004.svg'
-                        className='svg-icon-2 svg-icon-primary' />
+                        className='svg-icon-2 svg-icon-primary'
+                      />
                     </span>
                   </div>
 
@@ -417,7 +430,8 @@ function Search() {
                     <span className='symbol-label bg-light'>
                       <KTSVG
                         path='/media/icons/duotune/graphs/gra001.svg'
-                        className='svg-icon-2 svg-icon-primary' />
+                        className='svg-icon-2 svg-icon-primary'
+                      />
                     </span>
                   </div>
 
@@ -434,7 +448,8 @@ function Search() {
                     <span className='symbol-label bg-light'>
                       <KTSVG
                         path='/media/icons/duotune/graphs/gra006.svg'
-                        className='svg-icon-2 svg-icon-primary' />
+                        className='svg-icon-2 svg-icon-primary'
+                      />
                     </span>
                   </div>
 
@@ -451,7 +466,8 @@ function Search() {
                     <span className='symbol-label bg-light'>
                       <KTSVG
                         path='/media/icons/duotune/graphs/gra002.svg'
-                        className='svg-icon-2 svg-icon-primary' />
+                        className='svg-icon-2 svg-icon-primary'
+                      />
                     </span>
                   </div>
 
@@ -468,7 +484,8 @@ function Search() {
                     <span className='symbol-label bg-light'>
                       <KTSVG
                         path='/media/icons/duotune/communication/com010.svg'
-                        className='svg-icon-2 svg-icon-primary' />
+                        className='svg-icon-2 svg-icon-primary'
+                      />
                     </span>
                   </div>
 
@@ -485,7 +502,8 @@ function Search() {
                     <span className='symbol-label bg-light'>
                       <KTSVG
                         path='/media/icons/duotune/finance/fin001.svg'
-                        className='svg-icon-2 svg-icon-primary' />
+                        className='svg-icon-2 svg-icon-primary'
+                      />
                     </span>
                   </div>
 
@@ -502,7 +520,8 @@ function Search() {
                     <span className='symbol-label bg-light'>
                       <KTSVG
                         path='/media/icons/duotune/graphs/gra002.svg'
-                        className='svg-icon-2 svg-icon-primary' />
+                        className='svg-icon-2 svg-icon-primary'
+                      />
                     </span>
                   </div>
 
@@ -520,7 +539,8 @@ function Search() {
               <div className='pt-10 pb-10'>
                 <KTSVG
                   path='/media/icons/duotune/files/fil024.svg'
-                  className='svg-icon-4x opacity-50' />
+                  className='svg-icon-4x opacity-50'
+                />
               </div>
 
               <div className='pb-15 fw-bold'>
@@ -538,7 +558,8 @@ function Search() {
                 type='text'
                 className='form-control form-control-sm form-control-solid'
                 placeholder='Contains the word'
-                name='query' />
+                name='query'
+              />
             </div>
 
             <div className='mb-5'>
@@ -549,7 +570,8 @@ function Search() {
                     className='btn-check'
                     name='type'
                     value='has'
-                    defaultChecked />
+                    defaultChecked
+                  />
                   <span className='btn btn-sm btn-color-muted btn-active btn-active-primary'>
                     All
                   </span>
@@ -583,7 +605,8 @@ function Search() {
                 type='text'
                 name='assignedto'
                 className='form-control form-control-sm form-control-solid'
-                placeholder='Assigned to' />
+                placeholder='Assigned to'
+              />
             </div>
 
             <div className='mb-5'>
@@ -591,7 +614,8 @@ function Search() {
                 type='text'
                 name='collaborators'
                 className='form-control form-control-sm form-control-solid'
-                placeholder='Collaborators' />
+                placeholder='Collaborators'
+              />
             </div>
 
             <div className='mb-5'>
@@ -602,7 +626,8 @@ function Search() {
                     className='btn-check'
                     name='attachment'
                     value='has'
-                    defaultChecked />
+                    defaultChecked
+                  />
                   <span className='btn btn-sm btn-color-muted btn-active btn-active-primary'>
                     Has attachment
                   </span>
@@ -638,7 +663,8 @@ function Search() {
                   type='number'
                   name='date_number'
                   className='form-control form-control-sm form-control-solid'
-                  placeholder='Lenght' />
+                  placeholder='Lenght'
+                />
               </div>
 
               <div className='col-6'>
@@ -662,7 +688,7 @@ function Search() {
                 onClick={(e) => {
                   e.preventDefault()
                   setMenuState('main')
-                } }
+                }}
                 className='btn btn-sm btn-light fw-bolder btn-active-light-primary me-2'
               >
                 Cancel
@@ -730,7 +756,7 @@ function Search() {
                 onClick={(e) => {
                   e.preventDefault()
                   setMenuState('main')
-                } }
+                }}
                 className='btn btn-sm btn-light fw-bolder btn-active-light-primary me-2'
               >
                 Cancel

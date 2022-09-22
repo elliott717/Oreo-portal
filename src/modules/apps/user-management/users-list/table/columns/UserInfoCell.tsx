@@ -7,7 +7,7 @@ type Props = {
   user: User
 }
 
-function UserInfoCell({ user }: Props) {
+function UserInfoCell({user}: Props) {
   return (
     <div className='d-flex align-items-center'>
       {/* begin:: Avatar */}

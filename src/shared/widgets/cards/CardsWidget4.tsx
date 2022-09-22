@@ -6,7 +6,7 @@ type Props = {
   chartHeight: number
 }
 
-export function CardsWidget4({ className, chartHeight }: Props) {
+export function CardsWidget4({className, chartHeight}: Props) {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {

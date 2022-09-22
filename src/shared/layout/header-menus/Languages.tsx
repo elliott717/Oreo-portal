@@ -40,7 +40,7 @@ type Props = {
   languageMenuPlacement?: 'lert-start' | 'right-end'
 }
 
-function Languages({ languageMenuPlacement = 'lert-start' }: Props) {
+function Languages({languageMenuPlacement = 'lert-start'}: Props) {
   const lang = useLang()
   const currentLanguage = languages.find((x) => x.lang === lang)
   return (
@@ -67,11 +67,11 @@ function Languages({ languageMenuPlacement = 'lert-start' }: Props) {
             key={l.lang}
             onClick={() => {
               setLanguage(l.lang)
-            } }
+            }}
           >
             <a
               href='#'
-              className={clsx('menu-link d-flex px-5', { active: l.lang === currentLanguage?.lang })}
+              className={clsx('menu-link d-flex px-5', {active: l.lang === currentLanguage?.lang})}
             >
               <span className='symbol symbol-20px me-4'>
                 <img className='rounded-1' src={l.flag} alt='good' />

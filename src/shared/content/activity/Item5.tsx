@@ -10,7 +10,8 @@ function Item5() {
         <div className='symbol-label bg-light'>
           <KTSVG
             path='/media/icons/duotune/art/art005.svg'
-            className='svg-icon-2 svg-icon-gray-500' />
+            className='svg-icon-2 svg-icon-gray-500'
+          />
         </div>
       </div>
 
@@ -40,7 +41,8 @@ function Item5() {
                 <img
                   alt='img'
                   className='rounded w-200px'
-                  src={toAbsoluteUrl('/media/demos/demo1.png')} />
+                  src={toAbsoluteUrl('/media/demos/demo1.png')}
+                />
               </div>
 
               <div className='overlay-layer bg-dark bg-opacity-10 rounded'>
@@ -55,7 +57,8 @@ function Item5() {
                 <img
                   alt='img'
                   className='rounded w-200px'
-                  src={toAbsoluteUrl('/media/demos/demo2.png')} />
+                  src={toAbsoluteUrl('/media/demos/demo2.png')}
+                />
               </div>
 
               <div className='overlay-layer bg-dark bg-opacity-10 rounded'>
@@ -70,7 +73,8 @@ function Item5() {
                 <img
                   alt='img'
                   className='rounded w-200px'
-                  src={toAbsoluteUrl('/media/demos/demo3.png')} />
+                  src={toAbsoluteUrl('/media/demos/demo3.png')}
+                />
               </div>
 
               <div className='overlay-layer bg-dark bg-opacity-10 rounded'>

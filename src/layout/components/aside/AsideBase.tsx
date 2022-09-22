@@ -14,8 +14,6 @@ function AsideBase() {
       data-kt-drawer-direction='start'
       data-kt-drawer-toggle='#kt_aside_mobile_toggle'
     >
-      
-
       <div className='aside-menu flex-column-fluid'>
         <AsideMenu />
       </div>

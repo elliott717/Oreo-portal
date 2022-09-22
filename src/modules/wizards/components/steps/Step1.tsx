@@ -33,14 +33,16 @@ function Step1() {
               className='btn-check'
               name='accountType'
               value='personal'
-              id='kt_create_account_form_account_type_personal' />
+              id='kt_create_account_form_account_type_personal'
+            />
             <label
               className='btn btn-outline btn-outline-dashed btn-outline-default p-7 d-flex align-items-center mb-10'
               htmlFor='kt_create_account_form_account_type_personal'
             >
               <KTSVG
                 path='/media/icons/duotune/communication/com005.svg'
-                className='svg-icon-3x me-5' />
+                className='svg-icon-3x me-5'
+              />
 
               <span className='d-block fw-bold text-start'>
                 <span className='text-dark fw-bolder d-block fs-4 mb-2'>Personal Account</span>
@@ -57,7 +59,8 @@ function Step1() {
               className='btn-check'
               name='accountType'
               value='corporate'
-              id='kt_create_account_form_account_type_corporate' />
+              id='kt_create_account_form_account_type_corporate'
+            />
             <label
               className='btn btn-outline btn-outline-dashed btn-outline-default p-7 d-flex align-items-center'
               htmlFor='kt_create_account_form_account_type_corporate'

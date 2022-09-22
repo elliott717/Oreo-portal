@@ -27,7 +27,8 @@ function Step5() {
         <div className='notice d-flex bg-light-warning rounded border-warning border border-dashed p-6'>
           <KTSVG
             path='/media/icons/duotune/general/gen044.svg'
-            className='svg-icon-2tx svg-icon-warning me-4' />
+            className='svg-icon-2tx svg-icon-warning me-4'
+          />
           <div className='d-flex flex-stack flex-grow-1'>
             <div className='fw-bold'>
               <h4 className='text-gray-800 fw-bolder'>We need your attention!</h4>

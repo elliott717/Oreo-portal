@@ -6,7 +6,7 @@ type Props = {
   className: string
 }
 
-export function ListsWidget2({ className }: Props) {
+export function ListsWidget2({className}: Props) {
   return (
     <div className={`card card-flush ${className}`}>
       {/* begin::Header */}
