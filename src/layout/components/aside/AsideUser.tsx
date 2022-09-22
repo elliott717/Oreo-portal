@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import {useDispatch} from 'react-redux'
-import * as auth from 'modules/auth/redux/AuthRedux'
+import * as auth from 'features/auth/redux/AuthRedux'
 import {KTSVG, toAbsoluteUrl} from 'helpers'
 import {HeaderUserMenu} from 'shared'
 

@@ -1,7 +1,7 @@
 import {all} from 'redux-saga/effects'
 import {combineReducers} from 'redux'
 
-import * as auth from 'modules/auth'
+import * as auth from 'features/auth'
 
 export const rootReducer = combineReducers({
   auth: auth.reducer,

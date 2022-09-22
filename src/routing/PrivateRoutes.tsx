@@ -2,16 +2,16 @@ import {lazy, Suspense} from 'react'
 import {Navigate, Route, Routes} from 'react-router-dom'
 import {MasterLayout} from 'layout/MasterLayout'
 import TopBarProgress from 'react-topbar-progress-indicator'
-import {DashboardsPageWrapper} from '../pages/dashboards/DashboardsPageWrapper'
+import {DashboardsPageWrapper} from 'pages/dashboards/DashboardsPageWrapper'
 import {getCSSVariableValue} from 'assets/ts/_utils'
 
 const PrivateRoutes = () => {
-  const ProfilePage = lazy(() => import('../modules/profile/ProfilePage'))
-  const WizardsPage = lazy(() => import('../modules/wizards/WizardsPage'))
-  const AccountPage = lazy(() => import('../modules/accounts/AccountPage'))
-  const WidgetsPage = lazy(() => import('../modules/widgets/WidgetsPage'))
-  const ChatPage = lazy(() => import('../modules/apps/chat/ChatPage'))
-  const UsersPage = lazy(() => import('../modules/apps/user-management/UsersPage'))
+  const ProfilePage = lazy(() => import('../features/profile/ProfilePage'))
+  const WizardsPage = lazy(() => import('../features/wizards/WizardsPage'))
+  const AccountPage = lazy(() => import('../features/accounts/AccountPage'))
+  const WidgetsPage = lazy(() => import('../features/widgets/WidgetsPage'))
+  const ChatPage = lazy(() => import('../features/apps/chat/ChatPage'))
+  const UsersPage = lazy(() => import('../features/apps/user-management/UsersPage'))
 
   return (
     <Routes>

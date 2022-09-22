@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import {shallowEqual, useDispatch, useSelector} from 'react-redux'
-import * as auth from 'modules/auth/redux/AuthRedux'
-import {UserModel} from 'modules/auth/models/UserModel'
+import * as auth from 'features/auth/redux/AuthRedux'
+import {UserModel} from 'features/auth/models/UserModel'
 import {RootState} from 'setup'
 import {toAbsoluteUrl} from 'helpers'
 import {Link} from 'react-router-dom'
