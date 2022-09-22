@@ -1,0 +1,28 @@
+version: '1.0'
+
+services:
+  reflector-ui-tests:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.test
+    environment:
+      NODE_ENV: test
+  reflector-ui-singlife:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+      REFL_CONFIG: singlife
+      NGINX_CONFIG: default
+  reflector-ui-thunderbolt-demo:
+    build:
+      args:
+        REFL_CONFIG: thunderbolt-demo
+        NGINX_CONFIG: demo
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3333:80
