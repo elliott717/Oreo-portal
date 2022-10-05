@@ -15,7 +15,7 @@ RUN npm install --silent
 FROM node as builder
 COPY . .
 ARG REFL_CONFIG
-RUN npx ng build -c ${REFL_CONFIG}
+RUN npm run build
 
 FROM nginx:alpine
 ## Copy our default nginx config
