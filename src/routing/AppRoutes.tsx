@@ -5,12 +5,11 @@
  * components (e.g: `srcmodules/Auth/pages/AuthPage`, `srcBasePage`).
  */
 import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom'
-import {shallowEqual, useSelector} from 'react-redux'
 import {PrivateRoutes} from './PrivateRoutes'
 import {ErrorsPage} from 'features/errors/ErrorsPage'
 import {AuthPage, Logout} from 'features/auth'
-import {RootState} from 'setup'
-import {App} from '../App'
+import { App } from '../App'
+import { useAuth0 } from "@auth0/auth0-react";
 
 /**
  * Base URL of the website.
@@ -20,7 +19,8 @@ import {App} from '../App'
 const {PUBLIC_URL} = process.env
 
 function AppRoutes() {
-  const isAuthorized = useSelector<RootState>(({auth}) => auth.user, shallowEqual)
+  const isAuthorized = useAuth0();
+  const { isAuthenticated } = useAuth0();
   return (
     <BrowserRouter basename={PUBLIC_URL}>
       <Routes>
