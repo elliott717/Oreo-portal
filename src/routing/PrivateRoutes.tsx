@@ -3,6 +3,7 @@ import {Navigate, Route, Routes} from 'react-router-dom'
 import {MasterLayout} from 'layout/MasterLayout'
 import TopBarProgress from 'react-topbar-progress-indicator'
 import {DashboardsPageWrapper} from 'pages/dashboards/DashboardsPageWrapper'
+import {RocketsPage} from 'pages/Rockets/RocketsPage'
 import {getCSSVariableValue} from 'assets/ts/_utils'
 
 const PrivateRoutes = () => {
@@ -20,6 +21,7 @@ const PrivateRoutes = () => {
         <Route path='auth/*' element={<Navigate to='/dashboards' />} />
         {/* Pages */}
         <Route path='dashboards/*' element={<DashboardsPageWrapper />} />
+        <Route path='rockets/*' element={<RocketsPage />} />
         {/* Lazy Modules */}
         <Route
           path='crafted/pages/profile/*'

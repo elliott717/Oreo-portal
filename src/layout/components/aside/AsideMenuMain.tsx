@@ -30,6 +30,14 @@ export function AsideMenuMain() {
         <AsideMenuItem to='/products/search' title='Search' hasBullet={true} />
         <AsideMenuItem to='/products/new' title='New' hasBullet={true} />
       </AsideMenuItemWithSub>
+      <AsideMenuItemWithSub
+        to='/rockets'
+        title='Rockets'
+        icon='/media/icons/duotune/arrows/arr001.svg'
+        fontIcon='bi-person'
+      >
+        <AsideMenuItem to='/rockets/default' title='Rockets' hasBullet={true} />
+      </AsideMenuItemWithSub>
     </>
   )
 }
