@@ -19,7 +19,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 const {PUBLIC_URL} = process.env
 
 function AppRoutes() {
-  const isAuthorized = useAuth0();
   const { isAuthenticated } = useAuth0();
   return (
     <BrowserRouter basename={PUBLIC_URL}>
@@ -27,7 +26,7 @@ function AppRoutes() {
         <Route element={<App />}>
           <Route path='error/*' element={<ErrorsPage />} />
           <Route path='logout' element={<Logout />} />
-          {isAuthorized ? (
+          {isAuthenticated ? (
             <>
               <Route path='/*' element={<PrivateRoutes />} />
               <Route index element={<Navigate to='/dashboards' />} />
