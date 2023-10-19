@@ -34,6 +34,7 @@ _redux.setupAxios(axios, store)
 
 const root = ReactDOM.createRoot(document.getElementById('root')!)
 
+// test comment
 root.render(
   <GoodI18nProvider>
     <Provider store={store}>
